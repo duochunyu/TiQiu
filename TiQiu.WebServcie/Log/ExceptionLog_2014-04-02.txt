@@ -1,0 +1,117 @@
+
+[2014/4/2 17:54:07]: Error Message Begin  -------------------
+ExceptionType : System.NullReferenceException
+Message : 未将对象引用设置到对象的实例。
+StackTrace :
+   在 TiQiu.WebServcie.AccountHandler.LoginB(HttpContext context, Object& userData) 位置 g:\TiQiu\TiQiu.WebServcie\AccountHandler.ashx.cs:行号 90
+   在 TiQiu.WebServcie.HttpProcessor.ExecActionHandler(HttpContext context, String action) 位置 g:\TiQiu\TiQiu.WebServcie\HttpProcessor.cs:行号 95
+   在 TiQiu.WebServcie.HttpProcessor.ProcessRequestHandler[BE](HttpContext context, Action`1 exceptionHandler) 位置 g:\TiQiu\TiQiu.WebServcie\HttpProcessor.cs:行号 73
+
+--------- Exception Information [End] ----------------------
+
+[2014/4/2 17:55:14]: Error Message Begin  -------------------
+ExceptionType : System.NullReferenceException
+Message : 未将对象引用设置到对象的实例。
+StackTrace :
+   在 TiQiu.WebServcie.AccountHandler.LoginB(HttpContext context, Object& userData) 位置 g:\TiQiu\TiQiu.WebServcie\AccountHandler.ashx.cs:行号 90
+   在 TiQiu.WebServcie.HttpProcessor.ExecActionHandler(HttpContext context, String action) 位置 g:\TiQiu\TiQiu.WebServcie\HttpProcessor.cs:行号 95
+   在 TiQiu.WebServcie.HttpProcessor.ProcessRequestHandler[BE](HttpContext context, Action`1 exceptionHandler) 位置 g:\TiQiu\TiQiu.WebServcie\HttpProcessor.cs:行号 73
+
+--------- Exception Information [End] ----------------------
+
+[2014/4/2 17:56:33]: Error Message Begin  -------------------
+ExceptionType : System.NullReferenceException
+Message : 未将对象引用设置到对象的实例。
+StackTrace :
+   在 TiQiu.WebServcie.AccountHandler.LoginB(HttpContext context, Object& userData) 位置 g:\TiQiu\TiQiu.WebServcie\AccountHandler.ashx.cs:行号 90
+   在 TiQiu.WebServcie.HttpProcessor.ExecActionHandler(HttpContext context, String action) 位置 g:\TiQiu\TiQiu.WebServcie\HttpProcessor.cs:行号 95
+   在 TiQiu.WebServcie.HttpProcessor.ProcessRequestHandler[BE](HttpContext context, Action`1 exceptionHandler) 位置 g:\TiQiu\TiQiu.WebServcie\HttpProcessor.cs:行号 73
+
+--------- Exception Information [End] ----------------------
+
+[2014/4/2 17:59:33]: Error Message Begin  -------------------
+ExceptionType : System.NullReferenceException
+Message : 未将对象引用设置到对象的实例。
+StackTrace :
+   在 TiQiu.Biz.AccountManager.LoginB(String acct, String pwd) 位置 g:\TiQiu\TiQiu.Biz\AccountManager.cs:行号 157
+   在 TiQiu.WebServcie.AccountHandler.LoginB(HttpContext context, Object& userData) 位置 g:\TiQiu\TiQiu.WebServcie\AccountHandler.ashx.cs:行号 102
+   在 TiQiu.WebServcie.HttpProcessor.ExecActionHandler(HttpContext context, String action) 位置 g:\TiQiu\TiQiu.WebServcie\HttpProcessor.cs:行号 95
+   在 TiQiu.WebServcie.HttpProcessor.ProcessRequestHandler[BE](HttpContext context, Action`1 exceptionHandler) 位置 g:\TiQiu\TiQiu.WebServcie\HttpProcessor.cs:行号 73
+
+--------- Exception Information [End] ----------------------
+
+[2014/4/2 18:00:28]: Error Message Begin  -------------------
+ExceptionType : System.NullReferenceException
+Message : 未将对象引用设置到对象的实例。
+StackTrace :
+   在 TiQiu.Biz.AccountManager.LoginB(String acct, String pwd) 位置 g:\TiQiu\TiQiu.Biz\AccountManager.cs:行号 157
+   在 TiQiu.WebServcie.AccountHandler.LoginB(HttpContext context, Object& userData) 位置 g:\TiQiu\TiQiu.WebServcie\AccountHandler.ashx.cs:行号 102
+   在 TiQiu.WebServcie.HttpProcessor.ExecActionHandler(HttpContext context, String action) 位置 g:\TiQiu\TiQiu.WebServcie\HttpProcessor.cs:行号 95
+   在 TiQiu.WebServcie.HttpProcessor.ProcessRequestHandler[BE](HttpContext context, Action`1 exceptionHandler) 位置 g:\TiQiu\TiQiu.WebServcie\HttpProcessor.cs:行号 73
+
+--------- Exception Information [End] ----------------------
+
+[2014/4/2 21:04:36]: Error Message Begin  -------------------
+ExceptionType : System.InvalidOperationException
+Message : 指定的 Include 路径无效。EntityType“TIQIUModel.ACCOUNT_B”未声明具有名称“member”的导航属性。
+StackTrace :
+   在 System.Data.Entity.Core.Objects.Internal.ObjectFullSpanRewriter.ConvertSpanPath(SpanPathInfo parentInfo, List`1 navPropNames, Int32 pos)
+   在 System.Data.Entity.Core.Objects.Internal.ObjectFullSpanRewriter..ctor(DbCommandTree tree, DbExpression toRewrite, Span span, AliasGenerator aliasGenerator)
+   在 System.Data.Entity.Core.Objects.Internal.ObjectSpanRewriter.TryRewrite(DbQueryCommandTree tree, Span span, MergeOption mergeOption, AliasGenerator aliasGenerator, DbExpression& newQuery, SpanIndex& spanInfo)
+   在 System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlanFactory.Prepare(ObjectContext context, DbQueryCommandTree tree, Type elementType, MergeOption mergeOption, Boolean streaming, Span span, IEnumerable`1 compiledQueryParameters, AliasGenerator aliasGenerator)
+   在 System.Data.Entity.Core.Objects.ELinq.ELinqQueryState.GetExecutionPlan(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClassb.<GetResults>b__a()
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClassb.<GetResults>b__9()
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<System.Collections.Generic.IEnumerable<T>.GetEnumerator>b__0()
+   在 System.Lazy`1.CreateValue()
+   在 System.Lazy`1.LazyInitValue()
+   在 System.Lazy`1.get_Value()
+   在 System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   在 System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   在 System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__1[TResult](IEnumerable`1 sequence)
+   在 System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   在 System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[TResult](Expression expression)
+   在 System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   在 System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   在 TiQiu.Biz.AccountManager.GetAccountBInfoByName(String name)
+   在 TiQiu.WebServcie.AccountHandler.LoginB(HttpContext context, Object& userData) 位置 g:\TiQiu\TiQiu.WebServcie\AccountHandler.ashx.cs:行号 104
+   在 TiQiu.WebServcie.HttpProcessor.ExecActionHandler(HttpContext context, String action) 位置 g:\TiQiu\TiQiu.WebServcie\HttpProcessor.cs:行号 95
+   在 TiQiu.WebServcie.HttpProcessor.ProcessRequestHandler[BE](HttpContext context, Action`1 exceptionHandler) 位置 g:\TiQiu\TiQiu.WebServcie\HttpProcessor.cs:行号 73
+
+--------- Exception Information [End] ----------------------
+
+[2014/4/2 21:06:04]: Error Message Begin  -------------------
+ExceptionType : System.InvalidOperationException
+Message : 指定的 Include 路径无效。EntityType“TIQIUModel.ACCOUNT_B”未声明具有名称“member”的导航属性。
+StackTrace :
+   在 System.Data.Entity.Core.Objects.Internal.ObjectFullSpanRewriter.ConvertSpanPath(SpanPathInfo parentInfo, List`1 navPropNames, Int32 pos)
+   在 System.Data.Entity.Core.Objects.Internal.ObjectFullSpanRewriter.AddSpanPath(SpanPathInfo parentInfo, List`1 navPropNames)
+   在 System.Data.Entity.Core.Objects.Internal.ObjectFullSpanRewriter..ctor(DbCommandTree tree, DbExpression toRewrite, Span span, AliasGenerator aliasGenerator)
+   在 System.Data.Entity.Core.Objects.Internal.ObjectSpanRewriter.TryRewrite(DbQueryCommandTree tree, Span span, MergeOption mergeOption, AliasGenerator aliasGenerator, DbExpression& newQuery, SpanIndex& spanInfo)
+   在 System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlanFactory.Prepare(ObjectContext context, DbQueryCommandTree tree, Type elementType, MergeOption mergeOption, Boolean streaming, Span span, IEnumerable`1 compiledQueryParameters, AliasGenerator aliasGenerator)
+   在 System.Data.Entity.Core.Objects.ELinq.ELinqQueryState.GetExecutionPlan(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClassb.<GetResults>b__a()
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClassb.<GetResults>b__9()
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<System.Collections.Generic.IEnumerable<T>.GetEnumerator>b__0()
+   在 System.Lazy`1.CreateValue()
+   在 System.Lazy`1.LazyInitValue()
+   在 System.Lazy`1.get_Value()
+   在 System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   在 System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   在 System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__1[TResult](IEnumerable`1 sequence)
+   在 System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   在 System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[TResult](Expression expression)
+   在 System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   在 System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   在 TiQiu.Biz.AccountManager.GetAccountBInfoByName(String name)
+   在 TiQiu.WebServcie.AccountHandler.LoginB(HttpContext context, Object& userData) 位置 g:\TiQiu\TiQiu.WebServcie\AccountHandler.ashx.cs:行号 105
+   在 TiQiu.WebServcie.HttpProcessor.ExecActionHandler(HttpContext context, String action) 位置 g:\TiQiu\TiQiu.WebServcie\HttpProcessor.cs:行号 95
+   在 TiQiu.WebServcie.HttpProcessor.ProcessRequestHandler[BE](HttpContext context, Action`1 exceptionHandler) 位置 g:\TiQiu\TiQiu.WebServcie\HttpProcessor.cs:行号 73
+
+--------- Exception Information [End] ----------------------

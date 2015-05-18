@@ -1,0 +1,373 @@
+* {
+    font-size: 10pt;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    color: rgb(0, 0, 0);
+    font-family: Arial,Helvetica,Verdana,sans-serif;
+}
+
+html {
+    margin: 0px auto;
+    padding: 0px;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    margin: 0px auto;
+    padding: 0px;
+    height: 100%;
+    overflow: hidden;
+}
+
+ul {
+    list-style: none;
+}
+
+ol {
+    list-style: none;
+}
+
+li {
+    list-style: none;
+}
+
+dl {
+    list-style: none;
+}
+
+img {
+    border: currentColor;
+}
+
+body {
+    background: url("../images/Login/bj.jpg") no-repeat top rgb(255, 255, 255);
+    color: rgb(101, 101, 101);
+    font-family: Arial;
+    font-size: 14px;
+}
+
+#thead {
+    margin: 0px auto;
+    width: 1000px;
+    overflow: hidden;
+    position: relative;
+}
+
+    #thead .bg1 {
+        background: url("../images/Login/c_02.jpg") no-repeat;
+        height: 185px;
+    }
+
+    #thead .bg2 {
+        background: url("../images/Login/c_04.jpg") no-repeat;
+        height: 158px;
+    }
+
+    #thead .bg3 {
+        background: url("images/Login/c_05.jpg") no-repeat;
+        height: 212px;
+    }
+
+        #thead .bg3 .nav {
+            margin-top: 5px;
+            margin-left: 340px;
+            float: left;
+        }
+
+    #thead .bg4 {
+        background: url("../images/Login/c_06.jpg") no-repeat;
+        height: 185px;
+        text-align: center;
+        padding-top: 30px;
+    }
+
+.s8 {
+    left: 44.3%;
+    top: 450px;
+    position: absolute;
+    z-index: 3000;
+    cursor: pointer;
+    vertical-algin: top;
+}
+
+.load {
+    left: 65%;
+    top: 465px;
+    display: none;
+    position: absolute;
+    z-index: 3000;
+}
+
+.sign {
+    background: url("../images/Login/137.png");
+    border: currentColor;
+    width: 130px;
+    height: 40px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+    .sign:hover {
+        background-position: 0px -40px;
+    }
+
+.sign_hover {
+    background-position: 0px -40px;
+}
+
+.signload {
+    background: url("../images/Login/login-v2-load.png");
+    border: currentColor;
+    width: 130px;
+    height: 40px;
+    margin-left: 20px;
+}
+
+#bottom {
+    background: url("../images/Login/c_061.jpg");
+    left: 0%;
+    top: 94%;
+    width: 100%;
+    height: 158px;
+    position: absolute;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+a {
+    border: 0px currentColor;
+    text-decoration: none;
+}
+
+img {
+    border: 0px currentColor;
+    text-decoration: none;
+}
+
+.Form {
+    width: 340px;
+}
+
+    .Form li {
+        font-size: 21px;
+        font-weight: 300;
+        margin-bottom: 18px;
+        display: block;
+    }
+
+    .Form input[type=text] {
+        background: rgb(255, 255, 255);
+        padding: 6px 12px;
+        border-radius: 6px;
+        border: 1px solid rgb(164, 162, 162);
+        color: rgb(34, 25, 25);
+        line-height: 1.4;
+        font-size: 18px;
+        font-weight: 300;
+        display: inline-block;
+        box-sizing: border-box;
+        box-shadow: inset 0px 1px rgba(34,25,25,0.15), 0px 1px rgba(255,255,255,0.8);
+        -moz-border-radius: 6px;
+        -webkit-border-radius: 6px;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-shadow: inset 0 1px rgba(34, 25, 25, .15), 0 1px rgba(255, 255, 255, .8);
+        -webkit-box-shadow: inset 0 1px rgba(34, 25, 25, .15), 0 1px rgba(255, 255, 255, .8);
+        -webkit-transition: all .08s ease-in-out;
+        -moz-transition: all .08s ease-in-out;
+    }
+
+    .Form input[type=password] {
+        background: rgb(255, 255, 255);
+        padding: 6px 12px;
+        border-radius: 6px;
+        border: 1px solid rgb(164, 162, 162);
+        color: rgb(34, 25, 25);
+        line-height: 1.4;
+        font-size: 18px;
+        font-weight: 300;
+        display: inline-block;
+        box-sizing: border-box;
+        box-shadow: inset 0px 1px rgba(34,25,25,0.15), 0px 1px rgba(255,255,255,0.8);
+        -moz-border-radius: 6px;
+        -webkit-border-radius: 6px;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-shadow: inset 0 1px rgba(34, 25, 25, .15), 0 1px rgba(255, 255, 255, .8);
+        -webkit-box-shadow: inset 0 1px rgba(34, 25, 25, .15), 0 1px rgba(255, 255, 255, .8);
+        -webkit-transition: all .08s ease-in-out;
+        -moz-transition: all .08s ease-in-out;
+    }
+
+    .Form textarea {
+        background: rgb(255, 255, 255);
+        padding: 6px 12px;
+        border-radius: 6px;
+        border: 1px solid rgb(164, 162, 162);
+        color: rgb(34, 25, 25);
+        line-height: 1.4;
+        font-size: 18px;
+        font-weight: 300;
+        display: inline-block;
+        box-sizing: border-box;
+        box-shadow: inset 0px 1px rgba(34,25,25,0.15), 0px 1px rgba(255,255,255,0.8);
+        -moz-border-radius: 6px;
+        -webkit-border-radius: 6px;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-shadow: inset 0 1px rgba(34, 25, 25, .15), 0 1px rgba(255, 255, 255, .8);
+        -webkit-box-shadow: inset 0 1px rgba(34, 25, 25, .15), 0 1px rgba(255, 255, 255, .8);
+        -webkit-transition: all .08s ease-in-out;
+        -moz-transition: all .08s ease-in-out;
+    }
+
+    .Form textarea {
+        min-height: 90px;
+    }
+
+    .Form label {
+        line-height: 1.4em;
+        font-size: 18px;
+        display: inline-block;
+    }
+
+    .Form input[type=text]:focus {
+        border-color: rgb(0, 100, 153);
+        box-shadow: inset 0px 1px rgba(34,25,25,0.15), 0px 1px rgba(255,255,255,0.8), 0px 0px 14px rgba(82,162,235,0.35);
+        -moz-box-shadow: 0 1px rgba(34, 25, 25, 0.15) inset, 0 1px rgba(255, 255, 255, 0.8), 0 0 14px rgba(82, 162, 235, 0.35);
+        -webkit-box-shadow: 0 1px rgba(34, 25, 25, 0.15) inset, 0 1px rgba(255, 255, 255, 0.8), 0 0 14px rgba(82, 162, 235, 0.35);
+    }
+
+    .Form input[type=password]:focus {
+        border-color: rgb(0, 100, 153);
+        box-shadow: inset 0px 1px rgba(34,25,25,0.15), 0px 1px rgba(255,255,255,0.8), 0px 0px 14px rgba(82,162,235,0.35);
+        -moz-box-shadow: 0 1px rgba(34, 25, 25, 0.15) inset, 0 1px rgba(255, 255, 255, 0.8), 0 0 14px rgba(82, 162, 235, 0.35);
+        -webkit-box-shadow: 0 1px rgba(34, 25, 25, 0.15) inset, 0 1px rgba(255, 255, 255, 0.8), 0 0 14px rgba(82, 162, 235, 0.35);
+    }
+
+    .Form textarea:focus {
+        border-color: rgb(0, 100, 153);
+        box-shadow: inset 0px 1px rgba(34,25,25,0.15), 0px 1px rgba(255,255,255,0.8), 0px 0px 14px rgba(82,162,235,0.35);
+        -moz-box-shadow: 0 1px rgba(34, 25, 25, 0.15) inset, 0 1px rgba(255, 255, 255, 0.8), 0 0 14px rgba(82, 162, 235, 0.35);
+        -webkit-box-shadow: 0 1px rgba(34, 25, 25, 0.15) inset, 0 1px rgba(255, 255, 255, 0.8), 0 0 14px rgba(82, 162, 235, 0.35);
+    }
+
+.FancyForm li {
+    position: relative;
+}
+
+    .FancyForm li .input {
+        position: relative;
+    }
+
+.FancyForm input[type=text] {
+    border-radius: 6px;
+    border: 1px solid rgb(164, 162, 162);
+    width: 100%;
+    display: block;
+    position: relative;
+    z-index: 3;
+    box-shadow: inset 0px 1px rgba(34,25,25,0.15), 0px 1px rgba(255,255,255,0.8);
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-box-shadow: inset 0 1px rgba(34, 25, 25, .15), 0 1px rgba(255, 255, 255, .8);
+    -webkit-box-shadow: inset 0 1px rgba(34, 25, 25, .15), 0 1px rgba(255, 255, 255, .8);
+    -webkit-transition: all .08s ease-in-out;
+    -moz-transition: all .08s ease-in-out;
+}
+
+.FancyForm input[type=password] {
+    border-radius: 6px;
+    border: 1px solid rgb(164, 162, 162);
+    width: 100%;
+    display: block;
+    position: relative;
+    z-index: 3;
+    box-shadow: inset 0px 1px rgba(34,25,25,0.15), 0px 1px rgba(255,255,255,0.8);
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-box-shadow: inset 0 1px rgba(34, 25, 25, .15), 0 1px rgba(255, 255, 255, .8);
+    -webkit-box-shadow: inset 0 1px rgba(34, 25, 25, .15), 0 1px rgba(255, 255, 255, .8);
+    -webkit-transition: all .08s ease-in-out;
+    -moz-transition: all .08s ease-in-out;
+}
+
+.FancyForm textarea {
+    border-radius: 6px;
+    border: 1px solid rgb(164, 162, 162);
+    width: 100%;
+    display: block;
+    position: relative;
+    z-index: 3;
+    box-shadow: inset 0px 1px rgba(34,25,25,0.15), 0px 1px rgba(255,255,255,0.8);
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-box-shadow: inset 0 1px rgba(34, 25, 25, .15), 0 1px rgba(255, 255, 255, .8);
+    -webkit-box-shadow: inset 0 1px rgba(34, 25, 25, .15), 0 1px rgba(255, 255, 255, .8);
+    -webkit-transition: all .08s ease-in-out;
+    -moz-transition: all .08s ease-in-out;
+}
+
+.FancyForm textarea {
+    line-height: 1.3;
+    min-height: 3.95em;
+}
+
+.FancyForm label {
+    left: 13px;
+    top: 7px;
+    color: rgb(188, 188, 188);
+    display: block;
+    position: absolute;
+    z-index: 2;
+    cursor: text;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -webkit-transition: all .16s ease-in-out;
+    -moz-transition: all .16s ease-in-out;
+}
+
+.FancyForm .fff {
+    border-radius: 8px;
+    left: 3px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    position: absolute;
+    z-index: 1;
+    background-color: rgb(255, 255, 255);
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+}
+
+.FancyForm input[type=text]:focus + label {
+    filter: alpha(opacity="50");
+    opacity: 0.5;
+}
+
+.FancyForm input[type=password]:focus + label {
+    filter: alpha(opacity="50");
+    opacity: 0.5;
+}
+
+.FancyForm textarea:focus + label {
+    filter: alpha(opacity="50");
+    opacity: 0.5;
+}
+
+.FancyForm .val label {
+    left: -9999px;
+    filter: alpha(opacity="0") !important;
+    opacity: 0 !important;
+}

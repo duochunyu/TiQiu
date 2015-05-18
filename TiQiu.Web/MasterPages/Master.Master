@@ -1,0 +1,144 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.master.cs" Inherits="TiQiu.Web.MasterPage.Master" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>踢球去</title>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta name="keywords" content="足球, 场地, 预订, 约战, PK, 成都, 5人制" />
+    <meta name="description" content="找场子--提供成都全域足球场地预订、赛事组织、赛事播报" />
+    
+    <link href="../Styles/base.css" type="text/css" rel="stylesheet" />
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type="text/javascript"></script>
+    <script src="/Scripts/base.js"></script>
+    <style>
+        .title {
+            color: #6c9900;
+            font-size: 14px;
+            padding-bottom: 10px;
+        }
+
+        .list li {
+            padding: 10px 0px;
+            height: 82px;
+        }
+
+            .list li img {
+                float: left;
+            }
+
+            .list li p {
+                margin-left: 145px;
+                padding: 5px 0px;
+            }
+
+        .box2 {
+            border: 1px solid rgb(217, 215, 215);
+            margin-left: 25px;
+            padding: 15px;
+            width: 520px;
+            float: left;
+            display: inline;
+        }
+
+            .box2 img {
+                float: left;
+            }
+
+            .box2 h2 {
+                font-size: 14px;
+                margin-bottom: 10px;
+            }
+
+            .box2 h2, .box2 p {
+                margin-left: 25px;
+            }
+
+        .list2 li {
+            height: 30px;
+            line-height: 30px;
+            overflow: hidden;
+        }
+
+            .list2 li span {
+                display: inline-block;
+                margin: 0px 10px;
+            }
+
+        .create-btn {
+            background: url("../Images/create-btn.png") no-repeat scroll 0 0 transparent;
+            color: #FFFFFF;
+            display: inline-block;
+            height: 25px;
+            line-height: 25px;
+            text-align: center;
+            width: 87px;
+        }
+    </style>
+
+    <asp:ContentPlaceHolder ID="CPHead" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div id="header">
+                <div class="header-top">
+                    <div id="headdiv">
+                        <span class="login-panel">
+
+                            <%if (this.Request.IsAuthenticated && this.IsBusiness == "false")
+                              {%>
+                            欢迎您,<%=Context.User.Identity.Name%><a href="/Logout.aspx">[注销]</a>
+                            <%}
+                              else
+                              { %>
+                            <a href="/Login.aspx">[登录]</a>
+                            <a href="/WebPages/Register.aspx">注册</a>
+                            <%} %>
+                           
+                        </span>
+                       <%-- <span class="header-time"><%=DateTime.Now.ToString("yyyy年MM月dd日") %></span>--%>
+                       <div style="margin-left:5px;float:left;"> <script type="text/javascript" src="http://ext.weather.com.cn/45140.js"></script></div>
+                        <
+
+                    </div>
+                    <a id="logo"></a>
+                    <ul class="nav clearfix">
+
+                        <li <%= Request.Url.AbsoluteUri.Contains("index.aspx") ? "class='here'":""  %>><a href="/index.aspx">首&nbsp;&nbsp;页</a></li>
+                        <li <%= Request.Url.AbsoluteUri.Contains("Findfield.aspx") ? "class='here'":""  %>><a href="/WebPages/Findfield.aspx">找场子</a></li>
+                        <li <%= Request.Url.AbsoluteUri.Contains("FindTeam.aspx") ? "class='here'":""  %>><a href="/WebPages/FindTeam.aspx">找球队</a></li>
+                        <li <%= Request.Url.AbsoluteUri.Contains("PersonalInfo.aspx") ? "class='here'":""  %>><a href="/WebPages/PersonalInfo.aspx">个人中心</a></li>
+                        <li <%= Request.Url.AbsoluteUri.Contains("MyTeam.aspx") ? "class='here'":""  %>><a href="/WebPages/MyTeam.aspx">我的球队</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </header>
+
+        <div id="content" class="clearfix">
+            <asp:ContentPlaceHolder ID="mian" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+
+        <footer>
+            <div id="footer" class="align-center">
+                <div class="footer-help"><a href="../WebPages/Help.aspx">帮助中心</a></div>
+                <div class="copyright">Copyrights © tiqiu365.com ALl rights reserved <a href="http://www.miitbeian.gov.cn/">蜀ICP备13018625</a></div>
+            </div>
+        </footer>
+        <div style="width: 10px; float: left;"></div>
+    </div>
+    <script type="text/javascript">
+        $(function () {
+            $(document).ready(function () {
+                bindSelect();
+            });
+        })
+    </script>
+</body>
+</html>

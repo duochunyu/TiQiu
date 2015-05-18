@@ -1,0 +1,29 @@
+﻿/*表格样式*/
+.Search_table tr
+{
+    height: 25px;
+    padding-left: 5px; 
+}
+.Search_table
+{
+    width: 98%;
+}
+.ui_tables td
+{
+    background-color: #FFFFFF;
+    height: 25px;
+    line-height: 25px;
+    padding-left: 5px;
+}
+.ui_tables
+{
+    width: 100%;
+    background-color: Silver;
+}
+.Show_table tr
+{
+    height: 30px;
+    padding-left: 5px; 
+    width: 70%;
+    background-color: #F0F8FF;
+}

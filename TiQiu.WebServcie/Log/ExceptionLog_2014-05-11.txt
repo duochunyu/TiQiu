@@ -1,0 +1,29 @@
+
+[2014/5/11 19:12:37]: Error Message Begin  -------------------
+ExceptionType : System.InvalidOperationException
+Message : 指定的 Include 路径无效。EntityType“TIQIUModel.TEAM_MEMBER”未声明具有名称“TEAM_MEMBER”的导航属性。
+StackTrace :
+   在 System.Data.Entity.Core.Objects.Internal.ObjectFullSpanRewriter.ConvertSpanPath(SpanPathInfo parentInfo, List`1 navPropNames, Int32 pos)
+   在 System.Data.Entity.Core.Objects.Internal.ObjectFullSpanRewriter.AddSpanPath(SpanPathInfo parentInfo, List`1 navPropNames)
+   在 System.Data.Entity.Core.Objects.Internal.ObjectFullSpanRewriter..ctor(DbCommandTree tree, DbExpression toRewrite, Span span, AliasGenerator aliasGenerator)
+   在 System.Data.Entity.Core.Objects.Internal.ObjectSpanRewriter.TryRewrite(DbQueryCommandTree tree, Span span, MergeOption mergeOption, AliasGenerator aliasGenerator, DbExpression& newQuery, SpanIndex& spanInfo)
+   在 System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlanFactory.Prepare(ObjectContext context, DbQueryCommandTree tree, Type elementType, MergeOption mergeOption, Boolean streaming, Span span, IEnumerable`1 compiledQueryParameters, AliasGenerator aliasGenerator)
+   在 System.Data.Entity.Core.Objects.ELinq.ELinqQueryState.GetExecutionPlan(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClassb.<GetResults>b__a()
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClassb.<GetResults>b__9()
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<System.Collections.Generic.IEnumerable<T>.GetEnumerator>b__0()
+   在 System.Lazy`1.CreateValue()
+   在 System.Lazy`1.LazyInitValue()
+   在 System.Lazy`1.get_Value()
+   在 System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 TiQiu.Biz.TeamManager.GetMyTeamList(Int32 memberId) 位置 g:\TiQiu\TiQiu.Biz\TeamManager.cs:行号 57
+   在 TiQiu.WebServcie.TeamHandler.GetMyTeamList(HttpContext context, Object& userData) 位置 g:\TiQiu\TiQiu.WebServcie\TeamHandler.ashx.cs:行号 50
+   在 TiQiu.WebServcie.HttpProcessor.ExecActionHandler(HttpContext context, String action) 位置 g:\TiQiu\TiQiu.WebServcie\HttpProcessor.cs:行号 127
+   在 TiQiu.WebServcie.HttpProcessor.ProcessRequestHandler[BE](HttpContext context, Action`1 exceptionHandler) 位置 g:\TiQiu\TiQiu.WebServcie\HttpProcessor.cs:行号 89
+
+--------- Exception Information [End] ----------------------

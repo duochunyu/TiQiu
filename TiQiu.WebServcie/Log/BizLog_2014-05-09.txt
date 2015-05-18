@@ -1,0 +1,17 @@
+[2014/5/9 0:02:32]: Platform:WinNT-Query:action=GetFieldList&pageindex=0&pagesize=5&start=2014-5-8&end=2014-5-9  
+[2014/5/9 0:02:56]: Platform:WinNT-Query:action=GetFieldList&pageindex=0&pagesize=5&start=2014-5-8&end=2014-5-9  
+[2014/5/9 0:03:38]: Platform:WinNT-Query:action=GetFieldList&pageindex=0&pagesize=5&start=2014-5-8&end=2014-5-9  
+[2014/5/9 0:06:41]: Platform:WinNT-Query:action=GetFieldList&pageindex=0&pagesize=5&start=2014-5-8&end=2014-5-9  
+[2014/5/9 0:09:12]: Platform:WinNT-Query:action=GetFieldList&pageindex=0&pagesize=5&start=2014-5-8&end=2014-5-9  
+[2014/5/9 0:09:44]: Platform:WinNT-Query:action=GetFieldList&AreaCode=0&FieldType=0&pageIndex=1&pageSize=10&ts=1399565338666  
+[2014/5/9 15:29:50]: Platform:WinNT-Query:action=Login&name=hz&phone=123&pwd=1  
+[2014/5/9 15:30:29]: Platform:WinNT-Query:action=UpdateMemberInfo&Token=dkt5rv55w1ienq55zcqybn45&memberId=2&nickName=%u963f%u91cc%u5566%u54af%u4e86&brithday=1988-08-01&brief=%u770b%u51e0%u96c6%u4e86%u6765%u54af%u5f04%u5f04&ts=1399620365636  
+[2014/5/9 15:31:34]: Platform:WinNT-Query:action=UpdateMemberInfo&Token=dkt5rv55w1ienq55zcqybn45&memberId=2&nickName=%u963f%u91cc%u5566%u54af%u4e86&brithday=1988-08-01&brief=%u770b%u51e0%u96c6%u4e86%u6765%u54af%u5f04%u5f04&ts=1399620365636  
+[2014/5/9 15:31:47]: Platform:WinNT-Query:action=Login&name=hz&phone=123&pwd=1  
+[2014/5/9 15:32:04]: Platform:WinNT-Query:action=UpdateMemberInfo&Token=dkt5rv55w1ienq55zcqybn45&memberId=2&nickName=%u963f%u91cc%u5566%u54af%u4e86&brithday=1988-08-01&brief=%u770b%u51e0%u96c6%u4e86%u6765%u54af%u5f04%u5f04&ts=1399620365636  
+[2014/5/9 15:32:39]: Platform:WinNT-Query:action=UpdateMemberInfo&phone=13340991321&Token=dkt5rv55w1ienq55zcqybn45&memberId=2&nickName=%u963f%u91cc%u5566%u54af%u4e86&brithday=1988-08-01&brief=%u770b%u51e0%u96c6%u4e86%u6765%u54af%u5f04%u5f04&ts=1399620365636  
+[2014/5/9 23:49:14]: Platform:WinNT-Query:action=GetTeamList&name=&pageIndex=1&pageSize=10&ts=1399646915420  
+[2014/5/9 23:49:34]: Platform:WinNT-Query:action=GetTeamList&name=&pageIndex=1&pageSize=10&ts=1399646915420  
+[2014/5/9 23:50:43]: Platform:WinNT-Query:action=GetTeamList&name=&pageIndex=1&pageSize=10&ts=1399646915420  
+[2014/5/9 23:51:51]: Platform:WinNT-Query:action=GetTeamList&name=&pageIndex=1&pageSize=10&ts=1399646915420  
+[2014/5/9 23:51:59]: Platform:WinNT-Query:action=GetTeamList&name=&pageIndex=1&pageSize=10&ts=1399646915420  

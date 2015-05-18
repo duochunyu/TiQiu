@@ -1,0 +1,177 @@
+
+[2014/4/15 22:15:57]: Error Message Begin  -------------------
+ExceptionType : System.NullReferenceException
+Message : 未将对象引用设置到对象的实例。
+StackTrace :
+   在 TiQiu.Biz.OrderManager.GetOrderPKList(EnumFieldStatus status, String areaCode, Int32 fieldType, Nullable`1 start, Nullable`1 end, Int32 pageIdx, Int32 pageSize, Int32& totalCount) 位置 g:\TiQiu\TiQiu.Biz\OrderManager.cs:行号 237
+   在 TiQiu.WebServcie.OrderHandler.GetPKList(HttpContext context, Object& userData) 位置 g:\TiQiu\TiQiu.WebServcie\OrderHandler.ashx.cs:行号 226
+   在 TiQiu.WebServcie.HttpProcessor.ExecActionHandler(HttpContext context, String action) 位置 g:\TiQiu\TiQiu.WebServcie\HttpProcessor.cs:行号 126
+   在 TiQiu.WebServcie.HttpProcessor.ProcessRequestHandler[BE](HttpContext context, Action`1 exceptionHandler) 位置 g:\TiQiu\TiQiu.WebServcie\HttpProcessor.cs:行号 88
+
+--------- Exception Information [End] ----------------------
+
+[2014/4/15 22:16:54]: Error Message Begin  -------------------
+ExceptionType : System.NullReferenceException
+Message : 未将对象引用设置到对象的实例。
+StackTrace :
+   在 TiQiu.Biz.OrderManager.GetOrderPKList(EnumFieldStatus status, String areaCode, Int32 fieldType, Nullable`1 start, Nullable`1 end, Int32 pageIdx, Int32 pageSize, Int32& totalCount) 位置 g:\TiQiu\TiQiu.Biz\OrderManager.cs:行号 237
+   在 TiQiu.WebServcie.OrderHandler.GetPKList(HttpContext context, Object& userData) 位置 g:\TiQiu\TiQiu.WebServcie\OrderHandler.ashx.cs:行号 226
+   在 TiQiu.WebServcie.HttpProcessor.ExecActionHandler(HttpContext context, String action) 位置 g:\TiQiu\TiQiu.WebServcie\HttpProcessor.cs:行号 126
+   在 TiQiu.WebServcie.HttpProcessor.ProcessRequestHandler[BE](HttpContext context, Action`1 exceptionHandler) 位置 g:\TiQiu\TiQiu.WebServcie\HttpProcessor.cs:行号 88
+
+--------- Exception Information [End] ----------------------
+
+[2014/4/15 22:17:28]: Error Message Begin  -------------------
+ExceptionType : System.NullReferenceException
+Message : 未将对象引用设置到对象的实例。
+StackTrace :
+   在 TiQiu.Biz.OrderManager.GetOrderPKList(EnumFieldStatus status, String areaCode, Int32 fieldType, Nullable`1 start, Nullable`1 end, Int32 pageIdx, Int32 pageSize, Int32& totalCount) 位置 g:\TiQiu\TiQiu.Biz\OrderManager.cs:行号 237
+   在 TiQiu.WebServcie.OrderHandler.GetPKList(HttpContext context, Object& userData) 位置 g:\TiQiu\TiQiu.WebServcie\OrderHandler.ashx.cs:行号 226
+   在 TiQiu.WebServcie.HttpProcessor.ExecActionHandler(HttpContext context, String action) 位置 g:\TiQiu\TiQiu.WebServcie\HttpProcessor.cs:行号 126
+   在 TiQiu.WebServcie.HttpProcessor.ProcessRequestHandler[BE](HttpContext context, Action`1 exceptionHandler) 位置 g:\TiQiu\TiQiu.WebServcie\HttpProcessor.cs:行号 88
+
+--------- Exception Information [End] ----------------------
+
+[2014/4/15 22:18:43]: Error Message Begin  -------------------
+ExceptionType : System.NullReferenceException
+Message : 未将对象引用设置到对象的实例。
+StackTrace :
+   在 TiQiu.Biz.OrderManager.GetOrderFreeTeamList(EnumFieldStatus status, String areaCode, Int32 fieldType, Nullable`1 start, Nullable`1 end, Int32 pageIdx, Int32 pageSize, Int32& totalCount) 位置 g:\TiQiu\TiQiu.Biz\OrderManager.cs:行号 268
+   在 TiQiu.WebServcie.OrderHandler.GetFreeTeamList(HttpContext context, Object& userData) 位置 g:\TiQiu\TiQiu.WebServcie\OrderHandler.ashx.cs:行号 240
+   在 TiQiu.WebServcie.HttpProcessor.ExecActionHandler(HttpContext context, String action) 位置 g:\TiQiu\TiQiu.WebServcie\HttpProcessor.cs:行号 126
+   在 TiQiu.WebServcie.HttpProcessor.ProcessRequestHandler[BE](HttpContext context, Action`1 exceptionHandler) 位置 g:\TiQiu\TiQiu.WebServcie\HttpProcessor.cs:行号 88
+
+--------- Exception Information [End] ----------------------
+
+[2014/4/15 22:20:58]: Error Message Begin  -------------------
+ExceptionType : System.ArgumentException
+Message : Count 必须具有非负值。
+参数名: count
+StackTrace :
+   在 System.Data.Entity.Core.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Skip(DbExpressionBinding input, IEnumerable`1 sortOrder, DbExpression count)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.OrderByLifter.OrderByLifterBase.ApplySortOrderToSkip(DbExpression input, DbSortExpression sort, DbExpression k)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.OrderByLifter.SortLifter.Skip(DbExpression k)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.OrderByLifter.Skip(DbExpressionBinding input, DbExpression skipCount)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.Skip(DbExpressionBinding input, DbExpression skipCount)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.SkipTranslator.TranslatePagingOperator(ExpressionConverter parent, DbExpression operand, DbExpression count)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.PagingTranslator.TranslateUnary(ExpressionConverter parent, DbExpression operand, MethodCallExpression call)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.UnarySequenceMethodTranslator.Translate(ExpressionConverter parent, MethodCallExpression call)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.SequenceMethodTranslator.Translate(ExpressionConverter parent, MethodCallExpression call, SequenceMethod sequenceMethod)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.TypedTranslate(ExpressionConverter parent, MethodCallExpression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.UnarySequenceMethodTranslator.Translate(ExpressionConverter parent, MethodCallExpression call)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.SequenceMethodTranslator.Translate(ExpressionConverter parent, MethodCallExpression call, SequenceMethod sequenceMethod)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.TypedTranslate(ExpressionConverter parent, MethodCallExpression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.Convert()
+   在 System.Data.Entity.Core.Objects.ELinq.ELinqQueryState.GetExecutionPlan(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClassb.<GetResults>b__a()
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClassb.<GetResults>b__9()
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<System.Collections.Generic.IEnumerable<T>.GetEnumerator>b__0()
+   在 System.Lazy`1.CreateValue()
+   在 System.Lazy`1.LazyInitValue()
+   在 System.Lazy`1.get_Value()
+   在 System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 TiQiu.DAL.PagingQuery`1.GetPagingList(IQueryable`1 context, Expression`1 where, String orderBy, Boolean ascending, Int32 pageIndex, Int32 pageSize, Int32& totalRecord) 位置 g:\TiQiu\TiQiu.DAL\PagingQuery.cs:行号 30
+   在 TiQiu.Biz.OrderManager.GetOrderFreeTeamList(EnumFieldStatus status, String areaCode, Int32 fieldType, Nullable`1 start, Nullable`1 end, Int32 pageIdx, Int32 pageSize, Int32& totalCount) 位置 g:\TiQiu\TiQiu.Biz\OrderManager.cs:行号 279
+   在 TiQiu.WebServcie.OrderHandler.GetFreeTeamList(HttpContext context, Object& userData) 位置 g:\TiQiu\TiQiu.WebServcie\OrderHandler.ashx.cs:行号 240
+   在 TiQiu.WebServcie.HttpProcessor.ExecActionHandler(HttpContext context, String action) 位置 g:\TiQiu\TiQiu.WebServcie\HttpProcessor.cs:行号 126
+   在 TiQiu.WebServcie.HttpProcessor.ProcessRequestHandler[BE](HttpContext context, Action`1 exceptionHandler) 位置 g:\TiQiu\TiQiu.WebServcie\HttpProcessor.cs:行号 88
+
+--------- Exception Information [End] ----------------------
+
+[2014/4/15 22:22:04]: Error Message Begin  -------------------
+ExceptionType : System.ArgumentException
+Message : Count 必须具有非负值。
+参数名: count
+StackTrace :
+   在 System.Data.Entity.Core.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Skip(DbExpressionBinding input, IEnumerable`1 sortOrder, DbExpression count)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.OrderByLifter.OrderByLifterBase.ApplySortOrderToSkip(DbExpression input, DbSortExpression sort, DbExpression k)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.OrderByLifter.SortLifter.Skip(DbExpression k)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.OrderByLifter.Skip(DbExpressionBinding input, DbExpression skipCount)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.Skip(DbExpressionBinding input, DbExpression skipCount)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.SkipTranslator.TranslatePagingOperator(ExpressionConverter parent, DbExpression operand, DbExpression count)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.PagingTranslator.TranslateUnary(ExpressionConverter parent, DbExpression operand, MethodCallExpression call)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.UnarySequenceMethodTranslator.Translate(ExpressionConverter parent, MethodCallExpression call)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.SequenceMethodTranslator.Translate(ExpressionConverter parent, MethodCallExpression call, SequenceMethod sequenceMethod)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.TypedTranslate(ExpressionConverter parent, MethodCallExpression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TranslateSet(Expression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.UnarySequenceMethodTranslator.Translate(ExpressionConverter parent, MethodCallExpression call)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.SequenceMethodTranslator.Translate(ExpressionConverter parent, MethodCallExpression call, SequenceMethod sequenceMethod)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.TypedTranslate(ExpressionConverter parent, MethodCallExpression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.Convert()
+   在 System.Data.Entity.Core.Objects.ELinq.ELinqQueryState.GetExecutionPlan(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClassb.<GetResults>b__a()
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClassb.<GetResults>b__9()
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<System.Collections.Generic.IEnumerable<T>.GetEnumerator>b__0()
+   在 System.Lazy`1.CreateValue()
+   在 System.Lazy`1.LazyInitValue()
+   在 System.Lazy`1.get_Value()
+   在 System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 TiQiu.DAL.PagingQuery`1.GetPagingList(IQueryable`1 context, Expression`1 where, String orderBy, Boolean ascending, Int32 pageIndex, Int32 pageSize, Int32& totalRecord) 位置 g:\TiQiu\TiQiu.DAL\PagingQuery.cs:行号 30
+   在 TiQiu.Biz.OrderManager.GetOrderFreeTeamList(EnumFieldStatus status, String areaCode, Int32 fieldType, Nullable`1 start, Nullable`1 end, Int32 pageIdx, Int32 pageSize, Int32& totalCount) 位置 g:\TiQiu\TiQiu.Biz\OrderManager.cs:行号 279
+   在 TiQiu.WebServcie.OrderHandler.GetFreeTeamList(HttpContext context, Object& userData) 位置 g:\TiQiu\TiQiu.WebServcie\OrderHandler.ashx.cs:行号 240
+   在 TiQiu.WebServcie.HttpProcessor.ExecActionHandler(HttpContext context, String action) 位置 g:\TiQiu\TiQiu.WebServcie\HttpProcessor.cs:行号 126
+   在 TiQiu.WebServcie.HttpProcessor.ProcessRequestHandler[BE](HttpContext context, Action`1 exceptionHandler) 位置 g:\TiQiu\TiQiu.WebServcie\HttpProcessor.cs:行号 88
+
+--------- Exception Information [End] ----------------------
+
+[2014/4/15 22:53:31]: Error Message Begin  -------------------
+ExceptionType : System.NullReferenceException
+Message : 未将对象引用设置到对象的实例。
+StackTrace :
+   在 TiQiu.WebServcie.ModelMapping.InitField(FIELD field) 位置 g:\TiQiu\TiQiu.WebServcie\ModelMapping.cs:行号 28
+   在 TiQiu.WebServcie.FieldHandler.GetFieldInfo(HttpContext context, Object& userData) 位置 g:\TiQiu\TiQiu.WebServcie\FieldHandler.ashx.cs:行号 57
+   在 TiQiu.WebServcie.HttpProcessor.ExecActionHandler(HttpContext context, String action) 位置 g:\TiQiu\TiQiu.WebServcie\HttpProcessor.cs:行号 126
+   在 TiQiu.WebServcie.HttpProcessor.ProcessRequestHandler[BE](HttpContext context, Action`1 exceptionHandler) 位置 g:\TiQiu\TiQiu.WebServcie\HttpProcessor.cs:行号 88
+
+--------- Exception Information [End] ----------------------
+
+[2014/4/15 22:55:30]: Error Message Begin  -------------------
+ExceptionType : System.NullReferenceException
+Message : 未将对象引用设置到对象的实例。
+StackTrace :
+   在 TiQiu.WebServcie.ModelMapping.InitField(FIELD field) 位置 g:\TiQiu\TiQiu.WebServcie\ModelMapping.cs:行号 28
+   在 TiQiu.WebServcie.FieldHandler.GetFieldInfo(HttpContext context, Object& userData) 位置 g:\TiQiu\TiQiu.WebServcie\FieldHandler.ashx.cs:行号 57
+   在 TiQiu.WebServcie.HttpProcessor.ExecActionHandler(HttpContext context, String action) 位置 g:\TiQiu\TiQiu.WebServcie\HttpProcessor.cs:行号 126
+   在 TiQiu.WebServcie.HttpProcessor.ProcessRequestHandler[BE](HttpContext context, Action`1 exceptionHandler) 位置 g:\TiQiu\TiQiu.WebServcie\HttpProcessor.cs:行号 88
+
+--------- Exception Information [End] ----------------------
+
+[2014/4/15 23:00:29]: Error Message Begin  -------------------
+ExceptionType : System.NullReferenceException
+Message : 未将对象引用设置到对象的实例。
+StackTrace :
+   在 TiQiu.Biz.FieldManager.GetField(Int32 fieldId) 位置 g:\TiQiu\TiQiu.Biz\FieldManager.cs:行号 62
+   在 TiQiu.WebServcie.FieldHandler.GetFieldInfo(HttpContext context, Object& userData) 位置 g:\TiQiu\TiQiu.WebServcie\FieldHandler.ashx.cs:行号 57
+   在 TiQiu.WebServcie.HttpProcessor.ExecActionHandler(HttpContext context, String action) 位置 g:\TiQiu\TiQiu.WebServcie\HttpProcessor.cs:行号 126
+   在 TiQiu.WebServcie.HttpProcessor.ProcessRequestHandler[BE](HttpContext context, Action`1 exceptionHandler) 位置 g:\TiQiu\TiQiu.WebServcie\HttpProcessor.cs:行号 88
+
+--------- Exception Information [End] ----------------------
+
+[2014/4/15 23:04:25]: Error Message Begin  -------------------
+ExceptionType : System.NullReferenceException
+Message : 未将对象引用设置到对象的实例。
+StackTrace :
+   在 TiQiu.Biz.FieldManager.GetField(Int32 fieldId) 位置 g:\TiQiu\TiQiu.Biz\FieldManager.cs:行号 62
+   在 TiQiu.WebServcie.FieldHandler.GetFieldInfo(HttpContext context, Object& userData) 位置 g:\TiQiu\TiQiu.WebServcie\FieldHandler.ashx.cs:行号 57
+   在 TiQiu.WebServcie.HttpProcessor.ExecActionHandler(HttpContext context, String action) 位置 g:\TiQiu\TiQiu.WebServcie\HttpProcessor.cs:行号 126
+   在 TiQiu.WebServcie.HttpProcessor.ProcessRequestHandler[BE](HttpContext context, Action`1 exceptionHandler) 位置 g:\TiQiu\TiQiu.WebServcie\HttpProcessor.cs:行号 88
+
+--------- Exception Information [End] ----------------------

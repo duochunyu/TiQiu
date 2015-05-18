@@ -1,0 +1,57 @@
+﻿@charset "utf-8";
+/* ��¼����ģ�� by housne @ 20130219 */
+
+body{background: #fff url(../../images/login/login_header.jpg) repeat-x;}
+.wrap{background:none;}
+.login_header{background:url(../../images/bg.png);margin:0 auto;padding:21px 0;}
+.login_header_1010{background:url(../../images/login/bg_1010.jpg) no-repeat 200px 0;}
+.login_header .logo_login{background:url(../../images/login/ico_login.jpg) no-repeat right center;display: block;height:38px;margin-left: 5px;padding-right:68px;width: 88px;}
+.login_header .logo_login h2{background:url(../../images/public/ioc_logo_v2.png) no-repeat;float: left;height: 42px;overflow: hidden;text-indent: -999em;width: 102px;margin-left:200px;}
+.loginbox_bg {background: url(../../images/login/loginbox_bg.jpg) }
+.loginbox_bg2{background:url(../../images/login/loginbox_bg2.jpg) repeat-x;height:460px;  }
+.loginbox_bg2_1010{ background-image:url(../../images/login/loginbox_bg2_1010.jpg);}
+.w960{padding:40px 0 0 0;}
+/*.loginbox{width:338px;height:390px;background:#fff;background:rgba(255,255,255,0.8);filter:alpha(opacity = 80);border:#d6cdc7 1px solid;}
+.loginbox .title{display:none;font-size:16px;margin:35px 0 20px}
+.cooperation{margin:0 2px;padding:10px 20px 0;border-top:#EAE6E5 1px dashed;}
+.form_box{margin:30px 0 0;line-height: 30px;color:#7B5035;}
+.form_box .form_li{padding-left:40px;vertical-align:middle;}
+.form_box .desc{margin:0;font:bold 14px/30px "Microsoft Yahei";color:#e76d95;background:url(../../images/public/icon/16x16/b_371.gif) no-repeat 15px center;}
+.form_box .formtip p{margin:0;height:30px;padding-left:40px}
+.form_box input{vertical-align:middle}
+.form_box input.w1{background:#fff;filter:alpha(opacity = 100);opacity:1;border:1px solid #D2D2D2;font:14px/14px "Tahoma";color:#666;padding:12px 10px;vertical-align:middle;width: 248px;}
+.form_box .pas{position:relative;margin-bottom:10px;zoom:1;}
+#password_desc2{font:14px/14px "Tahoma";color:#666;_height:20px;display:block;position:absolute;left:53px;top:14px;}
+.form_box .btn_a1{margin-right:10px}
+.login_ex_list a{ vertical-align:middle;}
+.login_ex_list a.no_ico{padding-left:0;}*/
+
+/*��¼ģ��*/
+.loginbox{width: 298px;height: 378px; border: 1px solid #81b7d8; border-radius: 4px;}
+.loginbox .title{display:none;font-size:16px;margin:35px 0 20px}
+.loginbox .title1 {font: 700 16px/1.5 '΢���ź�';}
+.loginbox .top{ border-radius: 4px 4px 0 0;padding: 10px 15px 18px 15px;}
+.loginbox .top .logout{margin-top: 5px;}
+.loginbox .title1{padding:0 0 15px 0; }
+.loginbox .form{padding: 0 30px;}
+.loginbox .ipt{width:168px;height: 34px;padding:0 10px 0 30px;border: 1px solid #ccc; border-radius: 3px;box-shadow:2px 2px 2px #efefef inset;font-size: 14px;color:#999;outline: none;line-height:34px\9;}
+.loginbox .error{border-color: #ff513a;background-color: #fff;box-shadow: 1px 1px 2px #fae6e3,-1px -1px 2px #fae6e3;}
+.loginbox .ipt:focus,.loginbox .focus{background-color: #fff;border:1px solid #5aabd1;box-shadow: 1px 1px 2px #eff8fc,-1px -1px 2px #eff8fc;}
+.loginbox .pwd_box{position:relative;}
+.loginbox .pwd_desc{font:14px/14px "Tahoma";color:#999;display:block;position:absolute;left:30px;top:12px;height:20px\9;line-height:16px\9;}
+.loginbox .error_tips{font:500 12px/18p; color:red; padding: 2px 5px;border-radius: 5px;*zoom:1;margin-left: 2px;vertical-align: 2px; background-color:#fff7e5; margin-bottom:10px;}
+.loginbox .ipt_name{ background:#f7f7f7 url(../../images/login/login_ico.png) 10px 0 no-repeat;}
+.loginbox .ipt_pwd{ background:#f7f7f7 url(../../images/login/login_ico.png) 10px -36px no-repeat;}
+.loginbox .chk_auto{vertical-align: -3px;}
+.loginbox .lnk_for_psw{margin-left: 23px;}
+.loginbox .btn_login span,.loginbox .btn_reg span{width: 170px; text-align: center;font:14px/34px Tahoma,Verdana,'΢���ź�';}
+.loginbox .btn_login button{width: 204px;}
+.loginbox .bottom{padding: 15px;}
+.loginbox .bottom .b_t{padding-left: 10px;}
+.loginbox .bottom .b_b{padding:6px 30px;}
+.loginbox .bottom .bdr{border-top: 1px solid #e2e4e6;padding-top: 5px;}
+.loginbox .bottom .ico{padding-left: 10px;padding-right: 10px;}
+.loginbox .bottom .ico a {margin:2px 5px;padding-left: 20px;display: inline-block;}
+.qq_ico{background:url(../../images/register/ico_16x16_qq.png) no-repeat left center;}
+.baidu_ico{background:url(../../images/register/ico_16x16_baidu.png) no-repeat left center;}
+.xinlang_ico {background:url(../../images/public/icon/16x16/b_xlwb.gif) no-repeat left center;}

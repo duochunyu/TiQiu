@@ -1,0 +1,10 @@
+[2014/6/3 11:12:58]: Platform:WinNT-Query:action=GetTeamInfo%3fid%3d1  
+[2014/6/3 11:13:31]: Platform:WinNT-Query:action=GetTeamInfo%3fteamId%3d1  
+[2014/6/3 11:13:42]: Platform:WinNT-Query:action=GetTeamInfo&teamId=1  
+[2014/6/3 11:13:53]: Platform:WinNT-Query:action=GetTeamInfo&teamId=1  
+[2014/6/3 11:15:21]: Platform:WinNT-Query:action=GetTeamInfo&teamId=1  
+[2014/6/3 11:15:36]: Platform:WinNT-Query:action=GetTeamInfo&teamId=1  
+[2014/6/3 11:16:21]: Platform:WinNT-Query:action=GetTeamInfo&teamId=1  
+[2014/6/3 11:17:56]: Platform:WinNT-Query:action=GetTeamInfo&teamId=1  
+[2014/6/3 16:34:01]: Platform:WinNT-Query:action=GetGameLiveList&from=2014-1-1&to=2014-9-1  
+[2014/6/3 16:39:55]: Platform:WinNT-Query:action=GetGameLiveList&from=2014-1-1&to=2014-9-1&pageindex=1&pagesize=5  

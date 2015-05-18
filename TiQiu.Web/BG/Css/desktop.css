@@ -1,0 +1,534 @@
+* {
+	margin: 0px; padding: 0px; font-size: 9pt;
+}
+html {
+	height: 100%; overflow: hidden;
+}
+body {
+	background: url("../Images/bg.jpg") left bottom; margin: 0px; padding: 0px; color: rgb(0, 0, 0); overflow: hidden; font-family: Î¢ÈíÑÅºÚ,ËÎÌå,Arial,Helvetica,Verdana,sans-serif;
+}
+#loading {
+	background: rgb(255, 255, 255); padding: 10px 10px 7px; border-radius: 15px; border: 3px solid rgb(204, 204, 204); left: 42%; top: 40%; width: auto; color: rgb(102, 102, 102); font-size: 14pt; display: none; position: absolute; z-index: 3000; cursor: pointer; -moz-border-radius: 15px; -webkit-border-radius: 15px;
+}
+div {
+	margin: 0px; padding: 0px; border: 0px currentColor; list-style-type: none;
+}
+ul {
+	margin: 0px; padding: 0px; border: 0px currentColor; list-style-type: none;
+}
+li {
+	margin: 0px; padding: 0px; border: 0px currentColor; list-style-type: none;
+}
+dl {
+	margin: 0px; padding: 0px; border: 0px currentColor; list-style-type: none;
+}
+dt {
+	margin: 0px; padding: 0px; border: 0px currentColor; list-style-type: none;
+}
+dd {
+	margin: 0px; padding: 0px; border: 0px currentColor; list-style-type: none;
+}
+img {
+	margin: 0px; padding: 0px; border: 0px currentColor; list-style-type: none;
+}
+h1 {
+	margin: 0px; padding: 0px; border: 0px currentColor; list-style-type: none;
+}
+h2 {
+	margin: 0px; padding: 0px; border: 0px currentColor; list-style-type: none;
+}
+body a {
+	
+}
+img {
+	border: 0px currentColor;
+}
+a:link {
+	color: rgb(34, 34, 34); text-decoration: none;
+}
+a:visited {
+	color: rgb(34, 34, 34); text-decoration: none;
+}
+a:hover {
+	color: rgb(34, 34, 34); text-decoration: none;
+}
+a:active {
+	color: rgb(34, 34, 34); text-decoration: none;
+}
+#north {
+	height: 78px; color: rgb(255, 255, 255); overflow: hidden;
+}
+#north #banner_text {
+	color: rgb(255, 255, 255); font-size: 18pt; font-weight: bold;
+}
+#north #north_left {
+	padding-left: 10px; float: left;
+}
+#north #north_left table {
+	border: 0px currentColor; height: 78px;
+}
+#north #north_left table td {
+	vertical-align: middle;
+}
+#north #north_right {
+	padding-top: 8px; float: right;
+}
+#taskbar {
+	height: 40px; overflow: hidden;
+}
+#taskbar #taskbar_left {
+	padding: 0px 10px; float: left;
+}
+#taskbar #taskbar_left #start_menu {
+	background: url("../Images/start_menu.png") no-repeat center 0px; width: 97px; height: 40px; display: block;
+}
+#taskbar #taskbar_left #start_menu:hover {
+	background-position: center -40px;
+}
+#taskbar #taskbar_left .active#start_menu {
+	background-position: center -40px;
+}
+#taskbar #taskbar_center {
+	padding-top: 10px; float: left;
+}
+#taskbar #taskbar_center #tabs_left_scroll {
+	background: url("../Images/tabs_arrow.png") no-repeat 0px; width: 30px; height: 30px; float: left; display: none; cursor: pointer;
+}
+#taskbar #taskbar_center .active#tabs_left_scroll {
+	background: url("../Images/tabs_arrow.png") no-repeat -60px;
+}
+#taskbar #taskbar_center #tabs_container {
+	width: 100%; height: 30px; overflow: hidden; float: left; white-space: nowrap;
+}
+#taskbar #taskbar_center #tabs_container div {
+	padding-right: 5px; margin-right: 3px; display: inline-block; white-space: nowrap; cursor: pointer; -moz-border-radius-topleft: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-left-radius: 5px; -webkit-border-top-right-radius: 5px;
+}
+#taskbar #taskbar_center #tabs_container div {
+	
+}
+#taskbar #taskbar_center #tabs_container div a.tab {
+	width: auto !important; height: 30px; text-align: center; color: rgb(255, 255, 255); line-height: 30px; padding-right: 3px; padding-left: 10px; text-decoration: none; display: inline-block; min-width: 64px !important; -moz-border-radius-topleft: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-left-radius: 5px; -webkit-border-top-right-radius: 5px;
+}
+#taskbar #taskbar_center #tabs_container div.selected {
+	background: url("../Images/tabs_active.png") no-repeat right -30px;
+}
+#taskbar #taskbar_center #tabs_container div.selected a.tab {
+	background: url("../Images/tabs_active.png") no-repeat left 0px; color: rgb(65, 106, 163); font-size: 14px; font-weight: bold;
+}
+#taskbar #taskbar_center #tabs_container div a.close {
+	background: url("../Images/tabs_close.png") no-repeat 0px; width: 16px; height: 16px; margin-bottom: -2px !important; display: none; z-index: 1;
+}
+#taskbar #taskbar_center #tabs_container div a.close:hover {
+	background-position: -16px; cursor: pointer;
+}
+#taskbar #taskbar_center #tabs_container div.selected a.close {
+	display: inline-block;
+}
+#taskbar #taskbar_center #tabs_right_scroll {
+	background: url("../Images/tabs_arrow.png") no-repeat -30px; width: 30px; height: 30px; float: right; display: none; cursor: pointer;
+}
+#taskbar #taskbar_center .active#tabs_right_scroll {
+	background: url("../Images/tabs_arrow.png") no-repeat -90px;
+}
+#taskbar #taskbar_right {
+	padding-left: 10px; float: right;
+}
+#taskbar #taskbar_right #task_center {
+	background: url("../Images/desktop_icons.png") no-repeat 0px 0px; width: 30px; height: 25px; margin-top: 10px; margin-right: 5px; display: inline-block;
+}
+#taskbar #taskbar_right #task_center:hover {
+	background-position: 0px -25px;
+}
+#taskbar #taskbar_right .active#task_center {
+	background-position: 0px -25px;
+}
+#taskbar #taskbar_right #portal {
+	background: url("../Images/desktop_icons.png") no-repeat -323px 0px; width: 30px; height: 25px; margin-top: 10px; margin-right: 5px; display: inline-block;
+}
+#taskbar #taskbar_right #portal:hover {
+	background-position: -323px -25px;
+}
+#taskbar #taskbar_right .active#portal {
+	background-position: -323px -25px;
+}
+#taskbar #taskbar_right #logout {
+	background: url("../Images/desktop_icons.png") no-repeat -288px 0px; width: 30px; height: 25px; margin-top: 10px; margin-right: 5px; display: inline-block;
+}
+#taskbar #taskbar_right #logout:hover {
+	background-position: -288px -25px;
+}
+#taskbar #taskbar_right .active#logout {
+	background-position: -288px -25px;
+}
+#taskbar #taskbar_right #theme {
+	background: url("../Images/desktop_icons.png") no-repeat -364px 0px; width: 30px; height: 25px; margin-top: 10px; margin-right: 5px; display: inline-block;
+}
+#taskbar #taskbar_right #theme:hover {
+	background-position: -364px -25px;
+}
+#taskbar #taskbar_right .active#theme {
+	background-position: -364px -25px;
+}
+#taskbar #taskbar_right #hide_topbar {
+	background: url("../Images/show_topbar.png") no-repeat 0px 0px; width: 30px; height: 25px; margin-top: 10px; margin-right: 5px; display: inline-block;
+}
+#taskbar #taskbar_right #hide_topbar:hover {
+	background-position: 0px -25px;
+}
+#taskbar #taskbar_right .active#hide_topbar {
+	background-position: 0px -25px;
+}
+#funcbar {
+	background: rgb(229, 229, 229); height: 4px; overflow: hidden;
+}
+#funcbar #funcbar_left {
+	position: relative;
+}
+#funcbar #funcbar_left .second-tabs-container {
+	left: 0px; top: 0px; position: absolute;
+}
+#funcbar #funcbar_left a {
+	background: url("../Images/second_tabs_inactive.png") no-repeat right; height: 30px; color: rgb(56, 56, 56); line-height: 30px; padding-left: 15px; text-decoration: none; margin-left: 3px; float: left; display: block;
+}
+#funcbar #funcbar_left a span {
+	height: 30px; line-height: 30px; padding-right: 15px; cursor: pointer;
+}
+#funcbar #funcbar_left a.last {
+	
+}
+#funcbar #funcbar_left a:hover {
+	background: url("../Images/second_tabs_active.png") repeat-x left; color: rgb(255, 255, 255);
+}
+#funcbar #funcbar_left a.active {
+	background: url("../Images/second_tabs_active.png") repeat-x left; color: rgb(255, 255, 255);
+}
+#funcbar #funcbar_right {
+	padding: 0px 10px; float: right;
+}
+#funcbar #funcbar_right .search {
+	background: url("../Images/search_bg.png") no-repeat left 0px; width: 134px !important; height: 30px; padding-left: 26px; float: left; display: inline-block !important;
+}
+#funcbar #funcbar_right .search .search-body {
+	background: url("../Images/search_bg.png") no-repeat right -60px; padding-right: 26px; position: relative;
+}
+#funcbar #funcbar_right .search .search-body .search-input {
+	background: url("../Images/search_bg.png") repeat-x left -30px; height: 30px;
+}
+#funcbar #funcbar_right .search .search-body .search-input input {
+	border: 0px currentColor; width: 100%; height: 16px; padding-left: 0px; margin-top: 7px;
+}
+#funcbar #funcbar_right .search .search-clear {
+	background: url("../Images/search_bg.png") no-repeat right -90px; top: 0px; width: 16px; height: 30px; right: 10px; position: absolute; cursor: pointer;
+}
+#funcbar #funcbar_right .rss {
+	background: url("../Images/rss.png") no-repeat left; height: 30px; color: rgb(13, 68, 133); line-height: 30px; padding-left: 20px; font-size: 14px; font-weight: bold; text-decoration: none; margin-left: 10px; display: inline-block;
+}
+#center {
+	width: 100%; height: 100%; overflow: hidden; position: relative;
+}
+#center .tabs-panel {
+	width: 100%; height: 100%; display: none;
+}
+#center .selected {
+	display: block;
+}
+#center .tabs-panel iframe {
+	width: 100%; height: 100%;
+}
+#center #ie6_tips {
+	background: rgb(253, 244, 217); width: 100%; height: 40px; text-align: center; color: rgb(220, 88, 2); line-height: 40px; overflow: hidden; font-size: 20px; border-top-color: rgb(255, 255, 255); border-top-width: 1px; border-top-style: solid; position: absolute; z-index: 1000;
+}
+#center #ie6_tips span.close {
+	right: 20px; position: absolute;
+}
+#south {
+	background: rgb(229, 229, 229); width: 100%; height: 30px; color: rgb(0, 0, 0); line-height: 28px; overflow: hidden;
+}
+#south-line {
+	margin: 0px auto; border-top-color: rgb(204, 204, 204); border-bottom-color: rgb(255, 255, 255); border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid;
+}
+.south-separator {
+	margin-right: 3px; margin-left: 3px; border-right-color: rgb(255, 255, 255); border-left-color: rgb(204, 204, 204); border-right-width: 1px; border-left-width: 1px; border-right-style: solid; border-left-style: solid;
+}
+#start_menu_panel {
+	left: 3px; top: 132px; width: 404px; display: none; position: absolute; z-index: 91000;
+}
+#start_menu_panel .panel-head {
+	background: url("../Images/start_menu_panel_bg.png") no-repeat 0px top; height: 16px;
+}
+#start_menu_panel .panel-foot {
+	background: url("../Images/start_menu_panel_bg.png") no-repeat -808px bottom; height: 16px;
+}
+#start_menu_panel .panel-user {
+	background: url("../Images/start_menu_panel_bg.png") no-repeat 0px bottom; height: 52px; padding-right: 22px; padding-left: 22px;
+}
+#start_menu_panel .panel-user .avatar {
+	background: url("../Images/avatar_bg.jpg") no-repeat center; width: 42px !important; height: 42px !important; padding-top: 4px; padding-left: 4px; float: left; cursor: pointer;
+}
+#start_menu_panel .panel-user .avatar img {
+	width: 38px; height: 38px;
+}
+#start_menu_panel .panel-user .avatar div.status_icon {
+	left: 55px; top: 45px; width: 16px; height: 16px; overflow: hidden; position: absolute;
+}
+#start_menu_panel .panel-user .avatar div.status_icon_1 {
+	background: url("../Images/online_status.png") no-repeat 0px -7px;
+}
+#start_menu_panel .panel-user .avatar div.status_icon_2 {
+	background: url("../Images/online_status.png") no-repeat 0px -37px;
+}
+#start_menu_panel .panel-user .avatar div.status_icon_3 {
+	background: url("../Images/online_status.png") no-repeat 0px -97px;
+}
+#start_menu_panel .panel-user .avatar div.status_icon_4 {
+	background: url("../Images/online_status.png") no-repeat 0px -67px;
+}
+#start_menu_panel .panel-user .avatar #on_status {
+	background: url("../Images/on_status_bg.png") repeat-y left top rgb(255, 255, 255); border: 1px solid rgb(179, 179, 179); left: 25px; top: 60px; width: 100px; display: none; position: absolute; z-index: 94000;
+}
+#start_menu_panel .panel-user .avatar #on_status a {
+	background: url("../Images/online_status.png") no-repeat left top; height: 30px; color: rgb(57, 57, 57); line-height: 30px; padding-left: 25px; text-decoration: none; display: block;
+}
+#start_menu_panel .panel-user .avatar #on_status a:hover {
+	background-color: rgb(230, 235, 241);
+}
+#start_menu_panel .panel-user .avatar #on_status a.on_status_1 {
+	background-position: 4px 0px;
+}
+#start_menu_panel .panel-user .avatar #on_status a.on_status_2 {
+	background-position: 4px -30px;
+}
+#start_menu_panel .panel-user .avatar #on_status a.on_status_3 {
+	background-position: 4px -90px;
+}
+#start_menu_panel .panel-user .avatar #on_status a.on_status_4 {
+	background-position: 4px -60px;
+}
+#start_menu_panel .panel-user .name {
+	color: rgb(14, 67, 135); padding-top: 15px; padding-left: 10px; font-size: 14px; font-weight: bold; float: left;
+}
+#start_menu_panel .panel-menu {
+	background: url("../Images/start_menu_panel_bg.png") repeat-y -404px top; padding-right: 12px; padding-left: 12px;
+}
+#start_menu_panel .panel-menu #first_panel {
+	padding: 5px 0px; width: 200px;
+}
+#start_menu_panel .panel-menu #first_panel .scroll-up {
+	background: url("../Images/scroll_arrow.png") no-repeat center 0px; height: 10px; overflow: hidden; cursor: pointer;
+}
+#start_menu_panel .panel-menu #first_panel .scroll-down {
+	background: url("../Images/scroll_arrow.png") no-repeat center 0px; height: 10px; overflow: hidden; cursor: pointer;
+}
+#start_menu_panel .panel-menu #first_panel .scroll-up {
+	background-position: center 0px;
+}
+#start_menu_panel .panel-menu #first_panel .scroll-down {
+	background-position: center -10px;
+}
+#start_menu_panel .panel-menu #first_panel .scroll-up-hover {
+	background-position: center -20px;
+}
+#start_menu_panel .panel-menu #first_panel .scroll-down-hover {
+	background-position: center -30px;
+}
+#start_menu_panel .panel-menu #first_panel ul {
+	left: 0px; top: 0px; height: 360px; overflow: hidden; list-style-type: none; position: relative; z-index: 93000;
+}
+#start_menu_panel .panel-menu #first_panel ul li {
+	
+}
+#start_menu_panel .panel-menu #first_panel ul li a {
+	background: url("../Images/menu_bg.png") no-repeat right top; height: 25px !important; color: rgb(0, 0, 0); line-height: 20px; overflow: hidden; padding-top: 5px !important; padding-left: 10px; font-size: 12px; text-decoration: none; display: block;
+}
+#start_menu_panel .panel-menu #first_panel ul li a:hover {
+	background-position: right -30px; color: rgb(255, 255, 255);
+}
+#start_menu_panel .panel-menu #first_panel ul li a.active {
+	background-position: right -30px; color: rgb(255, 255, 255);
+}
+#start_menu_panel .panel-menu #first_panel ul li a img {
+	border: 0px currentColor; width: 20px; height: 20px; padding-right: 6px;
+}
+#overlay_startmenu {
+	background: rgb(255, 255, 255); left: 0px; top: 0px; width: 100%; height: 100%; display: none; filter: alpha(opacity=1); position: absolute; z-index: 90000; opacity: 0.01; -moz-opacity: 0.01;
+}
+#start_menu_panel .panel-menu #second_panel {
+	left: 202px; top: 68px; width: 180px; height: 370px; position: absolute; z-index: 92000;
+}
+#start_menu_panel .panel-menu #second_panel .second-panel-head {
+	background: url("../Images/second_panel_bg.jpg") no-repeat 0px 0px; height: 5px; overflow: hidden;
+}
+#start_menu_panel .panel-menu #second_panel .second-panel-menu {
+	background: url("../Images/second_panel_bg.jpg") repeat-y -200px 0px; width: 100%;
+}
+#start_menu_panel .panel-menu #second_panel .second-panel-foot {
+	background: url("../Images/second_panel_bg.jpg") no-repeat -400px 0px; height: 5px; overflow: hidden;
+}
+#start_menu_panel .panel-menu #second_panel .second-panel-menu ul {
+	left: 0px; top: 0px; overflow: hidden; list-style-type: none; position: relative; z-index: 94000;
+}
+#start_menu_panel .panel-menu #second_panel .second-panel-menu ul li {
+	
+}
+#start_menu_panel .panel-menu #second_panel .second-panel-menu ul li a {
+	height: 30px; line-height: 30px; overflow: hidden; padding-left: 20px; display: block; cursor: pointer;
+}
+#start_menu_panel .panel-menu #second_panel .second-panel-menu ul li a img {
+	border: 0px currentColor; width: 20px; height: 20px; padding-right: 6px;
+}
+#start_menu_panel .panel-menu #second_panel .second-panel-menu ul li a:hover {
+	background: url("../Images/menu_bg.png") no-repeat left -90px; color: rgb(255, 255, 255);
+}
+#start_menu_panel .panel-menu #second_panel .second-panel-menu ul li a:hover span {
+	background: url("../Images/menu_span_bg.png") no-repeat 0px -30px;
+}
+#start_menu_panel .panel-menu #second_panel .second-panel-menu ul li a.expand {
+	background: url("../Images/menu_bg.png") no-repeat right -60px; margin-right: 0px;
+}
+#start_menu_panel .panel-menu #second_panel .second-panel-menu ul li a.expand:hover {
+	background-position: right -90px; color: rgb(255, 255, 255);
+}
+#start_menu_panel .panel-menu #second_panel .second-panel-menu ul li a.active {
+	background-position: right -90px; color: rgb(255, 255, 255);
+}
+#start_menu_panel .panel-menu #second_panel .second-panel-menu ul li a.expand:hover span {
+	background: url("../Images/menu_span_bg.png") no-repeat 0px -30px;
+}
+#start_menu_panel .panel-menu #second_panel .second-panel-menu ul li a.active span {
+	background: url("../Images/menu_span_bg.png") no-repeat 0px -30px;
+}
+#start_menu_panel .panel-menu #second_panel .second-panel-menu ul li ul {
+	
+}
+#start_menu_panel .panel-menu #second_panel .second-panel-menu ul li ul li {
+	
+}
+#start_menu_panel .panel-menu #second_panel .second-panel-menu ul li ul li a {
+	overflow: hidden; padding-left: 30px;
+}
+#start_menu_panel .panel-menu #second_panel .second-panel-menu ul li ul li a span {
+	background: url("../Images/menu_span_bg.png") no-repeat 0px -60px; cursor: pointer;
+}
+#start_menu_panel .panel-menu #second_panel .second-panel-menu ul li ul li a:hover {
+	color: rgb(39, 113, 208);
+}
+#start_menu_panel .panel-menu #second_panel .second-panel-menu ul li ul li a:hover span {
+	background: url("../Images/menu_span_bg.png") no-repeat 0px -90px;
+}
+#Content {
+	background: url("../Images/portal_bg.jpg") no-repeat right bottom rgb(91, 152, 207);
+}
+#control {
+	left: 0px; top: 10px; width: 100%; height: 26px; position: absolute; z-index: 3;
+}
+#control table {
+	margin: 0px auto;
+}
+.control-r {
+	background: url("../Images/slidebox/slide_bar_r.png") no-repeat right top; width: 26px; height: 26px; padding-right: 15px;
+}
+.control-l {
+	background: url("../Images/slidebox/slide_bar_l.png") no-repeat left top; width: 15px; height: 26px;
+}
+#control a {
+	background: url("../Images/slidebox/btn.png") no-repeat top; top: 0px; width: 26px; height: 26px; float: left; display: block;
+}
+#control a.active {
+	background: url("../Images/slidebox/btn_active.png") no-repeat top;
+}
+#control a.cfg {
+	background: url("../Images/slidebox/btn_cfg.png") no-repeat top; height: 26px; float: right;
+}
+#control a.cfg:hover {
+	background: url("../Images/slidebox/btn_cfg_hover.png") no-repeat top;
+}
+.desk {
+	width: 0px; height: 0px; position: absolute;
+}
+.desk li {
+	width: 100px; height: 85px; text-align: center; padding-top: 15px; position: absolute; z-index: 5;
+}
+.desk li:hover {
+	background: url("../Images/icon_over.png") no-repeat center; cursor: pointer;
+}
+.desk span {
+	display: block;
+}
+.desk .icon {
+	margin: 5px auto; width: 40px; height: 35px; -moz-user-select: none;
+}
+.desk .icon img {
+	width: 32px; height: 32px;
+}
+.desk .icon-text {
+	background: url("../Images/icon_text_l.png") no-repeat 0px 0px; height: 20px; padding-left: 10px; text-decoration: none; margin-top: 3px; display: inline-block; cursor: pointer;
+}
+.desk .icon-text span {
+	background: url("../Images/icon_text_r.png") no-repeat right; padding: 0px 10px 0px 0px; height: 20px; color: rgb(255, 255, 255); line-height: 20px; text-decoration: none; display: inline-block;
+}
+.mtip > span {
+	width: auto; line-height: 1; font-size: 24px; vertical-align: 3px; display: inline-block;
+}
+.mtip {
+	padding: 10px 25px; border-radius: 0px 0px 4px 4px; color: rgb(255, 255, 255); box-shadow: 0px 4px 4px rgba(0,0,0,0.2); text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+}
+.error.mtip {
+	border: 1px solid rgb(202, 62, 62); background-color: rgb(191, 51, 88);
+}
+.success.mtip {
+	border: 1px solid rgb(51, 129, 0); background-color: rgb(67, 171, 0);
+}
+.warning.mtip {
+	border: 1px solid rgb(0, 96, 150); background-color: orange;
+}
+.tip_container {
+	top: 0px; width: auto; text-align: left; display: none; position: fixed; z-index: 9999; _width: auto;
+}
+#topnav ul {
+	position: relative;
+}
+#topnav li.list {
+	margin: 3px 12px 0px 0px; float: left; display: inline;
+}
+#topnav li a {
+	padding: 5px 7px 0px; border-radius: 3px; width: 57px; height: 55px; text-align: center; color: rgb(255, 255, 255); overflow: hidden; text-decoration: none; float: left; display: inline; -webkit-border-radius: 3px; text-shadow: 0px -1px rgba(0, 0, 0, 0.2);
+}
+#topnav li a:hover {
+	background: url("../Images/topnav_over.png") no-repeat center;
+}
+#topnav li a.onnav {
+	background: url("../Images/topnav_over.png") no-repeat center;
+}
+#topnav li a span {
+	margin: 0px auto 2px; width: 32px; height: 30px; overflow: hidden; display: block;
+}
+#topnav li a span.c1 {
+	background: url("../Images/n1.png") no-repeat;
+}
+#topnav li a span.c3 {
+	background: url("../Images/n3.png") no-repeat;
+}
+#topnav li a span.c4 {
+	background: url("../Images/n4.png") no-repeat;
+}
+.simple-contextmenu {
+	background: url("../Images/contextmenumenu_bg.gif") repeat-y rgb(247, 243, 247); margin: 0px; padding: 0px 1px 0px 0px; border-radius: 3px; border: 1px solid rgb(204, 204, 204); left: 100px; top: 100px; display: none; list-style-type: none; position: absolute; min-width: 100px; -webkit-user-select: none;
+}
+.simple-contextmenu ul {
+	list-style: none; margin: 0px; padding: 0px;
+}
+.simple-contextmenu li {
+	background: url("../Images/contextmenuitem_bg.gif") no-repeat; margin: 0px; padding: 3px 1px;
+}
+.simple-contextmenu li a {
+	margin: 1px; padding: 1px 1px 1px 28px; color: buttontext; text-decoration: none; display: block; position: relative;
+}
+.simple-contextmenu li a img {
+	border: 0px currentColor; left: 3px; width: 16px; height: 16px; margin-top: 0px; position: absolute;
+}
+.simple-contextmenu li a:hover {
+	margin: 0px; outline: rgb(181, 211, 255) solid 1px; border: 1px solid rgb(0, 153, 255); cursor: default;
+}
+.simple-contextmenu .m-split {
+	background: url("../Images/splitLine_bg.gif") repeat-x center; margin: 0px 2px; height: 2px;
+}

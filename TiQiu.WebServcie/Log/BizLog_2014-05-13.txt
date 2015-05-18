@@ -1,0 +1,5 @@
+[2014/5/13 15:24:47]: Platform:WinNT-Query:action=GetGameList&pageIndex=1&pageSize=10  
+[2014/5/13 15:26:22]: Platform:WinNT-Query:action=GetGameList&pageIndex=1&pageSize=10  
+[2014/5/13 15:27:21]: Platform:WinNT-Query:action=GetGameList&pageIndex=1&pageSize=10  
+[2014/5/13 21:16:32]: Platform:WinNT-Query:action=GetGameScheduledList&groupId=1  
+[2014/5/13 21:17:09]: Platform:WinNT-Query:action=GetGameTeamList&groupId=1  

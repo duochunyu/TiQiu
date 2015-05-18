@@ -1,0 +1,42 @@
+
+[2014/4/30 0:05:49]: Error Message Begin  -------------------
+ExceptionType : System.Data.Entity.Validation.DbEntityValidationException
+Message : 对一个或多个实体的验证失败。有关详细信息，请参阅“EntityValidationErrors”属性。
+StackTrace :
+   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+   在 System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   在 System.Data.Entity.DbContext.SaveChanges()
+   在 TiQiu.Biz.OrderManager.OrderPK(Int32 scheduledId, Boolean needReferee, Int32 memberId, Int32 teamId, String colthColor, EnumPKPayType pkPayType, Int32 teamBId) 位置 g:\TiQiu\TiQiu.Biz\OrderManager.cs:行号 547
+   在 TiQiu.WebServcie.OrderHandler.OrderPK(HttpContext context, Object& userData) 位置 g:\TiQiu\TiQiu.WebServcie\OrderHandler.ashx.cs:行号 112
+   在 TiQiu.WebServcie.HttpProcessor.ExecActionHandler(HttpContext context, String action) 位置 g:\TiQiu\TiQiu.WebServcie\HttpProcessor.cs:行号 126
+   在 TiQiu.WebServcie.HttpProcessor.ProcessRequestHandler[BE](HttpContext context, Action`1 exceptionHandler) 位置 g:\TiQiu\TiQiu.WebServcie\HttpProcessor.cs:行号 88
+
+--------- Exception Information [End] ----------------------
+
+[2014/4/30 0:09:14]: Error Message Begin  -------------------
+ExceptionType : System.Data.Entity.Validation.DbEntityValidationException
+Message : 对一个或多个实体的验证失败。有关详细信息，请参阅“EntityValidationErrors”属性。
+StackTrace :
+   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+   在 System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   在 System.Data.Entity.DbContext.SaveChanges()
+   在 TiQiu.Biz.OrderManager.OrderPK(Int32 scheduledId, Boolean needReferee, Int32 memberId, Int32 teamId, String colthColor, EnumPKPayType pkPayType, Int32 teamBId) 位置 g:\TiQiu\TiQiu.Biz\OrderManager.cs:行号 547
+   在 TiQiu.WebServcie.OrderHandler.OrderPK(HttpContext context, Object& userData) 位置 g:\TiQiu\TiQiu.WebServcie\OrderHandler.ashx.cs:行号 112
+   在 TiQiu.WebServcie.HttpProcessor.ExecActionHandler(HttpContext context, String action) 位置 g:\TiQiu\TiQiu.WebServcie\HttpProcessor.cs:行号 126
+   在 TiQiu.WebServcie.HttpProcessor.ProcessRequestHandler[BE](HttpContext context, Action`1 exceptionHandler) 位置 g:\TiQiu\TiQiu.WebServcie\HttpProcessor.cs:行号 88
+
+--------- Exception Information [End] ----------------------
+
+[2014/4/30 0:10:06]: Error Message Begin  -------------------
+ExceptionType : System.Data.Entity.Validation.DbEntityValidationException
+Message : 对一个或多个实体的验证失败。有关详细信息，请参阅“EntityValidationErrors”属性。
+StackTrace :
+   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+   在 System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   在 System.Data.Entity.DbContext.SaveChanges()
+   在 TiQiu.Biz.OrderManager.OrderPK(Int32 scheduledId, Boolean needReferee, Int32 memberId, Int32 teamId, String colthColor, EnumPKPayType pkPayType, Int32 teamBId) 位置 g:\TiQiu\TiQiu.Biz\OrderManager.cs:行号 547
+   在 TiQiu.WebServcie.OrderHandler.OrderPK(HttpContext context, Object& userData) 位置 g:\TiQiu\TiQiu.WebServcie\OrderHandler.ashx.cs:行号 112
+   在 TiQiu.WebServcie.HttpProcessor.ExecActionHandler(HttpContext context, String action) 位置 g:\TiQiu\TiQiu.WebServcie\HttpProcessor.cs:行号 126
+   在 TiQiu.WebServcie.HttpProcessor.ProcessRequestHandler[BE](HttpContext context, Action`1 exceptionHandler) 位置 g:\TiQiu\TiQiu.WebServcie\HttpProcessor.cs:行号 88
+
+--------- Exception Information [End] ----------------------

@@ -1,0 +1,4 @@
+[2014/5/11 19:11:12]: Platform:WinNT-Query:action=Login&name=hz&phone=123&pwd=1  
+[2014/5/11 19:11:43]: Platform:WinNT-Query:action=GetMyTeamList&memberId=2&Token=dkt5rv55w1ienq55zcqybn45  
+[2014/5/11 19:13:08]: Platform:WinNT-Query:action=Login&name=hz&phone=123&pwd=1  
+[2014/5/11 19:13:24]: Platform:WinNT-Query:action=GetMyTeamList&memberId=2&Token=dkt5rv55w1ienq55zcqybn45  

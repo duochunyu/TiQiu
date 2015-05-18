@@ -1,0 +1,28 @@
+
+[2014/5/13 15:25:23]: Error Message Begin  -------------------
+ExceptionType : System.ArgumentException
+Message : propertyName
+参数名: Not Exist
+StackTrace :
+   在 TiQiu.DAL.Extends.OrderBy[T](IQueryable`1 source, String propertyName, Boolean ascending) 位置 g:\TiQiu\TiQiu.DAL\Extends.cs:行号 18
+   在 TiQiu.DAL.PagingQuery`1.GetPagingList(IQueryable`1 context, Expression`1 where, String orderBy, Boolean ascending, Int32 pageIndex, Int32 pageSize, Int32& totalRecord) 位置 g:\TiQiu\TiQiu.DAL\PagingQuery.cs:行号 31
+   在 TiQiu.Biz.GameManager.GetGameList(Int32 pageIdx, Int32 pageSize, Int32& totalCount) 位置 g:\TiQiu\TiQiu.Biz\GameManager.cs:行号 22
+   在 TiQiu.WebServcie.GameHandler.GetGameList(HttpContext context, Object& userData) 位置 g:\TiQiu\TiQiu.WebServcie\GameHandler.ashx.cs:行号 39
+   在 TiQiu.WebServcie.HttpProcessor.ExecActionHandler(HttpContext context, String action) 位置 g:\TiQiu\TiQiu.WebServcie\HttpProcessor.cs:行号 127
+   在 TiQiu.WebServcie.HttpProcessor.ProcessRequestHandler[BE](HttpContext context, Action`1 exceptionHandler) 位置 g:\TiQiu\TiQiu.WebServcie\HttpProcessor.cs:行号 89
+
+--------- Exception Information [End] ----------------------
+
+[2014/5/13 15:27:04]: Error Message Begin  -------------------
+ExceptionType : System.ArgumentException
+Message : propertyName
+参数名: Not Exist
+StackTrace :
+   在 TiQiu.DAL.Extends.OrderBy[T](IQueryable`1 source, String propertyName, Boolean ascending) 位置 g:\TiQiu\TiQiu.DAL\Extends.cs:行号 18
+   在 TiQiu.DAL.PagingQuery`1.GetPagingList(IQueryable`1 context, Expression`1 where, String orderBy, Boolean ascending, Int32 pageIndex, Int32 pageSize, Int32& totalRecord) 位置 g:\TiQiu\TiQiu.DAL\PagingQuery.cs:行号 31
+   在 TiQiu.Biz.GameManager.GetGameList(Int32 pageIdx, Int32 pageSize, Int32& totalCount) 位置 g:\TiQiu\TiQiu.Biz\GameManager.cs:行号 22
+   在 TiQiu.WebServcie.GameHandler.GetGameList(HttpContext context, Object& userData) 位置 g:\TiQiu\TiQiu.WebServcie\GameHandler.ashx.cs:行号 39
+   在 TiQiu.WebServcie.HttpProcessor.ExecActionHandler(HttpContext context, String action) 位置 g:\TiQiu\TiQiu.WebServcie\HttpProcessor.cs:行号 127
+   在 TiQiu.WebServcie.HttpProcessor.ProcessRequestHandler[BE](HttpContext context, Action`1 exceptionHandler) 位置 g:\TiQiu\TiQiu.WebServcie\HttpProcessor.cs:行号 89
+
+--------- Exception Information [End] ----------------------

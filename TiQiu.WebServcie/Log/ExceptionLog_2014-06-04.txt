@@ -1,0 +1,32 @@
+
+[2014/6/4 9:21:06]: Error Message Begin  -------------------
+ExceptionType : System.NullReferenceException
+Message : 未将对象引用设置到对象的实例。
+StackTrace :
+   在 TiQiu.WebServcie.ModelMapping.<>c__DisplayClass2.<InitGameScheduled>b__1(GAME_SCHEDULED s) 位置 g:\TiQiu\TiQiu.WebServcie\ModelMapping.cs:行号 20
+   在 System.Collections.Generic.List`1.ForEach(Action`1 action)
+   在 TiQiu.WebServcie.ModelMapping.InitGameScheduled(List`1 sList) 位置 g:\TiQiu\TiQiu.WebServcie\ModelMapping.cs:行号 19
+   在 TiQiu.WebServcie.ModelMapping.<>c__DisplayClass6.<InitGameRoundGroup>b__5(GAME_ROUND_GROUP g) 位置 g:\TiQiu\TiQiu.WebServcie\ModelMapping.cs:行号 54
+   在 System.Collections.Generic.List`1.ForEach(Action`1 action)
+   在 TiQiu.WebServcie.ModelMapping.InitGameRoundGroup(List`1 gList) 位置 g:\TiQiu\TiQiu.WebServcie\ModelMapping.cs:行号 53
+   在 TiQiu.WebServcie.GameHandler.GetGameRoundGroupList(HttpContext context, Object& userData) 位置 g:\TiQiu\TiQiu.WebServcie\GameHandler.ashx.cs:行号 79
+   在 TiQiu.WebServcie.HttpProcessor.ExecActionHandler(HttpContext context, String action) 位置 g:\TiQiu\TiQiu.WebServcie\HttpProcessor.cs:行号 127
+   在 TiQiu.WebServcie.HttpProcessor.ProcessRequestHandler[BE](HttpContext context, Action`1 exceptionHandler) 位置 g:\TiQiu\TiQiu.WebServcie\HttpProcessor.cs:行号 89
+
+--------- Exception Information [End] ----------------------
+
+[2014/6/4 9:24:37]: Error Message Begin  -------------------
+ExceptionType : System.NullReferenceException
+Message : 未将对象引用设置到对象的实例。
+StackTrace :
+   在 TiQiu.WebServcie.ModelMapping.<>c__DisplayClass2.<InitGameScheduled>b__1(GAME_SCHEDULED s) 位置 g:\TiQiu\TiQiu.WebServcie\ModelMapping.cs:行号 20
+   在 System.Collections.Generic.List`1.ForEach(Action`1 action)
+   在 TiQiu.WebServcie.ModelMapping.InitGameScheduled(List`1 sList) 位置 g:\TiQiu\TiQiu.WebServcie\ModelMapping.cs:行号 19
+   在 TiQiu.WebServcie.ModelMapping.<>c__DisplayClass6.<InitGameRoundGroup>b__5(GAME_ROUND_GROUP g) 位置 g:\TiQiu\TiQiu.WebServcie\ModelMapping.cs:行号 54
+   在 System.Collections.Generic.List`1.ForEach(Action`1 action)
+   在 TiQiu.WebServcie.ModelMapping.InitGameRoundGroup(List`1 gList) 位置 g:\TiQiu\TiQiu.WebServcie\ModelMapping.cs:行号 53
+   在 TiQiu.WebServcie.GameHandler.GetGameRoundGroupList(HttpContext context, Object& userData) 位置 g:\TiQiu\TiQiu.WebServcie\GameHandler.ashx.cs:行号 79
+   在 TiQiu.WebServcie.HttpProcessor.ExecActionHandler(HttpContext context, String action) 位置 g:\TiQiu\TiQiu.WebServcie\HttpProcessor.cs:行号 127
+   在 TiQiu.WebServcie.HttpProcessor.ProcessRequestHandler[BE](HttpContext context, Action`1 exceptionHandler) 位置 g:\TiQiu\TiQiu.WebServcie\HttpProcessor.cs:行号 89
+
+--------- Exception Information [End] ----------------------

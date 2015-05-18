@@ -1,0 +1,8 @@
+[2014/7/7 9:35:14]: Platform:WinNT-Query:action=LoginB&name=20&phone=123&pwd=1  
+[2014/7/7 9:35:21]: Platform:WinNT-Query:action=LoginB&name=20&phone=123&pwd=1  
+[2014/7/7 9:35:59]: Platform:WinNT-Query:token=dkt5rv55w1ienq55zcqybn45&action=GetOrderMessage  
+[2014/7/7 9:36:07]: Platform:WinNT-Query:token=dkt5rv55w1ienq55zcqybn45&action=GetOrderMessage  
+[2014/7/7 9:39:33]: Platform:WinNT-Query:action=LoginB&name=20&phone=123&pwd=1  
+[2014/7/7 9:58:46]: Platform:WinNT-Query:action=LoginB&name=20&phone=123&pwd=1  
+[2014/7/7 9:58:55]: Platform:WinNT-Query:token=dkt5rv55w1ienq55zcqybn45&action=GetOrderMessage  
+[2014/7/7 10:13:05]: Platform:WinNT-Query:action=LoginB&name=20&phone=123&pwd=1  

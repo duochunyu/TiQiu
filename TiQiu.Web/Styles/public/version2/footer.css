@@ -1,0 +1,146 @@
+﻿@charset "utf-8";
+
+/*公共底部第二版@缘来网 by Housne @ 20120331 */
+
+.pub_footer{clear:both;padding-top:0px;}
+.footer_wrap{background:#ebf4f8;padding-bottom:40px;}
+.pub_footer .footer_box{padding-top:12px;}
+.pub_footer .footer_box .logo{width:101px;height:41px;font-size:0;line-height:0;padding-top:32px;float:left;margin-left:125px;_display:inline;background:url(../../../images/public/ioc_logo_v2.png) no-repeat;_background-image:url(../../../images/public/version2/logo.gif);}
+.footer_content .copyrights,.pub_footer .hot_cities,.pub_footer .color4{line-height:1.1;padding-top:10px;color: #999999 !important;}
+.footer_content{width:580px;float:left;_display:inline;margin-left:20px;}
+.pub_footer a{text-decoration:none;}
+.pub_footer a:hover{text-decoration:underline;}
+.pub_footer .copyrights{padding-top:7px;}
+.pub_footer .youguanbumen a img{margin-top:-7px;vertical-align:middle;}
+.pub_footer .abouts a{margin-right:10px;color:#ffffff !important;}
+.pub_footer .copyrights span{margin:0 2px;}
+.pub_footer .hot_cities strong{font-weight:500;color:#999}
+.pub_footer .hot_cities .city_links{display:inline;}
+.pub_footer .hot_cities a{color:#999;margin-right:6px;}
+
+/* 淘宝推广 */
+.btm_tb_promo{width:950px;height:90px;margin:0 auto;padding-top:15px;}
+
+/* 以下是底部通栏样式 */
+
+.footerbar .color2{color:#ff513a !important}
+.footerbar .color3{color:#52b5d7 !important}
+.footerbar {position:fixed;  left:10px; right:10px;  bottom:0; z-index:9999;_position:absolute; _zoom:1;  _bottom:auto;_top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0))); margin:0 auto;}
+.fb_left,.fb_right,.fb_c,.fb_up,.fb_msg_btn span,.fixedmsg_box .close_msg,.fbappbox .close_msg { background:url(../../../images/public/footerbar/footerbar.png) left top no-repeat;}
+.fb_main { position: relative;  height:30px; }
+.fb_left { float:left;  _margin-right:-3px; width:5px; height:30px; background-position:0 0;}
+.fb_right { float:right;  margin-left:-3px; width:5px; height:30px; background-position:-20px -40px; }
+.fb_c {  min-height:30px; _height:30px; margin-left:5px; margin-right:5px; _margin-left:0px; _margin-right:0px; background: #f3f3f3 url(../../../images/public/footerbar/fb_c.png) repeat-x;}
+.fb_logo { display: block; float:left; padding-right:10px; border-right:1px solid #ddd; width:20px; height:30px; background:url(../../../images/public/icon/16x16/b_31.gif) no-repeat center center;}
+.fb_item { float:left; height:28px; margin-top:1px;}
+.fb_item li { position:relative; float:left; border-left:1px solid #fff; border-right:1px solid #ddd;}
+.fb_item li a.fb_list,.fb_item li span.fb_list { display: inline-block; padding:1px 10px 0 25px; line-height:28px; text-decoration:none;}
+.fb_item li a.fb_canon{padding:1px 18px 0;}
+.fb_item li a.fb_list:hover {}
+.fb_info_tip,.fb_honest_tip { position:absolute; bottom:29px; left:-2px; padding:15px; width:196px; height:90px;border:1px solid #f4e8d8; border-bottom:none; background:#fff; z-index:1; display:none; text-align:center;}
+.fb_info_tip .btn_c1,.fb_honest_tip .btn_c1 { margin-bottom:10px;}
+.fb_honest_tip { width:130px;}
+.fb_info_on,.fb_honest_on { display:block;}
+.fb_info_edit { background:url(../../../images/public/icon/16x16/b_01.gif) 5px center no-repeat;}
+.fb_points { background:url(../../../images/public/icon/16x16/b_42.gif) 5px center no-repeat;}
+.fb_points a{text-decoration:none;}
+.fb_edit_show,.fb_honest_show { position:relative; zoom:1; background-color:#FFFBE9; margin-top:-1px; z-index:2;}
+.fb_item .up_photo { background:url(../../../images/public/icon/16x16/b_15.gif) 5px center no-repeat;}
+.fb_item .check_mail { background:url(../../../images/public/icon/16x16/b_37.gif) 5px center no-repeat;}
+.fb_item .check_phone { background:url(../../../images/public/icon/16x16/b_38.gif) 5px center no-repeat;}
+.fb_favorites { background:url(../../../images/public/icon/16x16/b_33.gif) 5px center no-repeat;}
+.fb_share { margin-top:1px; float:left; display:inline; padding-left:0px; position: relative; height:21px; padding-top:7px; border-left:1px solid #fff; border-right:1px solid #ddd;}
+.fb_up { float:right; height:29px; margin-top:1px; border-left:1px solid #fff;  background-position:-85px -36px; z-index:2;}
+.fb_up a { display:inline-block; width:110px; height:29px;}
+.fb_msg { float:right; margin-top:1px; border-left:1px solid #fff;}
+.fb_msg_box { width:144px; height:29px; position:relative; overflow:visible;}
+.fb_msg_btn {position:absolute; left:0; bottom:0px; display:block; width:100%; height:28px; line-height:28px; text-decoration:none; border-left:#fff; border-right:1px solid #ddd; blr:expression(this.onFocus=this.blur()); }
+.fb_msg_btn span { display: block; padding-left:35px;  background-position:-85px -94px;}
+.fb_msg_show { height:29px; line-height:29px;  border:1px solid #c3cacd; border-top:none;z-index:999; background:url(../../../images/public/footerbar/fb_tips_bg.png) repeat-x; cursor:pointer;}
+.fb_msg_show span { position: absolute; left:64px; top:9px; padding:0; display:inline-block; width:16px; height:16px; overflow:hidden;text-indent:-9999px;  background:url(../../../images/public/footerbar/downV2.gif) left top no-repeat; cursor:pointer;}
+.fb_canon_tip{background:#FFFBE9 url(../../../images/canon/fb_canon.png) no-repeat;}
+.fb_canon_female{background-image:url(../../../images/canon/fb_canon_female.png);}
+.fb_canon_content{padding:0 0 0 65px;text-align:left;line-height:1.6;background:url(../../../images/canon/fb_canons.png) no-repeat 10px 20px;}
+.canon_step2{background-position:5px -63px;}
+.canon_step3{background-position:10px -140px;}
+.canon_step4{background-position:5px -220px;}
+.fb_canon_content p{margin-bottom:10px;}
+.fb_point_status{width:170px;float:left;padding:6px 10px 0;height:24px;border-left:solid 1px #fff;border-right:solid 1px #ddd;}
+.points_bg,.points_bg .points{display:inline-block;height:18px;width:82px;vertical-align:0;margin-left:5px;line-height:0;background:url(../../../images/canon/points_bg.png) no-repeat;}
+.points_bg .points{color:#fcb91d;line-height:16px;text-align:center;background-position:-84px 0;margin:0;}
+.fb_point_status .points_link{margin-left:10px;text-decoration:none;}
+
+/* 信息弹出框 */
+
+.footerbar .fixedmsg_box { display:none; position:absolute;  width:254px; border:1px solid #c3cacd; bottom:29px; left:0px; z-index:1; background:#fff;}
+
+.footerbar .fixedmsg_box .msgscroll { position:relative; zoom:1;}
+.footerbar .fixedmsg_box h1,.footerbar .fixedmsg_box h2 { height:23px; line-height:23px; font-size:12px; padding-left:10px; background:url(../../../images/public/footerbar/tips_t_bgV2.png) repeat-x; color: #fff; }
+.footerbar .fixedmsg_box .msgcontent { margin:10px;}
+.footerbar .fixedmsg_box .fixedmsg_con { position:relative; min-height:10px; _height:10px; padding-right:15px; padding-bottom:8px; margin-top:6px; border-bottom:1px solid #e5e5e5;}
+.footerbar .fixedmsg_box .fixedmsg_con:last-child { border:none;}
+.footerbar .fixedmsg_box .fixedmsg_con_del { position:absolute; top:0; right:0px; text-decoration:none; font-size:14px; line-height:20px; font-weight:bold; font-family:"宋体"; color:#dcdcdc;}
+.footerbar .fixedmsg_box .msg_more { display:block; padding-right:10px; float:right;}
+.footerbar .fixedmsg_box .close_msg { position:absolute; display:block; height:12px; width:12px;; top:5px; right:5px; background-position: -60px -45px; }
+.footerbar .fixedmsg_box a.close_msg:hover { background-position: -60px 5px; }
+.no_content {padding:30px 0;}
+.no_content p { text-align:center; overflow:hidden;}
+
+/* 信息弹出框：金钻会员*/
+#msgContentzj{margin:3px;}
+#msgContentzj .msg_more{position:absolute;right:36px;bottom:7px;width:94px;height:0;padding-top:27px;overflow:hidden;background:url(../../../images/public/footerbar/msg_more.jpg) no-repeat;}
+#msgContentzj .fixedmsg_con{margin:0;padding:0;width:248px;height:165px;background:url(../../../images/public/footerbar/zj.jpg) no-repeat;}
+#msgContentzj .msg_zj_info{padding:84px 0 0 108px;font:700 12px/20px 'Microsoft Yahei';color:#000;}
+#msgContentzj .msg_zj_info del{display:block;}
+#msgContentzj .msg_zj_info strong{font:700 16px/26px 'Microsoft Yahei';color:#fbff8e;}
+
+
+/* ie6用iframe遮住select html { _background-image:url(about:blank); }*/
+
+.ie_frame{position:absolute;z-index:-1;height:100%; width:100%; left:0;top:0;filter: alpha(opacity = 0); background:#f0f; border:none; overflow:hidden;}
+.ie_frame_bot { height:30px; width:95%;}
+iframe{margin:0;padding:0;}
+
+/* 交友应用 */
+.fb_app { float:left; margin-top:1px; border-left:1px solid #fff;  border-right:1px solid #ddd;}
+.fb_app_box { position:relative; width:100px; height:29px; overflow:visible;}
+.fbappbox { display:none; position:absolute; width:150px; padding-bottom: 15px; border:1px solid #664e47; bottom:29px; left:0px; z-index:1; background:#fff;}
+.fbappbox h1 {height:23px; line-height:23px; font-size:12px; padding-left:10px; background:url(../../../images/public/footerbar/tips_t_bg.png) repeat-x; color: #fff; }
+.fbappbox .close_msg { position:absolute; display:block; height:12px; width:12px; top:5px; right:5px; background-position: -60px -45px; }
+.fbappbox a.close_msg:hover { background-position: -60px 5px; }
+.fbappbox ul { padding:0px 0 0 15px;}
+.fbappbox ul li { margin-top:10px;  padding-left:20px;}
+.fbappbox ul li a { text-decoration:none; padding-right:5px;}
+.first_press { background:url(../../../images/public/icon/16x16/b_28.gif) no-repeat;}
+.pre_couple { background:url(../../../images/public/icon/16x16/b_27.jpg) no-repeat;}
+.ls_draw { background:url(../../../images/public/icon/16x16/b_54.png) no-repeat;}
+.ls_aic{ background:url(../../../images/public/icon/16x16/b_47.png) no-repeat;}
+.ls_star{background:url(../../../images/public/icon/16x16/b_50.gif) no-repeat;}
+.ls_game{background:url(../../../images/public/icon/16x16/b_59_0.png) no-repeat; _background:url(../../../images/public/icon/16x16/b_59.gif) no-repeat;}
+.fb_app_btn {position:absolute; left:0; bottom:0px; display:block; width:100%; height:28px; line-height:28px; text-decoration:none; border-left:#fff; border-right:1px solid #ddd; blr:expression(this.onFocus=this.blur()); }
+.fb_app_btn span { display: block; padding-left:20px; background:url(../../../images/public/footerbar/up.gif) 72px center no-repeat;}
+.fb_app_show { height:29px; line-height:29px;  border:1px solid #664e47; border-top:none;z-index:999; background:url(../../../images/public/footerbar/fb_tips_bg.png) repeat-x; cursor:pointer;}
+.fb_app_show span { position: absolute; left:40px; top:9px; padding:0; display:inline-block; width:16px; height:16px; overflow:hidden;text-indent:-9999px;  background:url(../../../images/public/footerbar/down.gif) left top no-repeat; cursor:pointer;}
+
+/* 新闻提示 */
+.fb_news { padding-left:10px; float:left; margin-top:1px; border-left:1px solid #fff;}
+.fb_news_list { float:left; line-height:28px; height:28px; overflow:hidden; }
+.fb_news_list a { float:left; clear:both; height:28px;line-height:28px;color:#E35480; vertical-align:middle;}
+.fb_news_list .bottom_svr{vertical-align:middle;*padding-top:8px;*vertical-align:-3px;}
+
+/* 收件箱 */
+.fb_mail { height:29px; float:right; margin-top:1px; border-left:1px solid #ddd; border-right:1px solid #ddd;}
+.fb_mail_rec {  }
+.fb_mail_rec a { display:block; padding:0 10px 0 30px;/* height:29px; overflow:hidden;*/ line-height:29px; text-decoration:none; background:url(../../../images/public/icon/16x16/b_12.gif) 10px center no-repeat;}
+.fb_mail_rec a:hover {background-color:#fdfdf6; }
+.fb_mail_rec a em { display: inline-block; width: 40px; }
+
+/* 收藏 */
+.fb_shou { float:right; height:29px; margin-top:1px; border-left:1px solid #fff; z-index:2;}
+.fb_shou .fb_favorites { display:block; line-height:28px; padding:0 20px 0 30px; background:url(../../../images/public/icon/16x16/b_33.gif) 13px center no-repeat; text-decoration:none;}
+
+/* 优质用户 */
+.superb_user { padding-bottom:10px;}
+.superb_user img { float:left; margin-right:8px; width:100px; height:125px; padding:4px 4px 6px; background:url(../../../images/search/search_pic_bg.png) center bottom no-repeat;}
+.superb_user_info { padding-bottom:10px;}
+.superb_user_btn { padding-top:8px;}

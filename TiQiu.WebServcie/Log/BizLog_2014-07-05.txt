@@ -1,0 +1,15 @@
+[2014/7/5 23:43:00]: Platform:WinNT-Query:action=Login&name=hz&phone=123&pwd=1&bduserId=1065232540888042694&bdchannelid=3472431594639454205&devicetype=3&version=1  
+[2014/7/5 23:43:05]: Platform:WinNT-Query:action=Login&name=hz&phone=123&pwd=1&bduserId=1065232540888042694&bdchannelid=3472431594639454205&devicetype=3&version=1  
+[2014/7/5 23:43:51]: Platform:WinNT-Query:token=dkt5rv55w1ienq55zcqybn45&action=GetOrderMessage  
+[2014/7/5 23:44:01]: Platform:WinNT-Query:action=Login&name=hz&phone=123&pwd=1&bduserId=1065232540888042694&bdchannelid=3472431594639454205&devicetype=3&version=1  
+[2014/7/5 23:44:17]: Platform:WinNT-Query:token=dkt5rv55w1ienq55zcqybn45&action=GetOrderMessage  
+[2014/7/5 23:45:24]: Platform:WinNT-Query:action=LoginB&name=hz&phone=123&pwd=1&bduserId=1065232540888042694&bdchannelid=3472431594639454205&devicetype=3&version=1  
+[2014/7/5 23:45:40]: Platform:WinNT-Query:action=LoginB&name=2&phone=123&pwd=1  
+[2014/7/5 23:45:58]: Platform:WinNT-Query:action=LoginB&name=20&phone=123&pwd=1  
+[2014/7/5 23:46:18]: Platform:WinNT-Query:token=dkt5rv55w1ienq55zcqybn45&action=GetOrderMessage  
+[2014/7/5 23:46:43]: Platform:WinNT-Query:action=LoginB&name=20&phone=123&pwd=1  
+[2014/7/5 23:46:48]: Platform:WinNT-Query:token=dkt5rv55w1ienq55zcqybn45&action=GetOrderMessage  
+[2014/7/5 23:46:59]: Platform:WinNT-Query:action=LoginB&name=20&phone=123&pwd=1  
+[2014/7/5 23:47:09]: Platform:WinNT-Query:token=dkt5rv55w1ienq55zcqybn45&action=GetOrderMessage  
+[2014/7/5 23:55:33]: Platform:WinNT-Query:action=LoginB&name=20&phone=123&pwd=1  
+[2014/7/5 23:55:40]: Platform:WinNT-Query:token=dkt5rv55w1ienq55zcqybn45&action=GetOrderMessage  

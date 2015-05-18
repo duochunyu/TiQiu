@@ -1,0 +1,92 @@
+<style type="text/css">
+#login-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate3d(-50%, -70%, 0);
+    width: 420px;
+    height:auto;
+}
+#login-form {
+    min-height: 250px;
+    margin: 0 auto;
+    border: 1px solid #dbdbdb;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 1px 1px 8px rgba(199, 199, 199, 0.25), -1px -1px 8px rgba(199, 199, 199, 0.25), 0 1px 1px #ffffff inset;
+    -moz-box-shadow: 1px 1px 8px rgba(199, 199, 199, 0.25), -1px -1px 8px rgba(199, 199, 199, 0.25), 0 1px 1px #ffffff inset;
+    box-shadow: 1px 1px 8px rgba(199, 199, 199, 0.25), -1px -1px 8px rgba(199, 199, 199, 0.25), 0 1px 1px #ffffff inset;
+    background-color: #ffffff;
+    background-image: -moz-linear-gradient(center top, #f4f4f4, #ffffff);
+    background-image: -ms-linear-gradient(top, #f4f4f4, #ffffff);
+    background-image: -webkit-linear-gradient(top, #f4f4f4, #ffffff);
+    background-image: -o-linear-gradient(top, #f4f4f4, #ffffff);
+    background-image: linear-gradient(top, #f4f4f4, #ffffff);
+    box-shadow: #c7c7c7 0px 0px 1px\0;
+    -pie-background: linear-gradient(#f4f4f4, #ffffff);
+}
+.legend {
+    padding: 15px 0 15px 30px;
+    font-weight: bold;
+    color: #5d5d5d;
+    line-height: 1;
+}
+#login-form hr {
+    width: 410px;
+    border: 0;
+    border-top: 2px solid #d5d5d5;
+    border-bottom: 1px solid #ffffff;
+    margin: 0 auto 0 auto;
+    color: #555;
+}
+#login-form hr.decoration {
+    width: 140px;
+    border-top: 2px solid #4288c5;
+    position: absolute;
+    left: 5px;
+    top: 45px;
+}
+#login-form fieldset {
+    margin: 0 0 30px 0;
+    padding: 0 48px;
+    border: none;
+}
+#login-form .hint {
+    min-height: 30px;
+    padding: 10px 50px 0 50px;
+    position: relative;
+    color: red;
+}
+</style>
+<div id="login-container">
+    <form id="login-form" ng-submit="login()">
+        <div class="legend">后台登录中心</div>
+        <hr/>
+        <hr class="decoration" />
+
+        <div class="hint">
+            <span class="error" data-ng-bind="error"></span>
+        </div>
+
+        <fieldset>
+            <div class="form-group">
+                <input type="text" ng-model="username" placeholder="账  号：" class="form-control" />
+            </div>
+
+            <div class="form-group">
+                <input type="password" ng-model="password" placeholder="密  码：" class="form-control" />
+            </div>
+
+            <div class="form-group" ng-show="showCaptcha">
+                <input type="text" ng-model="code" placeholder="验证码：" style="width: 140px; margin-right: 10px;" class="form-control" />
+                <img ng-src="{{captchaUrl}}" width="110" />
+                <a href="javascript:void(0);" ng-click="refreshCode()" style="line-height:38px;">刷新</a>
+            </div>
+
+            <div class="form-group">
+                <button id="submit" type="submit" class="btn btn-primary btn-large btn-block">登录</button>
+            </div>
+        </fieldset>
+    </form>
+</div>

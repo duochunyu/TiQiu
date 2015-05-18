@@ -1,0 +1,41 @@
+<div class="modal-header">
+    <h3>批量预定</h3>
+</div>
+
+<div class="modal-body">
+    <div class="form-horizontal">
+        <div class="form-group">
+            <label class="col-md-4 control-label">场次信息：</label>
+            <div class="col-md-6">
+                <span class="form-control-static">{{data.field.name}} {{data.fieldItem.title}}</span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-md-4 control-label">预订人联系电话：</label>
+            <div class="col-md-6">
+                <input type="text" ng-model="phone" ng-blur="findMember()" class="form-control" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-md-4 control-label">预订人名称：</label>
+            <div class="col-md-6">
+                <input type="text" ng-model="name" id="txtMemberName" class="form-control" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-md-4 control-label">时间区间：</label>
+            <div class="col-md-7">
+                <span class="form-control-static">{{now | date:'yyyy年MM月dd'}} 至</span>
+                <!-- <quick-datepicker name='myDate' ng-model='myDate' required disable-timepicker='true' disable-clear-button='true'></quick-datepicker> -->
+                <input type="text" style="width: 140px; display: inline-block;" datepicker-popup="yyyy-MM-dd" ng-model="endDate" is-open="opened" min="now" max="'2015-06-22'" ng-required="true" show-button-bar="false" date-disabled="disabled(date, mode)" show-weeks="false" class="form-control" />
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal-footer">
+    <button class="btn btn-primary" ng-click="batchOrderByManager()">确定</button>
+    <button class="btn btn-default" ng-click="cancel()">取消</button>
+</div>

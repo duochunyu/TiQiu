@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F8326F97-CD0F-455D-A4B0-1BC868356A58}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TiQiu.DAL</RootNamespace>
+    <AssemblyName>TiQiu.DAL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.0.2\lib\net45\EntityFramework.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.0.2\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ACCOUNT.cs">
+      <DependentUpon>SQLModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ACCOUNT_B.cs">
+      <DependentUpon>SQLModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ACCOUNT_B_BUSINESSES.cs">
+      <DependentUpon>SQLModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AREA.cs">
+      <DependentUpon>SQLModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BAIDU_USER_MEMBER.cs">
+      <DependentUpon>SQLModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BUSINESSES.cs">
+      <DependentUpon>SQLModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DICT_TEAM_ROLE.cs">
+      <DependentUpon>SQLModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Extends.cs" />
+    <Compile Include="FEEDBACK.cs">
+      <DependentUpon>SQLModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FIELD.cs">
+      <DependentUpon>SQLModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FIELD_ITEM.cs">
+      <DependentUpon>SQLModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FIELD_ORDER.cs">
+      <DependentUpon>SQLModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FIELD_ORDER_BATCH.cs">
+      <DependentUpon>SQLModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FIELD_ORDER_LOG.cs">
+      <DependentUpon>SQLModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FIELD_RULE.cs">
+      <DependentUpon>SQLModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FIELD_SCHEDULED.cs">
+      <DependentUpon>SQLModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FILE.cs">
+      <DependentUpon>SQLModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FREE_TEAM_LOG.cs">
+      <DependentUpon>SQLModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GAME.cs">
+      <DependentUpon>SQLModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GAME_COMMENT.cs">
+      <DependentUpon>SQLModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GAME_EVENT.cs">
+      <DependentUpon>SQLModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GAME_ROUND.cs">
+      <DependentUpon>SQLModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GAME_ROUND_GROUP.cs">
+      <DependentUpon>SQLModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GAME_SCHEDULED.cs">
+      <DependentUpon>SQLModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GAME_TEAM.cs">
+      <DependentUpon>SQLModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MEMBER.cs">
+      <DependentUpon>SQLModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PagingQuery.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PushMessages.cs">
+      <DependentUpon>SQLModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RIGHT.cs">
+      <DependentUpon>SQLModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ROLE.cs">
+      <DependentUpon>SQLModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ROLE_ACCOUNT_B.cs">
+      <DependentUpon>SQLModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ROLE_RIGHT.cs">
+      <DependentUpon>SQLModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SMS.cs">
+      <DependentUpon>SQLModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SMS_RECEIVE.cs">
+      <DependentUpon>SQLModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SQLModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SQLModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SQLModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SQLModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SQLModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SQLModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="TEAM.cs">
+      <DependentUpon>SQLModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TEAM_MEMBER.cs">
+      <DependentUpon>SQLModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TEAM_SCORE.cs">
+      <DependentUpon>SQLModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VERSION.cs">
+      <DependentUpon>SQLModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW_GAME_MEMBER_GOAL.cs">
+      <DependentUpon>SQLModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW_ORDER_FREETEAM.cs">
+      <DependentUpon>SQLModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW_ORDER_PK.cs">
+      <DependentUpon>SQLModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="V_FIELD_ITEM_SCHEDULED.cs">
+      <DependentUpon>SQLModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="V_FIELD_ORDER.cs">
+      <DependentUpon>SQLModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="V_FIELD_SCHEDULED.cs">
+      <DependentUpon>SQLModel.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config">
+      <SubType>Designer</SubType>
+    </None>
+    <EntityDeploy Include="SQLModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>SQLModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SQLModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SQLModel.edmx</DependentUpon>
+      <LastGenOutput>SQLModel.Context.cs</LastGenOutput>
+    </None>
+    <None Include="SQLModel.edmx.diagram">
+      <DependentUpon>SQLModel.edmx</DependentUpon>
+    </None>
+    <None Include="SQLModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SQLModel.edmx</DependentUpon>
+      <LastGenOutput>SQLModel.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,70 @@
+
+[2014/8/25 22:47:05]: Error Message Begin  -------------------
+ExceptionType : System.InvalidOperationException
+Message : 序列不包含任何元素
+StackTrace :
+   在 System.Linq.Enumerable.Single[TSource](IEnumerable`1 source)
+   在 TiQiu.Biz.OrderManager.GetOrderByID(Int32 orderId) 位置 f:\TiQiu\TiQiu.Biz\OrderManager.cs:行号 90
+   在 TiQiu.WebServcie.OrderHandler.GetOrderByID(HttpContext context, Object& userData) 位置 f:\TiQiu\TiQiu.WebServcie\OrderHandler.ashx.cs:行号 264
+   在 TiQiu.WebServcie.HttpProcessor.ExecActionHandler(HttpContext context, String action) 位置 f:\TiQiu\TiQiu.WebServcie\HttpProcessor.cs:行号 129
+   在 TiQiu.WebServcie.HttpProcessor.ProcessRequestHandler[BE](HttpContext context, Action`1 exceptionHandler) 位置 f:\TiQiu\TiQiu.WebServcie\HttpProcessor.cs:行号 90
+
+--------- Exception Information [End] ----------------------
+
+[2014/8/25 22:47:48]: Error Message Begin  -------------------
+ExceptionType : System.InvalidOperationException
+Message : 序列不包含任何元素
+StackTrace :
+   在 System.Linq.Enumerable.Single[TSource](IEnumerable`1 source)
+   在 TiQiu.Biz.OrderManager.GetOrderByID(Int32 orderId) 位置 f:\TiQiu\TiQiu.Biz\OrderManager.cs:行号 90
+   在 TiQiu.WebServcie.OrderHandler.GetOrderByID(HttpContext context, Object& userData) 位置 f:\TiQiu\TiQiu.WebServcie\OrderHandler.ashx.cs:行号 264
+   在 TiQiu.WebServcie.HttpProcessor.ExecActionHandler(HttpContext context, String action) 位置 f:\TiQiu\TiQiu.WebServcie\HttpProcessor.cs:行号 129
+   在 TiQiu.WebServcie.HttpProcessor.ProcessRequestHandler[BE](HttpContext context, Action`1 exceptionHandler) 位置 f:\TiQiu\TiQiu.WebServcie\HttpProcessor.cs:行号 90
+
+--------- Exception Information [End] ----------------------
+
+[2014/8/25 22:47:59]: Error Message Begin  -------------------
+ExceptionType : System.InvalidOperationException
+Message : 序列不包含任何元素
+StackTrace :
+   在 System.Linq.Enumerable.Single[TSource](IEnumerable`1 source)
+   在 TiQiu.Biz.OrderManager.GetOrderByID(Int32 orderId) 位置 f:\TiQiu\TiQiu.Biz\OrderManager.cs:行号 90
+   在 TiQiu.WebServcie.OrderHandler.GetOrderByID(HttpContext context, Object& userData) 位置 f:\TiQiu\TiQiu.WebServcie\OrderHandler.ashx.cs:行号 264
+   在 TiQiu.WebServcie.HttpProcessor.ExecActionHandler(HttpContext context, String action) 位置 f:\TiQiu\TiQiu.WebServcie\HttpProcessor.cs:行号 129
+   在 TiQiu.WebServcie.HttpProcessor.ProcessRequestHandler[BE](HttpContext context, Action`1 exceptionHandler) 位置 f:\TiQiu\TiQiu.WebServcie\HttpProcessor.cs:行号 90
+
+--------- Exception Information [End] ----------------------
+
+[2014/8/25 22:51:24]: Error Message Begin  -------------------
+ExceptionType : System.InvalidOperationException
+Message : 序列不包含任何元素
+StackTrace :
+   在 System.Linq.Enumerable.Single[TSource](IEnumerable`1 source)
+   在 TiQiu.Biz.OrderManager.GetOrderByID(Int32 orderId) 位置 f:\TiQiu\TiQiu.Biz\OrderManager.cs:行号 90
+   在 TiQiu.WebServcie.OrderHandler.GetOrderByID(HttpContext context, Object& userData) 位置 f:\TiQiu\TiQiu.WebServcie\OrderHandler.ashx.cs:行号 264
+   在 TiQiu.WebServcie.HttpProcessor.ExecActionHandler(HttpContext context, String action) 位置 f:\TiQiu\TiQiu.WebServcie\HttpProcessor.cs:行号 129
+   在 TiQiu.WebServcie.HttpProcessor.ProcessRequestHandler[BE](HttpContext context, Action`1 exceptionHandler) 位置 f:\TiQiu\TiQiu.WebServcie\HttpProcessor.cs:行号 90
+
+--------- Exception Information [End] ----------------------
+
+[2014/8/25 22:51:31]: Error Message Begin  -------------------
+ExceptionType : System.InvalidCastException
+Message : 指定的转换无效。
+StackTrace :
+   在 TiQiu.Biz.OrderManager.GetOrderByID(Int32 orderId) 位置 f:\TiQiu\TiQiu.Biz\OrderManager.cs:行号 120
+   在 TiQiu.WebServcie.OrderHandler.GetOrderByID(HttpContext context, Object& userData) 位置 f:\TiQiu\TiQiu.WebServcie\OrderHandler.ashx.cs:行号 264
+   在 TiQiu.WebServcie.HttpProcessor.ExecActionHandler(HttpContext context, String action) 位置 f:\TiQiu\TiQiu.WebServcie\HttpProcessor.cs:行号 129
+   在 TiQiu.WebServcie.HttpProcessor.ProcessRequestHandler[BE](HttpContext context, Action`1 exceptionHandler) 位置 f:\TiQiu\TiQiu.WebServcie\HttpProcessor.cs:行号 90
+
+--------- Exception Information [End] ----------------------
+
+[2014/8/25 22:53:01]: Error Message Begin  -------------------
+ExceptionType : System.InvalidCastException
+Message : 指定的转换无效。
+StackTrace :
+   在 TiQiu.Biz.OrderManager.GetOrderByID(Int32 orderId) 位置 f:\TiQiu\TiQiu.Biz\OrderManager.cs:行号 120
+   在 TiQiu.WebServcie.OrderHandler.GetOrderByID(HttpContext context, Object& userData) 位置 f:\TiQiu\TiQiu.WebServcie\OrderHandler.ashx.cs:行号 264
+   在 TiQiu.WebServcie.HttpProcessor.ExecActionHandler(HttpContext context, String action) 位置 f:\TiQiu\TiQiu.WebServcie\HttpProcessor.cs:行号 129
+   在 TiQiu.WebServcie.HttpProcessor.ProcessRequestHandler[BE](HttpContext context, Action`1 exceptionHandler) 位置 f:\TiQiu\TiQiu.WebServcie\HttpProcessor.cs:行号 90
+
+--------- Exception Information [End] ----------------------

@@ -1,0 +1,31 @@
+﻿@charset "utf-8";
+@import "../public/version2/footer.css";
+/* 注册公共 */
+.wrap{ background:url(../../images/register/bg.jpg) no-repeat center top; background-color:#F5F1F1; color:#333; }
+.reg_header { width:900px; padding:31px 0;margin:0 auto;}
+.reg_header .logo_reg { display:block; margin-left:5px; width:76px; height:37px;padding-right: 68px; background:url(../../images/register/ico_reg.png) no-repeat right center;_background-image:url(../../images/register/ico_reg.gif);}
+.reg_header .logo_reg h2{width:101px;background:url(../../images/public/ioc_logo_v2.png) no-repeat;_background-image:url(../../images/public/version2/logo.gif);float:left;overflow:hidden;text-indent:-999em;height:41px;}
+.reg_header .logo_tit { display:block; margin-left:5px; width:88px; height:37px;padding-right: 141px; background:url(../../images/register/ico_tit.png) no-repeat right center;}
+.reg_header .account{ text-align:right; color:#666; position:absolute; right:0; top:0; margin-top:-25px}
+
+
+/* 装饰图片 */
+.rel{ position:relative}
+.rel .mt{background:url(../../images/register/mt.png) no-repeat; _background:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://ylstatic.com/2016/web/images/register/mt.png" ); position:absolute; top:-83px; right:30px; width:293px; height:216px; text-indent:-9999px}
+.tit{ position:absolute;top:-83px; right:30px; width:293px;height:163px; overflow:hidden}
+.tit .mt{top:0; right:0;}
+.mt_tit{background:url(../../images/register/mt_titbg.png) no-repeat right bottom #FBF9F8;}
+
+/* 跳过页面 */
+.page_link{ margin:20px; text-align:right; clear:both;}
+.page_link a { margin-right:12px;}
+
+/* 加点背景 */
+.li_d{background: url(../../images/register/dian.png) no-repeat left center; padding-left:12px;}
+
+/* 左右布局 */
+.public_960box_main{ padding-top:40px}
+.public_960box_cbox { display:inline; float:left; width:707px;border-right:1px dashed #d1d1d1;}
+.public_960box_sbox { display:inline; float:left; width:250px;}
+
+.btn_a1{ margin-right:15px}

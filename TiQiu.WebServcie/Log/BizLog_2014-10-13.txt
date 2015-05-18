@@ -1,0 +1,4 @@
+[2014/10/13 10:30:00]: Platform:WinNT-Query:action=GetTeamList&pageSize=10&name=&pageIndex=1  
+[2014/10/13 10:30:35]: Platform:WinNT-Query:action=GetTeamList&pageSize=10&name=&pageIndex=1  
+[2014/10/13 10:37:05]: Platform:WinNT-Query:action=GetTeamList&pageSize=10&name=&pageIndex=1&23  
+[2014/10/13 10:44:04]: Platform:WinNT-Query:action=GetTeamList&pageSize=10&name=&pageIndex=1&23  

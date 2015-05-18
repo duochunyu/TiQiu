@@ -1,0 +1,61 @@
+@charset "utf-8";
+/* 注册页面用户资料预览模块 @ yuanlai by housne @ 20120131 */
+.preview_reg{
+	background:#fff;
+	border:solid 1px #ddd;
+	padding:15px 20px 12px;
+	margin-bottom:20px;
+	position:relative;
+	zoom:1;
+}
+.reg_avatar{
+	float:left;
+	margin-right:15px;
+}
+.reg_avatar img{
+	padding:5px 4px;
+	background:url(../../images/personal/pic_bg.png) no-repeat left bottom;
+}
+.preview_info{
+	float:left;
+	line-height:26px;
+}
+.bold_name{
+	font-size:14px;
+	font-weight:bold;
+}
+.gen_info h1{
+	font-size:12px;
+	display:inline;
+	font-weight:bold;
+	margin-right:10px;
+}
+.reg_moreinfo span{
+	margin-right:20px;
+}
+.preview_reg .top_left_coner{
+	background:url(../../images/register/preview.png) no-repeat right bottom;
+	height:18px;
+	width:17px;
+	position:absolute;
+	top:-1px;
+	left:-1px;
+}
+.preview_reg .lovers_bg{
+	background:url(../../images/register/preview.png) no-repeat;
+	_background:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://ylstatic.com/2012/web/images/register/lover_ie.png");
+	height:177px;
+	width:246px;
+	position:absolute;
+	bottom:1px;
+	right:50px;
+}
+
+
+.reg_preview .rel .mt{
+	display:none;
+}
+.reg_preview .login{
+	margin-top:50px;
+}

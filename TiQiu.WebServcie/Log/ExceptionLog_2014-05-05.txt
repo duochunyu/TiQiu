@@ -1,0 +1,156 @@
+
+[2014/5/5 1:08:56]: Error Message Begin  -------------------
+ExceptionType : System.Data.Entity.Core.EntityCommandExecutionException
+Message : 执行命令定义时出错。有关详细信息，请参阅内部异常。
+StackTrace :
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+   在 System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.Execute[TResultType](ObjectContext context, ObjectParameterCollection parameterValues)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClassb.<GetResults>b__a()
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClassb.<GetResults>b__9()
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<System.Collections.Generic.IEnumerable<T>.GetEnumerator>b__0()
+   在 System.Lazy`1.CreateValue()
+   在 System.Lazy`1.LazyInitValue()
+   在 System.Lazy`1.get_Value()
+   在 System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 TiQiu.Biz.FieldManager.GetFieldList(Int32 accountBId) 位置 g:\TiQiu\TiQiu.Biz\FieldManager.cs:行号 358
+   在 TiQiu.WebServcie.ModelMapping.InitAcct(ACCOUNT_B acct) 位置 g:\TiQiu\TiQiu.WebServcie\ModelMapping.cs:行号 124
+   在 TiQiu.WebServcie.AccountHandler.LoginB(HttpContext context, Object& userData) 位置 g:\TiQiu\TiQiu.WebServcie\AccountHandler.ashx.cs:行号 138
+   在 TiQiu.WebServcie.HttpProcessor.ExecActionHandler(HttpContext context, String action) 位置 g:\TiQiu\TiQiu.WebServcie\HttpProcessor.cs:行号 127
+   在 TiQiu.WebServcie.HttpProcessor.ProcessRequestHandler[BE](HttpContext context, Action`1 exceptionHandler) 位置 g:\TiQiu\TiQiu.WebServcie\HttpProcessor.cs:行号 89
+InnerException :
+  ExceptionType : System.Data.SqlClient.SqlException
+  Message : Timeout 时间已到。在操作完成之前超时时间已过或服务器未响应。
+  StackTrace :
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+   在 System.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+   在 System.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+   在 System.Data.SqlClient.TdsParserStateObject.TryPrepareBuffer()
+   在 System.Data.SqlClient.TdsParserStateObject.TryReadByte(Byte& value)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.<>c__DisplayClassb.<Reader>b__8()
+   在 System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TInterceptionContext,TResult](Func`1 operation, TInterceptionContext interceptionContext, Action`1 executing, Action`1 executed)
+   在 System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   在 System.Data.Entity.Internal.InterceptableDbCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.ExecuteStoreCommands(EntityCommand entityCommand, CommandBehavior behavior)
+  InnerException :
+    ExceptionType : System.ComponentModel.Win32Exception
+    Message : 等待的操作过时。
+    StackTrace :
+
+
+--------- Exception Information [End] ----------------------
+
+[2014/5/5 1:12:02]: Error Message Begin  -------------------
+ExceptionType : System.Data.Entity.Validation.DbEntityValidationException
+Message : 对一个或多个实体的验证失败。有关详细信息，请参阅“EntityValidationErrors”属性。
+StackTrace :
+   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+   在 System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   在 System.Data.Entity.DbContext.SaveChanges()
+   在 TiQiu.Biz.FieldManager.CreateFieldRule(Int32 fieldItemId, List`1 rules) 位置 g:\TiQiu\TiQiu.Biz\FieldManager.cs:行号 386
+   在 TiQiu.WebServcie.FieldHandler.CreateFieldRuleList(HttpContext context, Object& userData) 位置 g:\TiQiu\TiQiu.WebServcie\FieldHandler.ashx.cs:行号 154
+   在 TiQiu.WebServcie.HttpProcessor.ExecActionHandler(HttpContext context, String action) 位置 g:\TiQiu\TiQiu.WebServcie\HttpProcessor.cs:行号 127
+   在 TiQiu.WebServcie.HttpProcessor.ProcessRequestHandler[BE](HttpContext context, Action`1 exceptionHandler) 位置 g:\TiQiu\TiQiu.WebServcie\HttpProcessor.cs:行号 89
+
+--------- Exception Information [End] ----------------------
+
+[2014/5/5 1:12:38]: Error Message Begin  -------------------
+ExceptionType : System.Data.Entity.Validation.DbEntityValidationException
+Message : 对一个或多个实体的验证失败。有关详细信息，请参阅“EntityValidationErrors”属性。
+StackTrace :
+   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+   在 System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   在 System.Data.Entity.DbContext.SaveChanges()
+   在 TiQiu.Biz.FieldManager.CreateFieldRule(Int32 fieldItemId, List`1 rules) 位置 g:\TiQiu\TiQiu.Biz\FieldManager.cs:行号 386
+   在 TiQiu.WebServcie.FieldHandler.CreateFieldRuleList(HttpContext context, Object& userData) 位置 g:\TiQiu\TiQiu.WebServcie\FieldHandler.ashx.cs:行号 154
+   在 TiQiu.WebServcie.HttpProcessor.ExecActionHandler(HttpContext context, String action) 位置 g:\TiQiu\TiQiu.WebServcie\HttpProcessor.cs:行号 127
+   在 TiQiu.WebServcie.HttpProcessor.ProcessRequestHandler[BE](HttpContext context, Action`1 exceptionHandler) 位置 g:\TiQiu\TiQiu.WebServcie\HttpProcessor.cs:行号 89
+
+--------- Exception Information [End] ----------------------
+
+[2014/5/5 1:14:51]: Error Message Begin  -------------------
+ExceptionType : System.Data.Entity.Validation.DbEntityValidationException
+Message : 对一个或多个实体的验证失败。有关详细信息，请参阅“EntityValidationErrors”属性。
+StackTrace :
+   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+   在 System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   在 System.Data.Entity.DbContext.SaveChanges()
+   在 TiQiu.Biz.FieldManager.CreateFieldRule(Int32 fieldItemId, List`1 rules) 位置 g:\TiQiu\TiQiu.Biz\FieldManager.cs:行号 386
+   在 TiQiu.WebServcie.FieldHandler.CreateFieldRuleList(HttpContext context, Object& userData) 位置 g:\TiQiu\TiQiu.WebServcie\FieldHandler.ashx.cs:行号 154
+   在 TiQiu.WebServcie.HttpProcessor.ExecActionHandler(HttpContext context, String action) 位置 g:\TiQiu\TiQiu.WebServcie\HttpProcessor.cs:行号 127
+   在 TiQiu.WebServcie.HttpProcessor.ProcessRequestHandler[BE](HttpContext context, Action`1 exceptionHandler) 位置 g:\TiQiu\TiQiu.WebServcie\HttpProcessor.cs:行号 89
+
+--------- Exception Information [End] ----------------------
+
+[2014/5/5 1:20:30]: Error Message Begin  -------------------
+ExceptionType : System.Data.Entity.Validation.DbEntityValidationException
+Message : 对一个或多个实体的验证失败。有关详细信息，请参阅“EntityValidationErrors”属性。
+StackTrace :
+   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+   在 System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   在 System.Data.Entity.DbContext.SaveChanges()
+   在 TiQiu.Biz.FieldManager.CreateFieldRule(Int32 fieldItemId, List`1 rules) 位置 g:\TiQiu\TiQiu.Biz\FieldManager.cs:行号 389
+   在 TiQiu.WebServcie.FieldHandler.CreateFieldRuleList(HttpContext context, Object& userData) 位置 g:\TiQiu\TiQiu.WebServcie\FieldHandler.ashx.cs:行号 154
+   在 TiQiu.WebServcie.HttpProcessor.ExecActionHandler(HttpContext context, String action) 位置 g:\TiQiu\TiQiu.WebServcie\HttpProcessor.cs:行号 127
+   在 TiQiu.WebServcie.HttpProcessor.ProcessRequestHandler[BE](HttpContext context, Action`1 exceptionHandler) 位置 g:\TiQiu\TiQiu.WebServcie\HttpProcessor.cs:行号 89
+
+--------- Exception Information [End] ----------------------
+
+[2014/5/5 1:21:22]: Error Message Begin  -------------------
+ExceptionType : System.Data.Entity.Validation.DbEntityValidationException
+Message : 对一个或多个实体的验证失败。有关详细信息，请参阅“EntityValidationErrors”属性。
+StackTrace :
+   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+   在 System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   在 System.Data.Entity.DbContext.SaveChanges()
+   在 TiQiu.Biz.FieldManager.CreateFieldRule(Int32 fieldItemId, List`1 rules) 位置 g:\TiQiu\TiQiu.Biz\FieldManager.cs:行号 389
+   在 TiQiu.WebServcie.FieldHandler.CreateFieldRuleList(HttpContext context, Object& userData) 位置 g:\TiQiu\TiQiu.WebServcie\FieldHandler.ashx.cs:行号 154
+   在 TiQiu.WebServcie.HttpProcessor.ExecActionHandler(HttpContext context, String action) 位置 g:\TiQiu\TiQiu.WebServcie\HttpProcessor.cs:行号 127
+   在 TiQiu.WebServcie.HttpProcessor.ProcessRequestHandler[BE](HttpContext context, Action`1 exceptionHandler) 位置 g:\TiQiu\TiQiu.WebServcie\HttpProcessor.cs:行号 89
+
+--------- Exception Information [End] ----------------------
+
+[2014/5/5 1:23:06]: Error Message Begin  -------------------
+ExceptionType : System.Data.Entity.Validation.DbEntityValidationException
+Message : 对一个或多个实体的验证失败。有关详细信息，请参阅“EntityValidationErrors”属性。
+StackTrace :
+   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+   在 System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   在 System.Data.Entity.DbContext.SaveChanges()
+   在 TiQiu.Biz.FieldManager.CreateFieldRule(Int32 fieldItemId, List`1 rules) 位置 g:\TiQiu\TiQiu.Biz\FieldManager.cs:行号 393
+   在 TiQiu.WebServcie.FieldHandler.CreateFieldRuleList(HttpContext context, Object& userData) 位置 g:\TiQiu\TiQiu.WebServcie\FieldHandler.ashx.cs:行号 154
+   在 TiQiu.WebServcie.HttpProcessor.ExecActionHandler(HttpContext context, String action) 位置 g:\TiQiu\TiQiu.WebServcie\HttpProcessor.cs:行号 127
+   在 TiQiu.WebServcie.HttpProcessor.ProcessRequestHandler[BE](HttpContext context, Action`1 exceptionHandler) 位置 g:\TiQiu\TiQiu.WebServcie\HttpProcessor.cs:行号 89
+
+--------- Exception Information [End] ----------------------
+
+[2014/5/5 1:23:59]: Error Message Begin  -------------------
+ExceptionType : System.Data.Entity.Validation.DbEntityValidationException
+Message : 对一个或多个实体的验证失败。有关详细信息，请参阅“EntityValidationErrors”属性。
+StackTrace :
+   在 System.Data.Entity.Internal.InternalContext.SaveChanges()
+   在 System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   在 System.Data.Entity.DbContext.SaveChanges()
+   在 TiQiu.Biz.FieldManager.CreateFieldRule(Int32 fieldItemId, List`1 rules) 位置 g:\TiQiu\TiQiu.Biz\FieldManager.cs:行号 393
+   在 TiQiu.WebServcie.FieldHandler.CreateFieldRuleList(HttpContext context, Object& userData) 位置 g:\TiQiu\TiQiu.WebServcie\FieldHandler.ashx.cs:行号 154
+   在 TiQiu.WebServcie.HttpProcessor.ExecActionHandler(HttpContext context, String action) 位置 g:\TiQiu\TiQiu.WebServcie\HttpProcessor.cs:行号 127
+   在 TiQiu.WebServcie.HttpProcessor.ProcessRequestHandler[BE](HttpContext context, Action`1 exceptionHandler) 位置 g:\TiQiu\TiQiu.WebServcie\HttpProcessor.cs:行号 89
+
+--------- Exception Information [End] ----------------------

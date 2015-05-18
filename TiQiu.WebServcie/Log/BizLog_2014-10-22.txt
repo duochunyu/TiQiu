@@ -1,0 +1,2 @@
+[2014/10/22 10:07:34]: Platform:WinNT-Query:action=Login&name=18628329869&pwd=111111&bduserid=0&bdchannelid=0&devicetype=0&version=0  
+[2014/10/22 10:08:02]: Platform:WinNT-Query:action=UpdateTeam&teamName=xx&teamId=123&memberid=448&Token=2lcauonvuflip2ujkef1qyn4&feature=1234  

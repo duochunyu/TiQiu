@@ -1,0 +1,12 @@
+[2014/6/6 16:34:32]: Platform:WinNT-Query:action=GetGameLiveList&from=2014-1-1&to=2014-9-1&pageindex=1&pagesize=5  
+[2014/6/6 16:34:45]: Platform:WinNT-Query:action=GetGameLiveList&from=2013-1-1&to=2014-9-1&pageindex=1&pagesize=5  
+[2014/6/6 16:39:32]: Platform:WinNT-Query:action=GetGameRoundList&gameId=6  
+[2014/6/6 16:43:50]: Platform:WinNT-Query:action=GetGameLiveList&from=2014-1-1&to=2014-9-1  
+[2014/6/6 16:44:01]: Platform:WinNT-Query:action=GetGameLiveList&from=2014-1-1&to=2014-9-1&pageindex=1&pagesize=5  
+[2014/6/6 16:46:50]: Platform:WinNT-Query:action=GetGameLiveList&from=2014-1-1&to=2014-9-1&pageindex=1&pagesize=5  
+[2014/6/6 16:47:10]: Platform:WinNT-Query:action=GetGameLiveList&from=2014-1-1&to=2014-9-1&pageindex=1&pagesize=5  
+[2014/6/6 16:51:16]: Platform:WinNT-Query:action=GetGameLiveList&from=2014-1-1&to=2014-9-1&pageindex=1&pagesize=5  
+[2014/6/6 17:13:00]: Platform:WinNT-Query:action=Login&name=hz&phone=123&pwd=1  
+[2014/6/6 17:13:33]: Platform:WinNT-Query:action=addgameevent&token=dkt5rv55w1ienq55zcqybn45  
+[2014/6/6 17:14:00]: Platform:WinNT-Query:action=AddGameEvent&token=dkt5rv55w1ienq55zcqybn45  
+[2014/6/6 17:14:21]: Platform:WinNT-Query:action=AddGameEvent&token=dkt5rv55w1ienq55zcqybn45&schid=1  

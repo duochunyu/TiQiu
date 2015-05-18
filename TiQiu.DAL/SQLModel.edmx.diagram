@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="dda11b6e4e114067b89c8358e111a4c8" Name="关系图1" ZoomLevel="116">
+        <EntityTypeShape EntityType="TIQIUModel.ACCOUNT" Width="1.5" PointX="3" PointY="3.5" IsExpanded="false" />
+        <EntityTypeShape EntityType="TIQIUModel.AREA" Width="1.5" PointX="5.75" PointY="7.625" IsExpanded="false" />
+        <EntityTypeShape EntityType="TIQIUModel.DICT_TEAM_ROLE" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="false" />
+        <EntityTypeShape EntityType="TIQIUModel.FIELD" Width="1.5" PointX="8" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TIQIUModel.FIELD_ITEM" Width="1.5" PointX="10.25" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TIQIUModel.FIELD_ORDER" Width="1.5" PointX="0.75" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TIQIUModel.FIELD_RULE" Width="1.5" PointX="7.75" PointY="7.625" IsExpanded="false" />
+        <EntityTypeShape EntityType="TIQIUModel.FIELD_SCHEDULED" Width="1.5" PointX="9.5" PointY="5.5" IsExpanded="false" />
+        <EntityTypeShape EntityType="TIQIUModel.FILE" Width="1.5" PointX="5.75" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="TIQIUModel.FREE_TEAM_LOG" Width="1.5" PointX="7.75" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="TIQIUModel.RIGHT" Width="1.5" PointX="3" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TIQIUModel.ROLE" Width="1.5" PointX="2.75" PointY="10.625" IsExpanded="false" />
+        <EntityTypeShape EntityType="TIQIUModel.ROLE_ACCOUNT_B" Width="1.5" PointX="9.75" PointY="7.625" IsExpanded="false" />
+        <EntityTypeShape EntityType="TIQIUModel.ROLE_RIGHT" Width="1.5" PointX="9.75" PointY="9.625" IsExpanded="false" />
+        <EntityTypeShape EntityType="TIQIUModel.TEAM" Width="1.5" PointX="5.75" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="TIQIUModel.TEAM_MEMBER" Width="1.5" PointX="3.375" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TIQIUModel.TEAM_SCORE" Width="2.75" PointX="3.625" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="TIQIUModel.V_FIELD_ITEM_SCHEDULED" Width="1.5" PointX="10.75" PointY="3.625" IsExpanded="false" />
+        <EntityTypeShape EntityType="TIQIUModel.V_FIELD_ORDER" Width="2.75" PointX="10.875" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TIQIUModel.V_FIELD_SCHEDULED" Width="1.5" PointX="7.5" PointY="12.625" IsExpanded="false" />
+        <AssociationConnector Association="TIQIUModel.FK_TEAM_MEMBER_ROLE" ManuallyRouted="false" />
+        <AssociationConnector Association="TIQIUModel.FK_FIELD_ITEM_FIELD" ManuallyRouted="false" />
+        <AssociationConnector Association="TIQIUModel.FK_TEAM_SCORE_FIELD_ORDER" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="TIQIUModel.account1" Width="1.5" PointX="5.2960470324829441" PointY="14.49959250469673" />
+        <EntityTypeShape EntityType="TIQIUModel.account_b1" Width="1.5" PointX="9.3437839864491412" PointY="5.1514042490866983" />
+        <EntityTypeShape EntityType="TIQIUModel.account_b_businesses1" Width="1.5" PointX="4.8687886990927112" PointY="7.1262963447376606" />
+        <EntityTypeShape EntityType="TIQIUModel.area1" Width="1.5" PointX="6.4111089177481411" PointY="29.863468318182729" />
+        <EntityTypeShape EntityType="TIQIUModel.businesses" Width="1.5" PointX="1.8741707736040332" PointY="2.0600322047528028" />
+        <EntityTypeShape EntityType="TIQIUModel.dict_team_role1" Width="1.5" PointX="8.9048830107342845" PointY="9.5788215294381711" />
+        <EntityTypeShape EntityType="TIQIUModel.field1" Width="1.5" PointX="6.4476665493322844" PointY="18.045192279873969" />
+        <EntityTypeShape EntityType="TIQIUModel.field_item1" Width="1.5" PointX="4.5602611808852576" PointY="5.917530539407176" />
+        <EntityTypeShape EntityType="TIQIUModel.field_order1" Width="1.5" PointX="1.2505642460894604" PointY="28.702857403411929" />
+        <EntityTypeShape EntityType="TIQIUModel.field_order_log1" Width="1.5" PointX="4.7925288755411888" PointY="1.2235317980980183" />
+        <EntityTypeShape EntityType="TIQIUModel.field_rule1" Width="1.5" PointX="4.84059579895837" PointY="15.098272777673916" />
+        <EntityTypeShape EntityType="TIQIUModel.field_scheduled1" Width="1.5" PointX="8.5654723255734311" PointY="20.589026997140156" />
+        <EntityTypeShape EntityType="TIQIUModel.file1" Width="1.5" PointX="5.8434505936892007" PointY="13.1435121955087" />
+        <EntityTypeShape EntityType="TIQIUModel.free_team_log1" Width="1.5" PointX="7.1216782606773439" PointY="4.4460218122443287" />
+        <EntityTypeShape EntityType="TIQIUModel.game_scheduled1" Width="1.5" PointX="3.879467593449851" PointY="2.41118466966375" />
+        <EntityTypeShape EntityType="TIQIUModel.member1" Width="1.5" PointX="6.75807972753331" PointY="2.3652969460772804" />
+        <EntityTypeShape EntityType="TIQIUModel.right1" Width="1.5" PointX="4.4045434074497516" PointY="8.9079949450250684" />
+        <EntityTypeShape EntityType="TIQIUModel.role1" Width="1.5" PointX="7.3472908639103593" PointY="4.1597611327468238" />
+        <EntityTypeShape EntityType="TIQIUModel.role_account_b1" Width="1.5" PointX="8.3868124728960964" PointY="19.20627726018721" />
+        <EntityTypeShape EntityType="TIQIUModel.role_right1" Width="1.5" PointX="0.71426045369089608" PointY="25.500509080244466" />
+        <EntityTypeShape EntityType="TIQIUModel.sms_confirm1" Width="1.5" PointX="11.635226128453027" PointY="10.093326767018683" />
+        <EntityTypeShape EntityType="TIQIUModel.sms_history1" Width="1.5" PointX="10.00421516504335" PointY="20.050458857813133" />
+        <EntityTypeShape EntityType="TIQIUModel.sms_pool1" Width="1.5" PointX="9.2327121632325984" PointY="2.2921031128112705" />
+        <EntityTypeShape EntityType="TIQIUModel.team1" Width="1.5" PointX="1.6792168420177029" PointY="10.203000699264463" />
+        <EntityTypeShape EntityType="TIQIUModel.team_member1" Width="1.5" PointX="2.5430633325795937" PointY="16.517911784592044" />
+        <EntityTypeShape EntityType="TIQIUModel.team_score1" Width="1.5" PointX="11.194798271728121" PointY="10.466689561711014" />
+        <AssociationConnector Association="TIQIUModel.FK_ACCOUNT_MEMBER1" />
+        <AssociationConnector Association="TIQIUModel.FK_FIELD_BUSINESSES1" />
+        <AssociationConnector Association="TIQIUModel.FK_FIELD_ITEM_BUSINESSES1" />
+        <AssociationConnector Association="TIQIUModel.FK_TEAM_MEMBER_ROLE1" />
+        <AssociationConnector Association="TIQIUModel.FK_FIELD_ITEM_FIELD1" />
+        <AssociationConnector Association="TIQIUModel.FK_FIELD_ORDER_LOG_FIELD_ORDER1" />
+        <AssociationConnector Association="TIQIUModel.FK_GAME_SCHEDULED_FIELD_ORDER1" />
+        <AssociationConnector Association="TIQIUModel.FK_TEAM_SCORE_FIELD_ORDER1" />
+        <AssociationConnector Association="TIQIUModel.FK_TEAM_MEMBER_MEMBER1" />
+        <AssociationConnector Association="TIQIUModel.FK_TEAM_MEMBER_TEAM1" />
+        <EntityTypeShape EntityType="TIQIUModel.ACCOUNT_B_BUSINESSES" Width="1.5" PointX="6.75" PointY="11.625" IsExpanded="false" />
+        <EntityTypeShape EntityType="TIQIUModel.ACCOUNT_B" Width="1.5" PointX="8.75" PointY="11.625" IsExpanded="false" />
+        <EntityTypeShape EntityType="TIQIUModel.BUSINESSES" Width="1.5" PointX="5.75" PointY="1.75" IsExpanded="false" />
+        <AssociationConnector Association="TIQIUModel.FK_FIELD_BUSINESSES" />
+        <AssociationConnector Association="TIQIUModel.FK_FIELD_ITEM_BUSINESSES" />
+        <EntityTypeShape EntityType="TIQIUModel.VIEW_ORDER_FREETEAM" Width="1.5" PointX="10.75" PointY="11.625" IsExpanded="false" />
+        <EntityTypeShape EntityType="TIQIUModel.VIEW_ORDER_PK" Width="1.5" PointX="2.625" PointY="14.625" IsExpanded="false" />
+        <EntityTypeShape EntityType="TIQIUModel.MEMBER" Width="1.5" PointX="0.75" PointY="2.375" IsExpanded="true" />
+        <AssociationConnector Association="TIQIUModel.FK_ACCOUNT_MEMBER" />
+        <EntityTypeShape EntityType="TIQIUModel.FIELD_ORDER_BATCH" Width="1.5" PointX="11.75" PointY="10.625" IsExpanded="false" />
+        <EntityTypeShape EntityType="TIQIUModel.SMS_RECEIVE" Width="1.5" PointX="12.75" PointY="1.625" IsExpanded="false" />
+        <EntityTypeShape EntityType="TIQIUModel.SMS" Width="1.5" PointX="12.75" PointY="3.625" IsExpanded="false" />
+        <AssociationConnector Association="TIQIUModel.TEAMTEAM_MEMBER" />
+        <AssociationConnector Association="TIQIUModel.MEMBERTEAM_MEMBER" />
+        <EntityTypeShape EntityType="TIQIUModel.GAME_COMMENT" Width="1.5" PointX="14.125" PointY="6.25" IsExpanded="false" />
+        <EntityTypeShape EntityType="TIQIUModel.PushMessages" Width="1.5" PointX="1.5062348626117386" PointY="2.6068182301739315" />
+        <EntityTypeShape EntityType="TIQIUModel.BAIDU_USER_MEMBER" Width="1.5" PointX="6.6940151037154791" PointY="6.3869384109913083" />
+        <EntityTypeShape EntityType="TIQIUModel.FIELD_ORDER_LOG" Width="1.5" PointX="19" PointY="40.25" />
+        <AssociationConnector Association="TIQIUModel.FIELD_ORDER_LOGFIELD_ORDER" />
+        <EntityTypeShape EntityType="TIQIUModel.FEEDBACK" Width="1.5" PointX="3.0732285264289136" PointY="23.622229244384091" />
+        <EntityTypeShape EntityType="TIQIUModel.VERSION" Width="1.5" PointX="3.5236084347235082" PointY="8.5391403327412618" />
+        <EntityTypeShape EntityType="TIQIUModel.VIEW_GAME_MEMBER_GOAL" Width="1.5" PointX="2.5461618371988468" PointY="6.7237667323666468" />
+        </Diagram>
+      <Diagram DiagramId="13c37655dbe34930a5ff2ed95e54ee26" Name="关系图2" ZoomLevel="111" >
+        <EntityTypeShape EntityType="TIQIUModel.GAME_ROUND_GROUP" Width="2.375" PointX="5.625" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TIQIUModel.GAME_EVENT" Width="1.875" PointX="10.75" PointY="2.25" IsExpanded="false" />
+        <EntityTypeShape EntityType="TIQIUModel.GAME_SCHEDULED" Width="2.375" PointX="9.25" PointY="3" IsExpanded="true" />
+        <AssociationConnector Association="TIQIUModel.GAME_ROUND_GROUPGAME_SCHEDULED" />
+        <AssociationConnector Association="TIQIUModel.GAME_SCHEDULEDGAME_EVENT" />
+        <EntityTypeShape EntityType="TIQIUModel.GAME_ROUND" Width="1.5" PointX="3" PointY="4.5" IsExpanded="false" />
+        <EntityTypeShape EntityType="TIQIUModel.GAME_TEAM" Width="1.5" PointX="7.75" PointY="5.25" IsExpanded="false" />
+        <EntityTypeShape EntityType="TIQIUModel.GAME" Width="1.5" PointX="0.75" PointY="4.625" IsExpanded="true" />
+        <AssociationConnector Association="TIQIUModel.GAMEGAME_ROUND" />
+        <AssociationConnector Association="TIQIUModel.GAME_ROUNDGAME_ROUND_GROUP" />
+        <AssociationConnector Association="TIQIUModel.GAME_ROUND_GROUPGAME_TEAM" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,60 @@
+<ng-include src="'partial/header.html'"></ng-include>
+<div id="content">
+    <tabset>
+        <tab ng-repeat="item in fieldItemList" heading="{{item.title}}" active="item.active" disabled="item.disabled" select="switchFieldItem(item)">
+        </tab>
+    </tabset>
+
+    <div id="legend">
+        <ul>
+            <li style="border: none; padding: 0">
+                <span style="display: inline-block; width: 50px; border: solid 1px #bdbdbd; height: 12px; vertical-align: middle; margin-right: 5px;"></span>
+                <span style="vertical-align: middle;">可预订</span>
+            </li>
+            <li style="border-left-color: rgba(244, 249, 54, 0.65098)">预订申请</li>
+            <li style="border-left-color: rgba(39, 216, 18, 0.65098)">已预订</li>
+            <li style="border-left-color: #ff6a00">单飞</li>
+            <li style="border-left-color: #0094ff">约战申请(无应战球队)</li>
+            <li style="border-left-color: #0026ff">约战申请(有应战球队)</li>
+            <li style="border-left-color: #bebdbd">不可用</li>
+        </ul>
+    </div>
+
+    <div id="calendar" class="cal-context">
+        <div class="cal-row-fluid cal-row-head clearfix" sticky use-placeholder offset-top="61">
+            <a id="prev" href="javascript:void(0);" ng-click="query('prev')">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a id="next" href="javascript:void(0);" ng-click="query('next')">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+            <div class="cal-cell1" ng-repeat="day in days">
+                <span>{{day.weekday}}</span>
+                <br>
+                <span>{{day.day}}</span>
+            </div>
+        </div>
+
+        <div class="cal-week-box clearfix">
+            <div class="cal-column-fluid" ng-repeat="day in days">
+                <div id="cell_order_{{p.ScheduledID}}" class="cal-cell {{p.Status}}" ng-repeat="p in day.period" ng-class="{'solo': p.OrderType===2, 'Expire': p.isExpire, 'pk': p.OrderType===1}" book-menu="{{p}}">
+                    <div id="scheduled_Info_{{p.ScheduledID}}" ng-if="p.ScheduledID">
+                        <p>{{p.StartTime.slice(0,5)}}-{{p.EndTime.slice(0,5)}}</p>
+                        <p>{{p.Price | currency : '￥'}}</p>
+                    </div>
+                    <div id="booking_Info_{{p.ScheduledID}}">
+                        <span>
+                            {{p.OrderType == 0 ? (p.MemberName == null ? "":('预订人：'+ p.MemberName)) : p.OrderType == 2 ? '单飞'+ p.SoloMinPlayer + '('+p.SoloPalyerCount+')人场': p.OrderType == 1 ? p.MemberName==null?"":('约战联系人：'+ p.MemberName):"" }}
+                            <B>{{p.MemberPhone}}</B> 
+                            <!--<p>{{(p.OrderCreateDate | date :'M月d HH:mm')}}</p>-->
+                            <p>{{p.OrderPrice | currency : '￥' }}{{p.Income > 0 ? '收入：' + (p.Income | currency : '￥'):'' }}</p>
+                        </span>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<ng-include src="'partial/sidebar.html'"></ng-include>

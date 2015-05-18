@@ -1,0 +1,13 @@
+﻿@charset "utf-8";
+@import url("../public/reset.css");
+@import url("../public/public.css");
+@import url("../public/version2/header.css");
+@import url("../public/version2/footer.css");
+@import url("../public/button/pubButtonVersion2.css");
+@import url("../public/search.css");
+@import url("../register/form.css");
+@import url('login_ex_list.css');
+@import url("login_base.css");
+/* 缘来网登录 */
+.footer_wrap {height: 120px;background: #fff;padding-bottom: 0px;background:url(../../images/bg.png) }
+.footer_bg {background:url(../../images/bg.png) }

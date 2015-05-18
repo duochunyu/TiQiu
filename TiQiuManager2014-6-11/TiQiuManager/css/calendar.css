@@ -1,0 +1,124 @@
+.cal-row-head {
+    position: relative;
+    z-index: 1000;
+}
+.cal-row-head .cal-cell1:first-child, .cal-row-head .cal-cell1 {
+    font-weight: bolder;
+    text-align: center;
+    border: 0px solid;
+    padding: 5px 0;
+    margin-left: 0;
+    min-height: 1px;
+    min-height: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.cal-row-head .cal-cell1 {
+    background: #aaa;
+}
+.cal-row-head .cal-cell small {
+    font-weight: normal;
+}
+.cal-week-box {
+    /*border: 1px solid #e1e1e1;*/
+    /*border-radius: 2px;*/
+}
+.cal-column-fluid {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    /*border-right: 1px solid #e1e1e1;*/
+}
+.cal-column-fluid, .cal-row-head .cal-cell1 {
+    float: left;
+    width: 14.285714285714285%;
+    *width: 14.232409381663112%;
+    margin-right: -1px;
+}
+.cal-column-fluid > .cal-cell {
+    position: relative;
+    min-height: 115px;
+    /*border-bottom: 1px solid #e1e1e1;*/
+    padding: 10px 10px 0 10px;
+    font-size: 12px;
+    /*-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;*/
+    border: 1px solid #e1e1e1;
+    margin-bottom: -1px;
+}
+/*.cal-column-fluid:last-child {
+    border-right: 0px;
+}
+.cal-column-fluid > .cal-cell:last-child {
+    border-bottom: 0px;
+}*/
+
+/*.cal-column-fluid:first-child > .cal-cell:before {
+    position: absolute;
+    left: -150px;
+    width: 150px;
+    text-align: center;
+    bottom: 20px;
+    content:attr(data-time);
+    color: #555555;
+}*/
+ .Available {
+    background-color: #fff;
+}
+.Void, .Expire {
+    background-color: #bebdbd;
+}
+.Booking {
+    background-color: rgba(244, 249, 54, 0.65098);
+}
+.Booked {
+    background-color: #fff;
+    /*background-color: rgba(39, 216, 18, 0.65098);*/
+}
+.Booked:after {
+    position: absolute;
+    top: -3px;
+    right: -9px;
+    width: 79px;
+    height: 70px;
+    background: url('../img/booked.png') no-repeat;
+    content:'';
+    z-index: 1;
+}
+.solo {
+    /*background-color: #ff6a00;*/
+}
+.solo:after {
+    position: absolute;
+    top: -3px;
+    right: -9px;
+    width: 79px;
+    height: 70px;
+    background: url('../img/solo.png') no-repeat;
+    content:'';
+    z-index: 1;
+}
+.pk {
+    /*background-color: #ff6a00;*/
+}
+.pk:after {
+    position: absolute;
+    top: -3px;
+    right: -9px;
+    width: 79px;
+    height: 70px;
+    background: url('../img/pk.png') no-repeat;
+    content:'';
+    z-index: 1;
+}
+.reserve {
+    background-color: #0094ff;
+}
+.Ending {
+    background-color: #bebdbd;
+}
+.Available:hover, .Booking:hover, .Booked:hover, .solo:hover, .reserve:hover {
+    cursor: pointer;
+    background-color: #ededed;
+}

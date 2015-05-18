@@ -1,0 +1,9 @@
+@charset "utf-8";
+/* 合作网站账号 */
+.login_ex_list a{margin:5px 8px; padding-left:20px; display:inline-block}
+.login_ex_list img { vertical-align:top;vertical-align: middle\9; margin-right:6px;}
+.li_d{ font-family:"宋体"}
+.qq_ico{background:url(../../images/register/ico_16x16_qq.png) no-repeat left center;}
+.baidu_ico{background:url(../../images/register/ico_16x16_baidu.png) no-repeat left center;}
+.xinlang_ico {background:url(../../images/public/icon/16x16/b_xlwb.gif) no-repeat left center;}
+.renren_ico {background:url(../../images/public/icon/16x16/b_rrw.gif) no-repeat left center;}

@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* CSS Document */
+
+.search_bar {padding-bottom:10px;}
+.search_bar .search_top {padding-top:8px;vertical-align:middle;padding-left:25px;width:auto;background:#fdfdfd;height:30px;}
+.search_bar .search_google_entrance{background:#e6f2f8;padding:5px;border-top:#c9eaf9 solid 1px;text-align:center;}
+.search_top label {display:inline-block; vertical-align: middle; _vertical-align:baseline;}
+.search_top label .sp_new { padding-right: 30px; background: url("../../images/activity/previous/bg3.gif") no-repeat right 1px; }
+.search_top select {padding:0; margin:0; display:inline-block; vertical-align:middle; height:22px; padding:2px; border:1px solid #ccc; font-family:Tahoma, '宋体', Verdana;}
+.search_top a.btn_c1 {_vertical-align: top;}
+
+/* 我是焦点 */
+.focal_box{height:78px;margin-top:10px;background:#fff;}
+.focal_box dt,.focal_box dd{float:left;position:relative;z-index:101;}
+.focal_box img{width:62px;height:62px;}
+.focal_box .focal_bg{display:inline-block;height:0px;padding-top:62px;margin-top:8px;overflow:hidden;background:url(../../images/search/focal.png) no-repeat;}
+.focal_box .focal_desc{width:80px;margin-left:1px;}
+.focal_box .focal_my{width:62px;background-position:0 -64px;}
+.focal_box .focal{display:inline-block;width:62px;height:62px;padding:8px 3px;}
+.focal_box .focal_info{padding-bottom:8px;background:url(../../images/search/focal.png) no-repeat 0 -130px;}
+.focal_box p{display:none;position:absolute;bottom:-25px;height:24px;line-height:24px;padding:0px 5px;background:#832da0;color:#fff;white-space:nowrap;}
+.focal_box .focal_btn{display:inline-block;width:49px;height:20px;line-height:20px;margin-top:2px;text-align:center;text-decoration:none;background:url(../../images/search/focal_btn.gif) no-repeat;}
+
+.focal_box2{margin:0 auto;width:960px;height:106px;padding:4px;border:#4e2e21 solid 1px;}
+.focal_icon{display:inline-block;margin-left:65px;padding-bottom:8px;color:#ff0000;font-weight:bold;background:url(../../images/search/focal_icon.jpg) no-repeat center bottom;}

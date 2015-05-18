@@ -1,0 +1,167 @@
+﻿@charset "utf-8";
+/*
+公共按钮@缘来网
+by fan.ye@zhenai.com
+on Nov 30 2011
+*/
+
+/* 
+双层滑动门结构，可嵌套span、button、input，
+推荐嵌套span，其次button，不推荐input，
+外层class名：btn_级别+颜色，如：btn_b2
+*/
+
+/* 按钮共用模型 */
+.btn_a1,.btn_a2,.btn_a3,.btn_b1,.btn_b2,.btn_b3,.btn_c1,.btn_c2,.btn_c3,.btn_c3_not,.btn_a0,.btn_b0{border:none;outline:none;background:url(../../../images/public/button/public_button_version2.png) no-repeat;line-height:normal;vertical-align:middle;display:inline-block;font-size:12px;cursor:pointer;}
+.btn_a1,.btn_a1:visited,.btn_a1:hover,.btn_a2,.btn_a2:visited,.btn_a2:hover,.btn_a3,.btn_a3:visited,.btn_a3:hover,.btn_b1,.btn_b1:visited,.btn_b1:hover,.btn_b2,.btn_b2:visited,.btn_b2:hover,.btn_b3,.btn_b3:visited,.btn_b3:hover,.btn_c1,.btn_c1:visited,.btn_c1:hover,.btn_c2,.btn_c2:visited,.btn_c2:hover,.btn_c3,.btn_c3:visited,.btn_c3:hover,.btn_c3_not,.btn_c3_not:visited,.btn_c3_not:hover{text-decoration:none;}
+.btn_a1 span,.btn_a1 button,.btn_a1 input,.btn_a2 span,.btn_a2 button,.btn_a2 input,.btn_a3 span,.btn_a3 button,.btn_a3 input,.btn_b1 span,.btn_b1 button,.btn_b1 input,.btn_b2 span,.btn_b2 button,.btn_b2 input,.btn_b3 span,.btn_b3 button,.btn_b3 input,.btn_c1 span,.btn_c1 button,.btn_c1 input,.btn_c2 span,.btn_c2 button,.btn_c2 input,.btn_c3 span,.btn_c3 button,.btn_c3 input,.btn_c3_not span,.btn_c3_not button,.btn_c3_not input,.btn_c0,.btn_a0 span,.btn_b0 span,.btn_c0 span,.btn_a0 button,.btn_b0 button,.btn_c0 button,.btn_a0 input,.btn_b0 input,.btn_c0 input{height:100%;border:none;outline:none;margin:0;background:url(../../../images/public/button/public_button_version2.png) no-repeat #fff;text-decoration:none;display:inline-block;*overflow:visible;_blur:expression(this.onFocus=this.blur());cursor:pointer;}
+.sidemod .btn_a1 span,.sidemod .btn_a1 button,.sidemod .btn_a1 input,.sidemod .btn_a2 span,.sidemod .btn_a2 button,.sidemod .btn_a2 input,.sidemod .btn_a3 span,.sidemod .btn_a3 button,.sidemod .btn_a3 input,.sidemod .btn_b1 span,.sidemod .btn_b1 button,.sidemod .btn_b1 input,.sidemod .btn_b2 span,.sidemod .btn_b2 button,.sidemod .btn_b2 input,.sidemod .btn_b3 span,.sidemod .btn_b3 button,.sidemod .btn_b3 input,.sidemod .btn_c1 span,.sidemod .btn_c1 button,.sidemod .btn_c1 input,.sidemod .btn_c2 span,.sidemod .btn_c2 button,.sidemod .btn_c2 input,.sidemod .btn_c3 span,.sidemod .btn_c3 button,.sidemod .btn_c3 input,.sidemod .btn_c3_not span,.sidemod .btn_c3_not button,.sidemod .btn_c3_not input{background-color:#f7f7f7;}
+.btn_a1 ::-moz-focus-inner,.btn_a2 ::-moz-focus-inner,.btn_a3 ::-moz-focus-inner,.btn_b1 ::-moz-focus-inner,.btn_b2 ::-moz-focus-inner,.btn_b3 ::-moz-focus-inner,.btn_c1 ::-moz-focus-inner,.btn_c2 ::-moz-focus-inner,.btn_c3 ::-moz-focus-inner,.btn_c3_not ::-moz-focus-inner{border:none;}
+.btn_a1 button,.btn_a1 input,.btn_a2 button,.btn_a2 input,.btn_a3 button,.btn_a3 input,.btn_b1 button,.btn_b1 input,.btn_b2 button,.btn_b2 input,.btn_b3 button,.btn_b3 input,.btn_c1 button,.btn_c1 input,.btn_c2 button,.btn_c2 input,.btn_c3 button,.btn_c3 input,.btn_c3_not button,.btn_c3_not input{padding-bottom:2px !important;padding-top:1px\9 !important;*padding-top:0 !important;}
+
+/* 按钮共用文字颜色 */
+.btn_a1 span,.btn_a1 button,.btn_a1 input,.btn_b1 span,.btn_b1 button,.btn_b1 input,.btn_c1 span,.btn_c1 button,.btn_c1 input{color:#fff;}
+.btn_a2 span,.btn_a2 button,.btn_a2 input,.btn_b2 span,.btn_b2 button,.btn_b2 input,.btn_c2 span,.btn_c2 button,.btn_c2 input{color:#fff;}
+.btn_a3 span,.btn_a3 button,.btn_a3 input,.btn_b3 span,.btn_b3 button,.btn_b3 input,.btn_c3 span,.btn_c3 button,.btn_c3 input{color:#666;}
+.btn_c3_not span,.btn_c3_not button,.btn_c3_not input{color:#C8C8C8;}
+
+/* 按钮a组：一级按钮共用 */
+.btn_a1,.btn_a2,.btn_a3,.btn_a0{height:35px;padding:0 6px 0 0;}
+.btn_a1 span,.btn_a1 button,.btn_a1 input,.btn_a2 span,.btn_a2 button,.btn_a2 input,.btn_a3 span,.btn_a3 button,.btn_a3 input,.btn_a0 span,.btn_a0 buttton,.btn_a0 input{padding:0 14px 0 20px;font:700 14px/34px Tahoma,"Microsoft Yahei";}
+
+/* 按钮a1：强调按钮 */
+.btn_a1{background-position:100% 0;}
+.btn_a1:hover{background-position:100% -45px;}
+.btn_a1 span,.btn_a1 button,.btn_a1 input{background-position:0 0;}
+.btn_a1:hover span,.btn_a1:hover button,.btn_a1:hover input{background-position:0 -45px;}
+.btn_a1 button:active,.btn_a1 input:active{background-position:1px -44px\0 !important;}
+.btn_a1:active{background-position:100% -752px;}
+.btn_a1:active span,.btn_a1:active button,.btn_a1:active input{background-position:0 -752px;margin:0;}
+
+/* 按钮a2：普通按钮 */
+.btn_a2{background-position:100% -90px;}
+.btn_a2:hover{background-position:100% -135px;}
+.btn_a2 span,.btn_a2 button,.btn_a2 input{background-position:0 -90px;}
+.btn_a2:hover span,.btn_a2:hover button,.btn_a2:hover input{background-position:0 -135px;}
+.btn_a2 button:active,.btn_a2 input:active{background-position:1px -134px\0 !important;}
+.btn_a2:active{background-position:100% -799px;}
+.btn_a2:active span,.btn_a2:active button,.btn_a2:active input{background-position:0 -799px;margin:0;}
+
+/* 按钮a3：弱化按钮 */
+.btn_a3{background-position:100% -180px;}
+.btn_a3:hover{background-position:100% -225px;}
+.btn_a3 span,.btn_a3 button,.btn_a3 input{background-position:0 -180px;}
+.btn_a3:hover span,.btn_a3:hover button,.btn_a3:hover input{background-position:0 -225px;}
+.btn_a3 button:active,.btn_a3 input:active{background-position:1px -224px\0 !important;}
+.btn_a3:active{background-position:100% -846px;}
+.btn_a3:active span,.btn_a3:active button,.btn_a3:active input{background-position:0 -846px;margin:0;}
+
+/* 按钮b组：次级按钮共用 */
+.btn_b1,.btn_b2,.btn_b3,.btn_b0{height:30px;padding:0 5px 0 0;}
+.btn_b1 span,.btn_b1 button,.btn_b1 input,.btn_b2 span,.btn_b2 button,.btn_b2 input,.btn_b3 span,.btn_b3 button,.btn_b3 input,.btn_b0 span,.btn_b0 button,.btn_b0 input{padding:0 9px 0 14px;font:700 12px/29px Tahoma;}
+
+/* 按钮b1：强调按钮 */
+.btn_b1{background-position:100% -270px;}
+.btn_b1:hover{background-position:100% -310px;}
+.btn_b1 span,.btn_b1 button,.btn_b1 input{background-position:0 -270px;}
+.btn_b1:hover span,.btn_b1:hover button,.btn_b1:hover input{background-position:0 -310px;}
+.btn_b1 button:active,.btn_b1 input:active{background-position:1px -309px\0 !important;}
+.btn_b1:active{background-position:100% -893px;}
+.btn_b1:active span,.btn_b1:active button,.btn_b1:active input{background-position:0 -893px;margin:0;}
+
+/* 按钮b2：普通按钮 */
+.btn_b2{background-position:100% -350px;}
+.btn_b2:hover{background-position:100% -390px;}
+.btn_b2 span,.btn_b2 button,.btn_b2 input{background-position:0 -350px;}
+.btn_b2:hover span,.btn_b2:hover button,.btn_b2:hover input{background-position:0 -390px;}
+.btn_b2 button:active,.btn_b2 input:active{background-position:1px -389px\0 !important;}
+.btn_b2:active{background-position:100% -935px;}
+.btn_b2:active span,.btn_b2:active button,.btn_b2:active input{background-position:0 -935px;margin:0;}
+
+/* 按钮b3：弱化按钮 */
+.btn_b3{background-position:100% -430px;}
+.btn_b3:hover{background-position:100% -470px;}
+.btn_b3 span,.btn_b3 button,.btn_b3 input{background-position:0 -430px;}
+.btn_b3:hover span,.btn_b3:hover button,.btn_b3:hover input{background-position:0 -470px;}
+.btn_b3 button:active,.btn_b3 input:active{background-position:1px -469px\0 !important;}
+.btn_b3:active{background-position:100% -977px;}
+.btn_b3:active span,.btn_b3:active button,.btn_b3:active input{background-position:0 -977px;margin:0;}
+
+/* 按钮c组：小按钮共用 */
+.btn_c1,.btn_c2,.btn_c3,.btn_c3_not,.btn_c0{height:23px;padding:0 4px 0 0;}
+.btn_c1 span,.btn_c1 button,.btn_c1 input,.btn_c2 span,.btn_c2 button,.btn_c2 input,.btn_c3 span,.btn_c3 button,.btn_c3 input,.btn_c3_not span,.btn_c3_not button,.btn_c3_not input,.btn_c0 span,.btn_c0 button,.btn_c0 input{padding:0 2px 0 6px;font:400 12px/21px Tahoma;}
+
+/* 按钮c1：强调按钮 */
+.btn_c1{background-position:100% -510px;}
+.btn_c1:hover{background-position:100% -545px;}
+.btn_c1 span,.btn_c1 button,.btn_c1 input{background-position:0 -510px;}
+.btn_c1:hover span,.btn_c1:hover button,.btn_c1:hover input{background-position:0 -545px;}
+.btn_c1 button:active,.btn_c1 input:active{background-position:1px -544px\0 !important;}
+.btn_c1:active{background-position:100% -1019px;}
+.btn_c1:active span,.btn_c1:active button,.btn_c1:active input{background-position:0 -1019px;margin:0;}
+
+/* 按钮c2：普通按钮 */
+.btn_c2{background-position:100% -580px;}
+.btn_c2:hover{background-position:100% -615px;}
+.btn_c2 span,.btn_c2 button,.btn_c2 input{background-position:0 -580px;}
+.btn_c2:hover span,.btn_c2:hover button,.btn_c2:hover input{background-position:0 -615px;}
+.btn_c2 button:active,.btn_c2 input:active{background-position:1px -614px\0 !important;}
+.btn_c2:active{background-position:100% -1054px;}
+.btn_c2:active span,.btn_c2:active button,.btn_c2:active input{background-position:0 -1054px;margin:0;}
+
+/* 按钮c3：弱化按钮 */
+.btn_c3{background-position:100% -650px;}
+.btn_c3:hover{background-position:100% -685px;}
+.btn_c3 span,.btn_c3 button,.btn_c3 input{background-position:0 -650px;}
+.btn_c3:hover span,.btn_c3:hover button,.btn_c3:hover input{background-position:0 -685px;}
+.btn_c3 button:active,.btn_c3 input:active{background-position:1px -684px\0 !important;}
+.btn_c3:active{background-position:100% -1089px;}
+.btn_c3:active span,.btn_c3:active button,.btn_c3:active input{background-position:0 -1089px;margin:0;}
+
+/* 按钮c3：弱化按钮  灰色*/
+.btn_c3_not{background-position:100% -720px;}
+.btn_c3_not:hover{background-position:100% -685px;}
+.btn_c3_not span,.btn_c3_not button,.btn_c3_not input{background-position:0 -720px;}
+.btn_c3_not:hover span,.btn_c3_not:hover button,.btn_c3_not:hover input{background-position:0 -685px;}
+.btn_c3_not button:active,.btn_c3_not input:active{background-position:1px -684px\0 !important;}
+
+/* 灰色按钮 */
+.btn_a0,.btn_b0,.btn_c0{color:#fff !important;cursor:default;}
+.btn_a0 span,.btn_a0 button,.btn_a0 input,.btn_b0 span,.btn_button,.btn_b0 input,.btn_c0 span,.btn_c0 button,.btn_c0 input{cursor:default;}
+.btn_a0{background-position:100% -1124px;}
+.btn_a0 span,.btn_a0 button,.btn_a0 input{background-position:0 -1124px;}
+.btn_b0{background-position:100% -1171px;}
+.btn_b0 span,.btn_b0 button,.btn_b0 input{background-position:0 -1171px;}
+.btn_c0{background-position:100% -1213px;}
+.btn_c0 span,.btn_c0 button,.btn_c0 input{background-position:0 -1213px;}
+
+/* css3 重写按钮背景 */
+
+/* 强调按钮(红色)  */
+html.modern .btn_a1,html.modern .btn_b1,html.modern .btn_c1{background:linear-gradient(#58b5e1,#58b5e1,#58b5e1,#58b5e1);background:-webkit-linear-gradient(#58b5e1,#58b5e1 91%,#58b5e1 9%,#58b5e1);background:-moz-linear-gradient(#58b5e1,#58b5e1 91%,#58b5e1 9%,#58b5e1);border:solid 1px #58b5e1;box-shadow:0 1px rgba(0,0,0,.1),inset 0 0 0 1px rgba(255,255,255,.1);}
+html.modern .btn_a1 span,html.modern .btn_b1 span,html.modern .btn_c1 span,html.modern .btn_a1 button,html.modern .btn_b1 button,html.modern .btn_c1 button,html.modern .btn_a1 input,html.modern .btn_b1 input,html.modern .btn_c1 input{background:linear-gradient(top,rgba(255,255,255,.8),rgba(255,255,255,.8)) !important;background:-webkit-linear-gradient(top,rgba(255,255,255,0),rgba(255,255,255,0)) !important;background:-moz-linear-gradient(top,rgba(255,255,255,0),rgba(255,255,255,0)) !important;}
+html.modern .btn_a1:hover,html.modern .btn_b1:hover,html.modern .btn_c1:hover{background:linear-gradient(#f97c70,#fc6d5d 91%,#fc6d5d 9%,#f97b6e);background:-webkit-linear-gradient(#f97c70,#fc6d5d 91%,#fc6d5d 9%,#f97b6e);background:-moz-linear-gradient(#f97c70,#fc6d5d 91%,#fc6d5d 9%,#f97b6e);border-color:#fe5742;}
+html.modern .btn_a1:active,html.modern .btn_b1:active,html.modern .btn_c1:active{background:linear-gradient(#de6256,#de6256 41%,#de6256 59%,#de6256);background:-webkit-linear-gradient(#de6256,#de6256 41%,#de6256 59%,#de6256);background:-moz-linear-gradient(#de6256,#de6256 41%,#de6256 59%,#de6256);border-color:#ce1f07;box-shadow:0 1px rgba(0,0,0,.1),inset 0 0 0 1px rgba(255,255,255,.1),inset 0 2px 10px 0 rgba(0,0,0,.1);}
+
+/* 普通按钮(蓝色)  */
+html.modern .btn_a2,html.modern .btn_b2,html.modern .btn_c2{background:linear-gradient(top,#71c5e6,#56b1d6);background:-webkit-linear-gradient(top,#71c5e6,#56b1d6);background:-moz-linear-gradient(top,#71c5e6,#56b1d6);border:solid 1px #63bbdf;box-shadow:0 1px rgba(0,0,0,.1),inset 0 0 0 1px rgba(255,255,255,.1);}
+html.modern .btn_a2 span,html.modern .btn_b2 span,html.modern .btn_c2 span,html.modern .btn_a2 button,html.modern .btn_b2 button,html.modern .btn_c2 button,html.modern .btn_a2 input,html.modern .btn_b2 input,html.modern .btn_c2 input{background:linear-gradient(top,rgba(255,255,255,0),rgba(255,255,255,0)) !important;background:-webkit-linear-gradient(top,rgba(255,255,255,0),rgba(255,255,255,0)) !important;background:-moz-linear-gradient(top,rgba(255,255,255,0),rgba(255,255,255,0)) !important;}
+html.modern .btn_a2:hover,html.modern .btn_b2:hover,html.modern .btn_c2:hover{background:linear-gradient(top,#7dceee,#62badd);background:-webkit-linear-gradient(top,#7dceee,#62badd);background:-moz-linear-gradient(top,#7dceee,#62badd);border-color:#63bbdf;}
+html.modern .btn_a2:active,html.modern .btn_b2:active,html.modern .btn_c2:active{background:linear-gradient(top,#57b2d6,#56b1d6);background:-webkit-linear-gradient(top,#57b2d6,#56b1d6);background:-moz-linear-gradient(top,#57b2d6,#56b1d6);border-color:#288db6;box-shadow:0 1px rgba(0,0,0,.1),inset 0 0 0 1px rgba(255,255,255,.1),inset 0 2px 10px 0 rgba(0,0,0,.1);}
+
+/* 弱化按钮(白色)  */
+html.modern .btn_a3,html.modern .btn_b3,html.modern .btn_c3{background:linear-gradient(#f5f6f6,#f4f4f4 87%,#f4f4f4 13%,#f9f8f8);background:-webkit-linear-gradient(#f5f6f6,#f4f4f4 87%,#f4f4f4 13%,#f9f8f8);background:-moz-linear-gradient(#f5f6f6,#f4f4f4 87%,#f4f4f4 13%,#f9f8f8);border:solid 1px #dcdcdc;border-bottom:solid 1px #c5c5c5;box-shadow:0 1px rgba(0,0,0,.1),inset 0 0 0 1px rgba(255,255,255,.2);}
+html.modern .btn_a3 span,html.modern .btn_b3 span,html.modern .btn_c3 span,html.modern .btn_a3 button,html.modern .btn_b3 button,html.modern .btn_c3 button,html.modern .btn_a3 input,html.modern .btn_b3 input,html.modern .btn_c3 input{background:linear-gradient(top,rgba(255,255,255,0),rgba(255,255,255,0)) !important;background:-webkit-linear-gradient(top,rgba(255,255,255,0),rgba(255,255,255,0)) !important;background:-moz-linear-gradient(top,rgba(255,255,255,0),rgba(255,255,255,0)) !important;}
+html.modern .btn_a3:hover,html.modern .btn_b3:hover,html.modern .btn_c3:hover{background:linear-gradient(#fafafa,#f8f7f8 87%,#f8f7f8 13%,#f9f8f8);background:-webkit-linear-gradient(#fafafa,#f8f7f8 87%,#f8f7f8 13%,#f9f8f8);background:-moz-linear-gradient(#fafafa,#f8f7f8 87%,#f8f7f8 13%,#f9f8f8);border-color:#e9e9e9;border-bottom:solid 1px #d0d0d0;}
+html.modern .btn_a3:active,html.modern .btn_b3:active,html.modern .btn_c3:active{background:#f2f2f2;border-color:#c4c4c4;box-shadow:0 1px rgba(0,0,0,.1),inset 0 0 0 1px rgba(255,255,255,.1),inset 0 2px 10px 0 rgba(0,0,0,.1);}
+
+html.modern .btn_a0,html.modern .btn_b0,html.modern .btn_c0{background:linear-gradient(#d1d1d1,#cacaca 87%,#cacaca 13%,#cdcdcd);background:-webkit-linear-gradient(#d1d1d1,#cacaca 87%,#cacaca 13%,#cdcdcd);background:-moz-linear-gradient(#d1d1d1,#cacaca 87%,#cacaca 13%,#cdcdcd);border:solid 1px #a6a6a6;border-bottom:solid 1px #b4b4b4;box-shadow:0 1px rgba(0,0,0,.1),inset 0 0 0 1px rgba(255,255,255,.2);position:relative;}
+html.modern .btn_a0 span,html.modern .btn_b0 span,html.modern .btn_c0 span,html.modern .btn_a0 button,html.modern .btn_b0 button,html.modern .btn_c0 button,html.modern .btn_a0 input,html.modern .btn_b0 input,html.modern .btn_c0 input{background:linear-gradient(top,rgba(255,255,255,0),rgba(255,255,255,0)) !important;background:-webkit-linear-gradient(top,rgba(255,255,255,0),rgba(255,255,255,0)) !important;background:-moz-linear-gradient(top,rgba(255,255,255,0),rgba(255,255,255,0)) !important;}
+
+/* 按钮有边框，重置按钮高度  */
+html.modern .btn_a1,html.modern .btn_a2,html.modern .btn_a3,html.modern .btn_a0{height:32px;border-radius:4px;}
+html.modern .btn_b1,html.modern .btn_b2,html.modern .btn_b3,html.modern .btn_b0{height:27px;border-radius:4px;}
+html.modern .btn_c1,html.modern .btn_c2,html.modern .btn_c3,html.modern .btn_c0{height:20px;border-radius:2px;}
+html.modern .btn_b1 span,html.modern .btn_b2 span,html.modern .btn_b3 span,html.modern .btn_b1 button,html.modern .btn_b2 button,html.modern .btn_b3 button,html.modern .btn_b1 input,html.modern .btn_b2 input,html.modern .btn_b3 input,html.modern .btn_b0 span,html.modern .btn_b0 button,html.modern .btn_b0 input{line-height:25px;}
+html.modern .btn_c1 span,html.modern .btn_c2 span,html.modern .btn_c3 span,html.modern .btn_c1 button,html.modern .btn_c2 button,html.modern .btn_c3 button,html.modern .btn_c1 input,html.modern .btn_c2 input,html.modern .btn_c3 input,html.modern .btn_c0 span,html.modern .btn_c0 button,html.modern .btn_c0 input{line-height:19px;}
+

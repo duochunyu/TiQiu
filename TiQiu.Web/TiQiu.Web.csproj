@@ -1,0 +1,996 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9DCEBA22-AD59-4BA0-9E50-EF78F8266D22}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TiQiu.Web</RootNamespace>
+    <AssemblyName>TiQiu.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AspNetPager">
+      <HintPath>..\ReferenceLib\AspNetPager.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.0.2\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.0.2\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BG\BaseData\BookInfoManagerMent.aspx" />
+    <Content Include="BG\BaseData\MerChantInfoManagerMent.aspx" />
+    <Content Include="BG\BaseData\OrderInfoManagerment.aspx" />
+    <Content Include="BG\BaseData\ReportManagement.aspx" />
+    <Content Include="BG\Css\desktop.css" />
+    <Content Include="BG\Css\Dialog.css" />
+    <Content Include="BG\Css\DWZ\azure\images\accordion\accordion.png" />
+    <Content Include="BG\Css\DWZ\azure\images\account_info_bg.png" />
+    <Content Include="BG\Css\DWZ\azure\images\alert\alertpanel.png" />
+    <Content Include="BG\Css\DWZ\azure\images\alert\alertpanel_icon.png" />
+    <Content Include="BG\Css\DWZ\azure\images\button\button_s.png" />
+    <Content Include="BG\Css\DWZ\azure\images\button\imgX.gif" />
+    <Content Include="BG\Css\DWZ\azure\images\button\imgX.png" />
+    <Content Include="BG\Css\DWZ\azure\images\dialog\dialogpanel.png" />
+    <Content Include="BG\Css\DWZ\azure\images\dialog\dialogpanel_icon.png" />
+    <Content Include="BG\Css\DWZ\azure\images\form\input_bg.png" />
+    <Content Include="BG\Css\DWZ\azure\images\form\input_bt.png" />
+    <Content Include="BG\Css\DWZ\azure\images\grid\grid.png" />
+    <Content Include="BG\Css\DWZ\azure\images\grid\resizeCol.png" />
+    <Content Include="BG\Css\DWZ\azure\images\grid\tableth.png" />
+    <Content Include="BG\Css\DWZ\azure\images\header_bg.png" />
+    <Content Include="BG\Css\DWZ\azure\images\icon.png" />
+    <Content Include="BG\Css\DWZ\azure\images\layout\taskbar.png" />
+    <Content Include="BG\Css\DWZ\azure\images\layout\taskbar_control.png" />
+    <Content Include="BG\Css\DWZ\azure\images\layout\taskbar_icon.png" />
+    <Content Include="BG\Css\DWZ\azure\images\layout\toggleSidebar.png" />
+    <Content Include="BG\Css\DWZ\azure\images\listLine.png" />
+    <Content Include="BG\Css\DWZ\azure\images\menu\menu.png" />
+    <Content Include="BG\Css\DWZ\azure\images\order_down.gif" />
+    <Content Include="BG\Css\DWZ\azure\images\order_up.gif" />
+    <Content Include="BG\Css\DWZ\azure\images\pageHeader_bg.png" />
+    <Content Include="BG\Css\DWZ\azure\images\panel\panel.png" />
+    <Content Include="BG\Css\DWZ\azure\images\panel\panel_icon.png" />
+    <Content Include="BG\Css\DWZ\azure\images\preview.png" />
+    <Content Include="BG\Css\DWZ\azure\images\progressBar\progressBar_l.gif" />
+    <Content Include="BG\Css\DWZ\azure\images\progressBar\progressBar_m.gif" />
+    <Content Include="BG\Css\DWZ\azure\images\progressBar\progressBar_s.gif" />
+    <Content Include="BG\Css\DWZ\azure\images\search-bg.gif" />
+    <Content Include="BG\Css\DWZ\azure\images\search-bt.gif" />
+    <Content Include="BG\Css\DWZ\azure\images\shadow\shadow_c_c.png" />
+    <Content Include="BG\Css\DWZ\azure\images\shadow\shadow_c_l.png" />
+    <Content Include="BG\Css\DWZ\azure\images\shadow\shadow_c_r.png" />
+    <Content Include="BG\Css\DWZ\azure\images\shadow\shadow_f_c.png" />
+    <Content Include="BG\Css\DWZ\azure\images\shadow\shadow_f_l.png" />
+    <Content Include="BG\Css\DWZ\azure\images\shadow\shadow_f_r.png" />
+    <Content Include="BG\Css\DWZ\azure\images\shadow\shadow_h_c.png" />
+    <Content Include="BG\Css\DWZ\azure\images\shadow\shadow_h_l.png" />
+    <Content Include="BG\Css\DWZ\azure\images\shadow\shadow_h_r.png" />
+    <Content Include="BG\Css\DWZ\azure\images\tabs\tabscontrol.png" />
+    <Content Include="BG\Css\DWZ\azure\images\tabs\tabspage.png" />
+    <Content Include="BG\Css\DWZ\azure\images\tabs\tabspage_icon.png" />
+    <Content Include="BG\Css\DWZ\azure\images\tabs\tabspanel.png" />
+    <Content Include="BG\Css\DWZ\azure\images\tree\check.png" />
+    <Content Include="BG\Css\DWZ\azure\images\tree\folder.png" />
+    <Content Include="BG\Css\DWZ\azure\images\tree\tree.png" />
+    <Content Include="BG\Css\DWZ\azure\style.css" />
+    <Content Include="BG\Css\DWZ\css\core.css" />
+    <Content Include="BG\Css\DWZ\css\ieHack.css" />
+    <Content Include="BG\Css\DWZ\css\login.css" />
+    <Content Include="BG\Css\DWZ\default\images\accordion\accordion.png" />
+    <Content Include="BG\Css\DWZ\default\images\account_info_bg.png" />
+    <Content Include="BG\Css\DWZ\default\images\alert\alertpanel.png" />
+    <Content Include="BG\Css\DWZ\default\images\alert\alertpanel_icon.png" />
+    <Content Include="BG\Css\DWZ\default\images\btn_Bg.png" />
+    <Content Include="BG\Css\DWZ\default\images\button\button_s.png" />
+    <Content Include="BG\Css\DWZ\default\images\button\imgX.gif" />
+    <Content Include="BG\Css\DWZ\default\images\dialog\dialogpanel.png" />
+    <Content Include="BG\Css\DWZ\default\images\dialog\dialogpanel_icon.png" />
+    <Content Include="BG\Css\DWZ\default\images\form\input_bg.png" />
+    <Content Include="BG\Css\DWZ\default\images\form\input_bt.png" />
+    <Content Include="BG\Css\DWZ\default\images\grid\grid.png" />
+    <Content Include="BG\Css\DWZ\default\images\grid\resizeCol.png" />
+    <Content Include="BG\Css\DWZ\default\images\grid\tableth.png" />
+    <Content Include="BG\Css\DWZ\default\images\header_bg.png" />
+    <Content Include="BG\Css\DWZ\default\images\icon.png" />
+    <Content Include="BG\Css\DWZ\default\images\layout\taskbar.png" />
+    <Content Include="BG\Css\DWZ\default\images\layout\taskbar_control.png" />
+    <Content Include="BG\Css\DWZ\default\images\layout\taskbar_icon.png" />
+    <Content Include="BG\Css\DWZ\default\images\layout\toggleSidebar.png" />
+    <Content Include="BG\Css\DWZ\default\images\listLine.png" />
+    <Content Include="BG\Css\DWZ\default\images\login_banner.png" />
+    <Content Include="BG\Css\DWZ\default\images\login_bg.png" />
+    <Content Include="BG\Css\DWZ\default\images\login_content_bg.png" />
+    <Content Include="BG\Css\DWZ\default\images\login_header_bg.png" />
+    <Content Include="BG\Css\DWZ\default\images\login_list.png" />
+    <Content Include="BG\Css\DWZ\default\images\login_sub.png" />
+    <Content Include="BG\Css\DWZ\default\images\login_title.png" />
+    <Content Include="BG\Css\DWZ\default\images\logo.png" />
+    <Content Include="BG\Css\DWZ\default\images\menu\menu.png" />
+    <Content Include="BG\Css\DWZ\default\images\order_down.gif" />
+    <Content Include="BG\Css\DWZ\default\images\order_up.gif" />
+    <Content Include="BG\Css\DWZ\default\images\pageHeader_bg.png" />
+    <Content Include="BG\Css\DWZ\default\images\panel\panel.png" />
+    <Content Include="BG\Css\DWZ\default\images\panel\panel_icon.png" />
+    <Content Include="BG\Css\DWZ\default\images\progressBar\progressBar_l.gif" />
+    <Content Include="BG\Css\DWZ\default\images\progressBar\progressBar_m.gif" />
+    <Content Include="BG\Css\DWZ\default\images\progressBar\progressBar_s.gif" />
+    <Content Include="BG\Css\DWZ\default\images\search-bg.gif" />
+    <Content Include="BG\Css\DWZ\default\images\search-bt.gif" />
+    <Content Include="BG\Css\DWZ\default\images\shadow\shadow_c_c.png" />
+    <Content Include="BG\Css\DWZ\default\images\shadow\shadow_c_l.png" />
+    <Content Include="BG\Css\DWZ\default\images\shadow\shadow_c_r.png" />
+    <Content Include="BG\Css\DWZ\default\images\shadow\shadow_f_c.png" />
+    <Content Include="BG\Css\DWZ\default\images\shadow\shadow_f_l.png" />
+    <Content Include="BG\Css\DWZ\default\images\shadow\shadow_f_r.png" />
+    <Content Include="BG\Css\DWZ\default\images\shadow\shadow_h_c.png" />
+    <Content Include="BG\Css\DWZ\default\images\shadow\shadow_h_l.png" />
+    <Content Include="BG\Css\DWZ\default\images\shadow\shadow_h_r.png" />
+    <Content Include="BG\Css\DWZ\default\images\tabs\tabscontrol.png" />
+    <Content Include="BG\Css\DWZ\default\images\tabs\tabspage.png" />
+    <Content Include="BG\Css\DWZ\default\images\tabs\tabspage_icon.png" />
+    <Content Include="BG\Css\DWZ\default\images\tabs\tabspanel.png" />
+    <Content Include="BG\Css\DWZ\default\images\themeButton.png" />
+    <Content Include="BG\Css\DWZ\default\images\tree\check.png" />
+    <Content Include="BG\Css\DWZ\default\images\tree\folder.png" />
+    <Content Include="BG\Css\DWZ\default\images\tree\tree.png" />
+    <Content Include="BG\Css\DWZ\default\style.css" />
+    <Content Include="BG\Css\DWZ\green\images\accordion\accordion.png" />
+    <Content Include="BG\Css\DWZ\green\images\account_info_bg.png" />
+    <Content Include="BG\Css\DWZ\green\images\alert\alertpanel.png" />
+    <Content Include="BG\Css\DWZ\green\images\alert\alertpanel_icon.png" />
+    <Content Include="BG\Css\DWZ\green\images\button\button_s.png" />
+    <Content Include="BG\Css\DWZ\green\images\dialog\dialogpanel.png" />
+    <Content Include="BG\Css\DWZ\green\images\dialog\dialogpanel_icon.png" />
+    <Content Include="BG\Css\DWZ\green\images\form\input_bg.png" />
+    <Content Include="BG\Css\DWZ\green\images\form\input_bt.png" />
+    <Content Include="BG\Css\DWZ\green\images\grid\grid.png" />
+    <Content Include="BG\Css\DWZ\green\images\grid\resizeCol.png" />
+    <Content Include="BG\Css\DWZ\green\images\grid\tableth.png" />
+    <Content Include="BG\Css\DWZ\green\images\header_bg.png" />
+    <Content Include="BG\Css\DWZ\green\images\layout\toggleSidebar.png" />
+    <Content Include="BG\Css\DWZ\green\images\listLine.png" />
+    <Content Include="BG\Css\DWZ\green\images\pageHeader_bg.png" />
+    <Content Include="BG\Css\DWZ\green\images\panel\panel.png" />
+    <Content Include="BG\Css\DWZ\green\images\panel\panel_icon.png" />
+    <Content Include="BG\Css\DWZ\green\images\tabs\tabscontrol.png" />
+    <Content Include="BG\Css\DWZ\green\images\tabs\tabspage.png" />
+    <Content Include="BG\Css\DWZ\green\images\tabs\tabspage_icon.png" />
+    <Content Include="BG\Css\DWZ\green\images\tabs\tabspanel.png" />
+    <Content Include="BG\Css\DWZ\green\images\tree\tree.png" />
+    <Content Include="BG\Css\DWZ\green\style.css" />
+    <Content Include="BG\Css\DWZ\purple\images\accordion\accordion.png" />
+    <Content Include="BG\Css\DWZ\purple\images\account_info_bg.png" />
+    <Content Include="BG\Css\DWZ\purple\images\alert\alertpanel.png" />
+    <Content Include="BG\Css\DWZ\purple\images\alert\alertpanel_icon.png" />
+    <Content Include="BG\Css\DWZ\purple\images\button\button_s.png" />
+    <Content Include="BG\Css\DWZ\purple\images\dialog\dialogpanel.png" />
+    <Content Include="BG\Css\DWZ\purple\images\dialog\dialogpanel_icon.png" />
+    <Content Include="BG\Css\DWZ\purple\images\form\input_bg.png" />
+    <Content Include="BG\Css\DWZ\purple\images\form\input_bt.png" />
+    <Content Include="BG\Css\DWZ\purple\images\grid\grid.png" />
+    <Content Include="BG\Css\DWZ\purple\images\grid\resizeCol.png" />
+    <Content Include="BG\Css\DWZ\purple\images\grid\tableth.png" />
+    <Content Include="BG\Css\DWZ\purple\images\header_bg.png" />
+    <Content Include="BG\Css\DWZ\purple\images\layout\taskbar.png" />
+    <Content Include="BG\Css\DWZ\purple\images\layout\taskbar_control.png" />
+    <Content Include="BG\Css\DWZ\purple\images\layout\taskbar_icon.png" />
+    <Content Include="BG\Css\DWZ\purple\images\layout\toggleSidebar.png" />
+    <Content Include="BG\Css\DWZ\purple\images\login_bg.png" />
+    <Content Include="BG\Css\DWZ\purple\images\login_content_bg.png" />
+    <Content Include="BG\Css\DWZ\purple\images\login_header_bg.png" />
+    <Content Include="BG\Css\DWZ\purple\images\login_list.png" />
+    <Content Include="BG\Css\DWZ\purple\images\menu\menu.png" />
+    <Content Include="BG\Css\DWZ\purple\images\pageHeader_bg.png" />
+    <Content Include="BG\Css\DWZ\purple\images\panel\panel.png" />
+    <Content Include="BG\Css\DWZ\purple\images\panel\panel_icon.png" />
+    <Content Include="BG\Css\DWZ\purple\images\progressBar\progressBar_l.gif" />
+    <Content Include="BG\Css\DWZ\purple\images\progressBar\progressBar_m.gif" />
+    <Content Include="BG\Css\DWZ\purple\images\progressBar\progressBar_s.gif" />
+    <Content Include="BG\Css\DWZ\purple\images\shadow\shadow_c_c.png" />
+    <Content Include="BG\Css\DWZ\purple\images\shadow\shadow_c_l.png" />
+    <Content Include="BG\Css\DWZ\purple\images\shadow\shadow_c_r.png" />
+    <Content Include="BG\Css\DWZ\purple\images\shadow\shadow_f_c.png" />
+    <Content Include="BG\Css\DWZ\purple\images\shadow\shadow_f_l.png" />
+    <Content Include="BG\Css\DWZ\purple\images\shadow\shadow_f_r.png" />
+    <Content Include="BG\Css\DWZ\purple\images\shadow\shadow_h_c.png" />
+    <Content Include="BG\Css\DWZ\purple\images\shadow\shadow_h_l.png" />
+    <Content Include="BG\Css\DWZ\purple\images\shadow\shadow_h_r.png" />
+    <Content Include="BG\Css\DWZ\purple\images\tabs\tabscontrol.png" />
+    <Content Include="BG\Css\DWZ\purple\images\tabs\tabspage.png" />
+    <Content Include="BG\Css\DWZ\purple\images\tabs\tabspage_icon.png" />
+    <Content Include="BG\Css\DWZ\purple\images\tabs\tabspanel.png" />
+    <Content Include="BG\Css\DWZ\purple\images\tree\check.png" />
+    <Content Include="BG\Css\DWZ\purple\images\tree\folder.png" />
+    <Content Include="BG\Css\DWZ\purple\images\tree\tree.png" />
+    <Content Include="BG\Css\DWZ\purple\style.css" />
+    <Content Include="BG\Css\DWZ\silver\images\accordion\accordion.png" />
+    <Content Include="BG\Css\DWZ\silver\images\account_info_bg.png" />
+    <Content Include="BG\Css\DWZ\silver\images\alert\alertpanel.png" />
+    <Content Include="BG\Css\DWZ\silver\images\alert\alertpanel_icon.png" />
+    <Content Include="BG\Css\DWZ\silver\images\button\button_s.png" />
+    <Content Include="BG\Css\DWZ\silver\images\dialog\dialogpanel.png" />
+    <Content Include="BG\Css\DWZ\silver\images\dialog\dialogpanel_icon.png" />
+    <Content Include="BG\Css\DWZ\silver\images\form\input_bg.png" />
+    <Content Include="BG\Css\DWZ\silver\images\form\input_bt.png" />
+    <Content Include="BG\Css\DWZ\silver\images\grid\grid.png" />
+    <Content Include="BG\Css\DWZ\silver\images\grid\resizeCol.png" />
+    <Content Include="BG\Css\DWZ\silver\images\grid\tableth.png" />
+    <Content Include="BG\Css\DWZ\silver\images\header_bg.png" />
+    <Content Include="BG\Css\DWZ\silver\images\layout\taskbar.png" />
+    <Content Include="BG\Css\DWZ\silver\images\layout\taskbar_control.png" />
+    <Content Include="BG\Css\DWZ\silver\images\layout\taskbar_icon.png" />
+    <Content Include="BG\Css\DWZ\silver\images\layout\toggleSidebar.png" />
+    <Content Include="BG\Css\DWZ\silver\images\listLine.png" />
+    <Content Include="BG\Css\DWZ\silver\images\menu\menu.png" />
+    <Content Include="BG\Css\DWZ\silver\images\pageHeader_bg.png" />
+    <Content Include="BG\Css\DWZ\silver\images\panel\panel.png" />
+    <Content Include="BG\Css\DWZ\silver\images\panel\panel_icon.png" />
+    <Content Include="BG\Css\DWZ\silver\images\progressBar\progressBar_l.gif" />
+    <Content Include="BG\Css\DWZ\silver\images\progressBar\progressBar_m.gif" />
+    <Content Include="BG\Css\DWZ\silver\images\progressBar\progressBar_s.gif" />
+    <Content Include="BG\Css\DWZ\silver\images\shadow\shadow_c_c.png" />
+    <Content Include="BG\Css\DWZ\silver\images\shadow\shadow_c_l.png" />
+    <Content Include="BG\Css\DWZ\silver\images\shadow\shadow_c_r.png" />
+    <Content Include="BG\Css\DWZ\silver\images\shadow\shadow_f_c.png" />
+    <Content Include="BG\Css\DWZ\silver\images\shadow\shadow_f_l.png" />
+    <Content Include="BG\Css\DWZ\silver\images\shadow\shadow_f_r.png" />
+    <Content Include="BG\Css\DWZ\silver\images\shadow\shadow_h_c.png" />
+    <Content Include="BG\Css\DWZ\silver\images\shadow\shadow_h_l.png" />
+    <Content Include="BG\Css\DWZ\silver\images\shadow\shadow_h_r.png" />
+    <Content Include="BG\Css\DWZ\silver\images\tabs\tabscontrol.png" />
+    <Content Include="BG\Css\DWZ\silver\images\tabs\tabspage.png" />
+    <Content Include="BG\Css\DWZ\silver\images\tabs\tabspage_icon.png" />
+    <Content Include="BG\Css\DWZ\silver\images\tabs\tabspanel.png" />
+    <Content Include="BG\Css\DWZ\silver\images\tree\check.png" />
+    <Content Include="BG\Css\DWZ\silver\images\tree\folder.png" />
+    <Content Include="BG\Css\DWZ\silver\images\tree\tree.png" />
+    <Content Include="BG\Css\DWZ\silver\style.css" />
+    <Content Include="BG\Css\Global.css" />
+    <Content Include="BG\Css\GroupBox.css" />
+    <Content Include="BG\Css\login.css" />
+    <Content Include="BG\Css\TableClass.css" />
+    <Content Include="BG\Default.aspx" />
+    <Content Include="BG\Images\Login\137.png" />
+    <Content Include="BG\Images\bg.JPG" />
+    <Content Include="BG\Images\Login\bj.jpg" />
+    <Content Include="BG\Images\Login\c_02.jpg" />
+    <Content Include="BG\Images\Login\c_06.jpg" />
+    <Content Include="BG\Images\Login\c_061.jpg" />
+    <Content Include="BG\Images\Dialog\close_1.jpg" />
+    <Content Include="BG\Images\Dialog\close_2.jpg" />
+    <Content Include="BG\Images\Dialog\loading_little.gif" />
+    <Content Include="BG\Images\Dialog\top_bg.jpg" />
+    <Content Include="BG\Images\GroupBox\GroupBoxBg.gif" />
+    <Content Include="BG\Images\GroupBox\GroupBoxLeftBg.gif" />
+    <Content Include="BG\Images\GroupBox\GroupBoxRightBg.gif" />
+    <Content Include="BG\Images\GroupBox\GroupTitleBg.gif" />
+    <Content Include="BG\Images\logo.png" />
+    <Content Include="BG\Images\main.jpg" />
+    <Content Include="BG\Images\notice.mp3" />
+    <Content Include="BG\Images\System\+.png" />
+    <Content Include="BG\Images\System\DELETE.gif" />
+    <Content Include="BG\Images\System\demo.gif" />
+    <Content Include="BG\Images\System\EDIT.gif" />
+    <Content Include="BG\Images\System\movetoleft.jpg" />
+    <Content Include="BG\Images\System\movetoright.jpg" />
+    <Content Include="BG\Images\System\Permissions.png" />
+    <Content Include="BG\Images\System\Search.jpg" />
+    <Content Include="BG\login.aspx" />
+    <Content Include="BG\Scripts\dialog.js" />
+    <Content Include="BG\Scripts\dialogSelector.js" />
+    <Content Include="BG\Scripts\DWZ\dwz.accordion.js" />
+    <Content Include="BG\Scripts\DWZ\dwz.ajax.js" />
+    <Content Include="BG\Scripts\DWZ\dwz.alertMsg.js" />
+    <Content Include="BG\Scripts\DWZ\dwz.barDrag.js" />
+    <Content Include="BG\Scripts\DWZ\dwz.checkbox.js" />
+    <Content Include="BG\Scripts\DWZ\dwz.combox.js" />
+    <Content Include="BG\Scripts\DWZ\dwz.contextmenu.js" />
+    <Content Include="BG\Scripts\DWZ\dwz.core.js" />
+    <Content Include="BG\Scripts\DWZ\dwz.cssTable.js" />
+    <Content Include="BG\Scripts\DWZ\dwz.database.js" />
+    <Content Include="BG\Scripts\DWZ\dwz.datepicker.js" />
+    <Content Include="BG\Scripts\DWZ\dwz.dialogDrag.js" />
+    <Content Include="BG\Scripts\DWZ\dwz.drag.js" />
+    <Content Include="BG\Scripts\DWZ\dwz.effects.js" />
+    <Content Include="BG\Scripts\DWZ\dwz.frag.xml" />
+    <Content Include="BG\Scripts\DWZ\dwz.history.js" />
+    <Content Include="BG\Scripts\DWZ\dwz.jDialog.js" />
+    <Content Include="BG\Scripts\DWZ\dwz.navTab.js" />
+    <Content Include="BG\Scripts\DWZ\dwz.pagination.js" />
+    <Content Include="BG\Scripts\DWZ\dwz.panel.js" />
+    <Content Include="BG\Scripts\DWZ\dwz.pngFix.js" />
+    <Content Include="BG\Scripts\DWZ\dwz.regional.zh.js" />
+    <Content Include="BG\Scripts\DWZ\dwz.resize.js" />
+    <Content Include="BG\Scripts\DWZ\dwz.scrollCenter.js" />
+    <Content Include="BG\Scripts\DWZ\dwz.stable.js" />
+    <Content Include="BG\Scripts\DWZ\dwz.switchEnv.js" />
+    <Content Include="BG\Scripts\DWZ\dwz.tab.js" />
+    <Content Include="BG\Scripts\DWZ\dwz.taskBar.js" />
+    <Content Include="BG\Scripts\DWZ\dwz.theme.js" />
+    <Content Include="BG\Scripts\DWZ\dwz.tree.js" />
+    <Content Include="BG\Scripts\DWZ\dwz.ui.js" />
+    <Content Include="BG\Scripts\DWZ\dwz.util.date.js" />
+    <Content Include="BG\Scripts\DWZ\dwz.validate.method.js" />
+    <Content Include="BG\Scripts\DWZ\speedup.js" />
+    <Content Include="BG\Scripts\Global.js" />
+    <Content Include="BG\Scripts\jquery.messager.js" />
+    <Content Include="crossdomain.xml" />
+    <Content Include="Images\blank.gif" />
+    <Content Include="Images\camera-loader.gif" />
+    <Content Include="Images\camera_skins.png" />
+    <Content Include="Images\dh.jpg" />
+    <Content Include="Images\info-more.gif" />
+    <Content Include="Images\login\loginbox_bg.jpg" />
+    <Content Include="Images\login\loginbox_bg2.jpg" />
+    <Content Include="Images\login\login_ico.png" />
+    <Content Include="Images\nav-bg.jpg" />
+    <Content Include="Images\nav-bg.png" />
+    <Content Include="Images\nav1.jpg" />
+    <Content Include="Images\nav2.jpg" />
+    <Content Include="Images\nav3.jpg" />
+    <Content Include="Images\patterns\overlay1.png" />
+    <Content Include="Images\patterns\overlay10.png" />
+    <Content Include="Images\patterns\overlay2.png" />
+    <Content Include="Images\patterns\overlay3.png" />
+    <Content Include="Images\patterns\overlay4.png" />
+    <Content Include="Images\patterns\overlay5.png" />
+    <Content Include="Images\patterns\overlay6.png" />
+    <Content Include="Images\patterns\overlay7.png" />
+    <Content Include="Images\patterns\overlay8.png" />
+    <Content Include="Images\patterns\overlay9.png" />
+    <Content Include="Images\public\bg\bg_img.png" />
+    <Content Include="Images\public\button\public_button_version2.png" />
+    <Content Include="Images\public\ioc_logo_v2.png" />
+    <Content Include="Images\public\logo.png" />
+    <Content Include="Images\register\b_09.gif" />
+    <Content Include="Images\register\login.png" />
+    <Content Include="Images\register\public_960box_m.jpg" />
+    <Content Include="Images\register\public_960box_t.jpg" />
+    <Content Include="Images\register\reg_people.png" />
+    <Content Include="Images\register\title.jpg" />
+    <Content Include="Images\search.jpg" />
+    <Content Include="Images\search_btn.jpg" />
+    <Content Include="Images\select.png" />
+    <Content Include="Scripts\advise\float-tip.js" />
+    <Content Include="Scripts\base.js" />
+    <Content Include="Scripts\calendar\jquery.weekcalendar.js" />
+    <Content Include="Scripts\calendar\jquery.weekcalendar.js.min.js" />
+    <Content Include="Scripts\global\syscodeapi.js" />
+    <Content Include="AjaxHandler\CreateNewAccount.ashx" />
+    <Content Include="AjaxHandler\GetMemberInfos.ashx" />
+    <Content Include="packages.config" />
+    <Content Include="BG\VerifyCode.ashx" />
+    <Content Include="BG\GetRemindList.ashx" />
+    <None Include="Properties\PublishProfiles\ftp.pubxml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\PublishProfiles\publisher.pubxml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Scripts\JQueryUI\css\smoothness\images\animated-overlay.gif" />
+    <Content Include="Scripts\JQueryUI\css\smoothness\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Scripts\JQueryUI\css\smoothness\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Scripts\JQueryUI\css\smoothness\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Scripts\JQueryUI\css\smoothness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Scripts\JQueryUI\css\smoothness\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Scripts\JQueryUI\css\smoothness\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Scripts\JQueryUI\css\smoothness\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Scripts\JQueryUI\css\smoothness\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Scripts\JQueryUI\css\smoothness\images\ui-icons_222222_256x240.png" />
+    <Content Include="Scripts\JQueryUI\css\smoothness\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Scripts\JQueryUI\css\smoothness\images\ui-icons_454545_256x240.png" />
+    <Content Include="Scripts\JQueryUI\css\smoothness\images\ui-icons_888888_256x240.png" />
+    <Content Include="Scripts\JQueryUI\css\smoothness\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Scripts\JQueryUI\css\smoothness\jquery-ui-1.10.3.custom.css" />
+    <Content Include="Scripts\JQueryUI\css\smoothness\jquery-ui-1.10.3.custom.min.css" />
+    <Content Include="Scripts\JQueryUI\js\jquery-ui-1.10.3.custom.js" />
+    <Content Include="Scripts\JQueryUI\js\jquery-ui-1.10.3.custom.min.js" />
+    <Content Include="BG\Scripts\JQuery\jquery-1.4.4.js" />
+    <Content Include="BG\Scripts\JQuery\jquery-1.4.4.min.js" />
+    <Content Include="BG\Scripts\JQuery\jquery.bgiframe.js" />
+    <Content Include="BG\Scripts\JQuery\jquery.cookie.js" />
+    <Content Include="BG\Scripts\JQuery\jquery.validate.js" />
+    <Content Include="BG\Scripts\modalDialog.js" />
+    <Content Include="BG\Scripts\My97DatePicker\calendar.js" />
+    <Content Include="BG\Scripts\My97DatePicker\config.js" />
+    <Content Include="BG\Scripts\My97DatePicker\lang\en.js" />
+    <Content Include="BG\Scripts\My97DatePicker\lang\zh-cn.js" />
+    <Content Include="BG\Scripts\My97DatePicker\lang\zh-tw.js" />
+    <Content Include="BG\Scripts\My97DatePicker\My97DatePicker.htm" />
+    <Content Include="BG\Scripts\My97DatePicker\skin\datePicker.gif" />
+    <Content Include="BG\Scripts\My97DatePicker\skin\default\datepicker.css" />
+    <Content Include="BG\Scripts\My97DatePicker\skin\default\img.gif" />
+    <Content Include="BG\Scripts\My97DatePicker\skin\WdatePicker.css" />
+    <Content Include="BG\Scripts\My97DatePicker\skin\whyGreen\bg.jpg" />
+    <Content Include="BG\Scripts\My97DatePicker\skin\whyGreen\datepicker.css" />
+    <Content Include="BG\Scripts\My97DatePicker\skin\whyGreen\img.gif" />
+    <Content Include="BG\Scripts\My97DatePicker\WdatePicker.js" />
+    <Content Include="Images\bg.png" />
+    <Content Include="Images\create-btn.png" />
+    <Content Include="Images\footer-bg.png" />
+    <Content Include="Images\headbg.jpg" />
+    <Content Include="Images\header-bg.png" />
+    <Content Include="Images\here-bg.png" />
+    <Content Include="Images\logo.png" />
+    <Content Include="Images\nav.png" />
+    <Content Include="Images\pic\Slice 2.png" />
+    <Content Include="Images\point-left.png" />
+    <Content Include="Images\point-right.png" />
+    <Content Include="Images\search-btn.png" />
+    <Content Include="Images\Slice 10.png" />
+    <Content Include="Images\Slice 11.png" />
+    <Content Include="Images\Slice 12.png" />
+    <Content Include="Images\Slice 2.png" />
+    <Content Include="Images\Slice 3.png" />
+    <Content Include="Images\Slice 8.png" />
+    <Content Include="Images\Slice 9.png" />
+    <Content Include="Images\未命名-4.png" />
+    <Content Include="index.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="Logout.aspx" />
+    <Content Include="Scripts\jquery-1.8.0.min.js" />
+    <Content Include="Scripts\jquery.simplemodal.js" />
+    <Content Include="Scripts\login\login.js" />
+    <Content Include="Scripts\pagelog\promotion_log.js" />
+    <Content Include="Scripts\public\box\alertBox.js" />
+    <Content Include="Scripts\public\html5.js" />
+    <Content Include="Scripts\public\jQuery\jquery-1.6.4.min.js" />
+    <Content Include="Scripts\public\lab\LAB.js" />
+    <Content Include="Scripts\register\jquery.mailAutoComplete-3.1.js" />
+    <Content Include="Scripts\register\register_new2.js" />
+    <Content Include="Scripts\register\xzmail.js" />
+    <Content Include="Scripts\search\search.js" />
+    <Content Include="Scripts\search\search_bar.js" />
+    <Content Include="Styles\about\footer.css" />
+    <Content Include="Styles\base.css" />
+    <Content Include="Styles\calendar.css" />
+    <Content Include="Styles\jquery.weekcalendar.css" />
+    <Content Include="Styles\login\login.css" />
+    <Content Include="Styles\login\login_base.css" />
+    <Content Include="Styles\login\login_ex_list.css" />
+    <Content Include="Styles\public\box\alertBox.css" />
+    <Content Include="Styles\public\box\box960.css" />
+    <Content Include="Styles\public\button\pubButtonVersion2.css" />
+    <Content Include="Styles\public\public.css" />
+    <Content Include="Styles\public\reset.css" />
+    <Content Include="Styles\public\search.css" />
+    <Content Include="Styles\public\version2\footer.css" />
+    <Content Include="Styles\public\version2\header.css" />
+    <Content Include="Styles\register\form.css" />
+    <Content Include="Styles\register\preview.css" />
+    <Content Include="Styles\register\public.css" />
+    <Content Include="Styles\register\reg_new.css" />
+    <Content Include="Styles\slider\camera.css" />
+    <Content Include="Styles\slider\camera.js" />
+    <Content Include="Styles\slider\camera.min.js" />
+    <Content Include="Styles\slider\jquery.easing.1.3.js" />
+    <Content Include="Styles\slider\jquery.mobile.customized.min.js" />
+    <Content Include="UserControl\AddTeamerListUserControl.ascx" />
+    <Content Include="UserControl\Banner\IndexBanner.ascx" />
+    <Content Include="UserControl\BookingInfosIndexControl.ascx" />
+    <Content Include="UserControl\FieldInfosIndexControl.ascx" />
+    <Content Include="UserControl\FindFieldsUserControl\BookHistoryInfoUserControl.ascx" />
+    <Content Include="UserControl\FindFieldsUserControl\FieldInfoDetailsUserControl.ascx" />
+    <Content Include="UserControl\FindFieldsUserControl\FieldsInfoListUserControl.ascx" />
+    <Content Include="UserControl\FindFieldsUserControl\SearchFieldsUserControl.ascx" />
+    <Content Include="UserControl\FindTeamsUserControl\Banner.ascx" />
+    <Content Include="UserControl\FindTeamsUserControl\SearchTeamInfoListControl.ascx" />
+    <Content Include="UserControl\MangermentSystem\AddBookInfo.ascx" />
+    <Content Include="UserControl\MangermentSystem\AddMatchRecord.ascx" />
+    <Content Include="UserControl\MangermentSystem\ConfirmBookInfo.ascx" />
+    <Content Include="UserControl\MangermentSystem\FieldsInformation.ascx" />
+    <Content Include="UserControl\MangermentSystem\MerchantInformation.ascx" />
+    <Content Include="UserControl\MatchInfosindexControl.ascx" />
+    <Content Include="UserControl\ResearchIndexUserControl.ascx" />
+    <Content Include="UserControl\TeamInfoUserControl\TeamerInfoListUserControl.ascx" />
+    <Content Include="UserControl\TeamInfoUserControl\TeamInfoDetailsUserControl.ascx" />
+    <Content Include="UserControl\TeamInfoUserControl\TeamListUserControl.ascx" />
+    <Content Include="UserControl\TeamInfoUserControl\TeamRecordHistoryUserControl.ascx" />
+    <Content Include="UserControl\UploadImageControl.ascx" />
+    <Content Include="UserControl\WeekCalendar.ascx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="WebPages\BookingMangerment.aspx" />
+    <Content Include="WebPages\ErrorPages\HttpErrorPage.aspx" />
+    <Content Include="WebPages\FieldRuleManager.aspx" />
+    <Content Include="WebPages\Findfield.aspx" />
+    <Content Include="WebPages\FindTeam.aspx" />
+    <Content Include="WebPages\Help.aspx" />
+    <Content Include="WebPages\MyTeam.aspx" />
+    <Content Include="WebPages\PersonalInfo.aspx" />
+    <Content Include="WebPages\PKInfoSearch.aspx" />
+    <Content Include="WebPages\Register.aspx" />
+    <Content Include="WebPages\TeamInfo.aspx" />
+    <Content Include="WebPages\Upload.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AjaxHandler\CreateNewAccount.ashx.cs">
+      <DependentUpon>CreateNewAccount.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="AjaxHandler\GetMemberInfos.ashx.cs">
+      <DependentUpon>GetMemberInfos.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="AjaxHandler\GetRvTeam.ashx.cs">
+      <DependentUpon>GetRvTeam.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="AjaxHandler\updateMemberAvatr.ashx.cs">
+      <DependentUpon>updateMemberAvatr.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="BG\BaseData\BookInfoManagerMent.aspx.cs">
+      <DependentUpon>BookInfoManagerMent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BG\BaseData\BookInfoManagerMent.aspx.designer.cs">
+      <DependentUpon>BookInfoManagerMent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BG\BaseData\MerChantInfoManagerMent.aspx.cs">
+      <DependentUpon>MerChantInfoManagerMent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BG\BaseData\MerChantInfoManagerMent.aspx.designer.cs">
+      <DependentUpon>MerChantInfoManagerMent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BG\BaseData\OrderInfoManagerment.aspx.cs">
+      <DependentUpon>OrderInfoManagerment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BG\BaseData\OrderInfoManagerment.aspx.designer.cs">
+      <DependentUpon>OrderInfoManagerment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BG\BaseData\ReportManagement.aspx.cs">
+      <DependentUpon>ReportManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BG\BaseData\ReportManagement.aspx.designer.cs">
+      <DependentUpon>ReportManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BG\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BG\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BG\GetRemindList.ashx.cs">
+      <DependentUpon>GetRemindList.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="BG\login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BG\login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BG\MasterPages\Common.Master.cs">
+      <DependentUpon>Common.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BG\MasterPages\Common.Master.designer.cs">
+      <DependentUpon>Common.Master</DependentUpon>
+    </Compile>
+    <Compile Include="BG\VerifyCode.ashx.cs">
+      <DependentUpon>VerifyCode.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Model\CustomClass.cs" />
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPages\Content.master.cs">
+      <DependentUpon>Content.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPages\Content.master.designer.cs">
+      <DependentUpon>Content.master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPages\Master.Master.cs">
+      <DependentUpon>Master.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPages\Master.Master.designer.cs">
+      <DependentUpon>Master.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Model\MemberInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControl\AddTeamerListUserControl.ascx.cs">
+      <DependentUpon>AddTeamerListUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\AddTeamerListUserControl.ascx.designer.cs">
+      <DependentUpon>AddTeamerListUserControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\Banner\IndexBanner.ascx.cs">
+      <DependentUpon>IndexBanner.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\Banner\IndexBanner.ascx.designer.cs">
+      <DependentUpon>IndexBanner.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\BookingInfosIndexControl.ascx.cs">
+      <DependentUpon>BookingInfosIndexControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\BookingInfosIndexControl.ascx.designer.cs">
+      <DependentUpon>BookingInfosIndexControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\FieldInfosIndexControl.ascx.cs">
+      <DependentUpon>FieldInfosIndexControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\FieldInfosIndexControl.ascx.designer.cs">
+      <DependentUpon>FieldInfosIndexControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\FindFieldsUserControl\BookHistoryInfoUserControl.ascx.cs">
+      <DependentUpon>BookHistoryInfoUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\FindFieldsUserControl\BookHistoryInfoUserControl.ascx.designer.cs">
+      <DependentUpon>BookHistoryInfoUserControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\FindFieldsUserControl\FieldInfoDetailsUserControl.ascx.cs">
+      <DependentUpon>FieldInfoDetailsUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\FindFieldsUserControl\FieldInfoDetailsUserControl.ascx.designer.cs">
+      <DependentUpon>FieldInfoDetailsUserControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\FindFieldsUserControl\FieldsInfoListUserControl.ascx.cs">
+      <DependentUpon>FieldsInfoListUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\FindFieldsUserControl\FieldsInfoListUserControl.ascx.designer.cs">
+      <DependentUpon>FieldsInfoListUserControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\FindFieldsUserControl\SearchFieldsUserControl.ascx.cs">
+      <DependentUpon>SearchFieldsUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\FindFieldsUserControl\SearchFieldsUserControl.ascx.designer.cs">
+      <DependentUpon>SearchFieldsUserControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\FindTeamsUserControl\Banner.ascx.cs">
+      <DependentUpon>Banner.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\FindTeamsUserControl\Banner.ascx.designer.cs">
+      <DependentUpon>Banner.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\FindTeamsUserControl\SearchTeamInfoListControl.ascx.cs">
+      <DependentUpon>SearchTeamInfoListControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\FindTeamsUserControl\SearchTeamInfoListControl.ascx.designer.cs">
+      <DependentUpon>SearchTeamInfoListControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\MangermentSystem\AddBookInfo.ascx.cs">
+      <DependentUpon>AddBookInfo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\MangermentSystem\AddBookInfo.ascx.designer.cs">
+      <DependentUpon>AddBookInfo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\MangermentSystem\AddMatchRecord.ascx.cs">
+      <DependentUpon>AddMatchRecord.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\MangermentSystem\AddMatchRecord.ascx.designer.cs">
+      <DependentUpon>AddMatchRecord.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\MangermentSystem\ConfirmBookInfo.ascx.cs">
+      <DependentUpon>ConfirmBookInfo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\MangermentSystem\ConfirmBookInfo.ascx.designer.cs">
+      <DependentUpon>ConfirmBookInfo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\MangermentSystem\FieldsInformation.ascx.cs">
+      <DependentUpon>FieldsInformation.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\MangermentSystem\FieldsInformation.ascx.designer.cs">
+      <DependentUpon>FieldsInformation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\MangermentSystem\MerchantInformation.ascx.cs">
+      <DependentUpon>MerchantInformation.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\MangermentSystem\MerchantInformation.ascx.designer.cs">
+      <DependentUpon>MerchantInformation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\MatchInfosindexControl.ascx.cs">
+      <DependentUpon>MatchInfosindexControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\MatchInfosindexControl.ascx.designer.cs">
+      <DependentUpon>MatchInfosindexControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\ResearchIndexUserControl.ascx.cs">
+      <DependentUpon>ResearchIndexUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\ResearchIndexUserControl.ascx.designer.cs">
+      <DependentUpon>ResearchIndexUserControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\TeamInfoUserControl\TeamerInfoListUserControl.ascx.cs">
+      <DependentUpon>TeamerInfoListUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\TeamInfoUserControl\TeamerInfoListUserControl.ascx.designer.cs">
+      <DependentUpon>TeamerInfoListUserControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\TeamInfoUserControl\TeamInfoDetailsUserControl.ascx.cs">
+      <DependentUpon>TeamInfoDetailsUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\TeamInfoUserControl\TeamInfoDetailsUserControl.ascx.designer.cs">
+      <DependentUpon>TeamInfoDetailsUserControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\TeamInfoUserControl\TeamListUserControl.ascx.cs">
+      <DependentUpon>TeamListUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\TeamInfoUserControl\TeamListUserControl.ascx.designer.cs">
+      <DependentUpon>TeamListUserControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\TeamInfoUserControl\TeamRecordHistoryUserControl.ascx.cs">
+      <DependentUpon>TeamRecordHistoryUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\TeamInfoUserControl\TeamRecordHistoryUserControl.ascx.designer.cs">
+      <DependentUpon>TeamRecordHistoryUserControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UploadImageControl.ascx.cs">
+      <DependentUpon>UploadImageControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\UploadImageControl.ascx.designer.cs">
+      <DependentUpon>UploadImageControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\WeekCalendar.ascx.cs">
+      <DependentUpon>WeekCalendar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\WeekCalendar.ascx.designer.cs">
+      <DependentUpon>WeekCalendar.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\BookingMangerment.aspx.cs">
+      <DependentUpon>BookingMangerment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\BookingMangerment.aspx.designer.cs">
+      <DependentUpon>BookingMangerment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\ErrorPages\HttpErrorPage.aspx.cs">
+      <DependentUpon>HttpErrorPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\ErrorPages\HttpErrorPage.aspx.designer.cs">
+      <DependentUpon>HttpErrorPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\FieldRuleManager.aspx.cs">
+      <DependentUpon>FieldRuleManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\FieldRuleManager.aspx.designer.cs">
+      <DependentUpon>FieldRuleManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\Findfield.aspx.cs">
+      <DependentUpon>Findfield.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\Findfield.aspx.designer.cs">
+      <DependentUpon>Findfield.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\FindTeam.aspx.cs">
+      <DependentUpon>FindTeam.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\FindTeam.aspx.designer.cs">
+      <DependentUpon>FindTeam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\Help.aspx.cs">
+      <DependentUpon>Help.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\Help.aspx.designer.cs">
+      <DependentUpon>Help.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\MyTeam.aspx.cs">
+      <DependentUpon>MyTeam.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\MyTeam.aspx.designer.cs">
+      <DependentUpon>MyTeam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\PersonalInfo.aspx.cs">
+      <DependentUpon>PersonalInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\PersonalInfo.aspx.designer.cs">
+      <DependentUpon>PersonalInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\PKInfoSearch.aspx.cs">
+      <DependentUpon>PKInfoSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\PKInfoSearch.aspx.designer.cs">
+      <DependentUpon>PKInfoSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\TeamInfo.aspx.cs">
+      <DependentUpon>TeamInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\TeamInfo.aspx.designer.cs">
+      <DependentUpon>TeamInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\Upload.ashx.cs">
+      <DependentUpon>Upload.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\Utilities\HtmlHelper.cs" />
+    <Compile Include="PageBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\Utilities\SessionUtil.cs" />
+    <Compile Include="WebPages\Utilities\UtilsTool.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MasterPages\Master.Master" />
+    <Content Include="MasterPages\Content.master" />
+    <Content Include="BG\Css\DWZ\azure\images\grid\Thumbs.db" />
+    <Content Include="BG\Css\DWZ\azure\images\layout\Thumbs.db" />
+    <Content Include="BG\Css\DWZ\azure\images\menu\Thumbs.db" />
+    <Content Include="BG\Css\DWZ\azure\images\progressBar\Thumbs.db" />
+    <Content Include="BG\Css\DWZ\azure\images\shadow\Thumbs.db" />
+    <Content Include="BG\Css\DWZ\azure\images\tabs\Thumbs.db" />
+    <Content Include="BG\Css\DWZ\azure\images\tree\Thumbs.db" />
+    <Content Include="BG\Css\DWZ\default\images\panel\Thumbs.db" />
+    <Content Include="BG\MasterPages\Common.Master" />
+    <Content Include="AjaxHandler\GetRvTeam.ashx" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\TiQiu.Biz\TiQiu.Biz.csproj">
+      <Project>{90365e8c-0b13-429c-b553-951b976b62c2}</Project>
+      <Name>TiQiu.Biz</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TiQiu.Common\TiQiu.Common.csproj">
+      <Project>{f7de6b5a-cea5-4ccc-bcc1-e006509a9e65}</Project>
+      <Name>TiQiu.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TiQiu.DAL\TiQiu.DAL.csproj">
+      <Project>{f8326f97-cd0f-455d-a4b0-1bc868356a58}</Project>
+      <Name>TiQiu.DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:29751/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

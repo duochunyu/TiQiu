@@ -1,0 +1,63 @@
+<ng-include src="'partial/header.html'"></ng-include>
+<div id="content">
+    <tabset>
+        <tab ng-repeat="item in fieldItemList" heading="{{item.title}}" active="item.active" disabled="item.disabled" select="switchFieldItem(item)">
+        </tab>
+    </tabset>
+
+    <div class="form-horizontal" style="margin: 20px 0;">
+        <div class="row">
+            <label class="control-label col-md-2">默认时长：</label>
+
+            <div class="col-md-2">
+                <div class="input-group">
+                    <input type="text" class="form-control" ng-model="duration">
+                    <span class="input-group-addon">小时</span>
+                </div>
+            </div>
+
+            <label class="control-label col-md-2">默认价格：</label>
+            <div class="col-md-2">
+                <div class="input-group">
+                    <input type="text" class="form-control" ng-model="price">
+                    <span class="input-group-addon">￥</span>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <label class="control-label col-md-2">默认起始时间：</label>
+
+            <div class="col-md-2">
+                <timepicker hour-step="1" minute-step="15" show-meridian="false" ng-model="start"></timepicker>
+            </div>
+
+            <label class="control-label col-md-2">默认结束时间：</label>
+            <div class="col-md-3">
+                <timepicker hour-step="1" minute-step="15" show-meridian="false" ng-model="end"></timepicker>
+            </div>
+
+            <div class="col-md-2">
+                <button class="btn btn-primary" ng-click="generateTimeTable(duration, price, start, end)">确定</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="calendar" class="cal-context">
+        <div class="cal-row-fluid cal-row-head clearfix" sticky use-placeholder offset-top="61">
+            <div class="cal-cell1" ng-repeat="day in days">
+                <span>{{day.weekday}}</span>
+            </div>
+        </div>
+
+        <div class="cal-week-box clearfix">
+            <div class="cal-column-fluid" ng-repeat="day in days" ng-init="dayIndex=$index">
+                <div class="cal-cell" ng-repeat="p in day.period" ng-click="openDialog(dayIndex, $index)" ng-class="{Void: p.Status == 1}">
+                    <p>{{p.StartTime.format('HH:mm')}}-{{p.EndTime.format('HH:mm')}}</p>
+                    <p>{{p.Price | currency : '￥'}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<ng-include src="'partial/sidebar.html'"></ng-include>

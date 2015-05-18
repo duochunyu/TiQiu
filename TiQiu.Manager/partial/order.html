@@ -1,0 +1,34 @@
+<style type="text/css">
+body {
+    padding: 60px 0 0 0;
+}
+.table > tbody > tr > td {
+    text-align: center;
+}
+</style>
+<ng-include src="'partial/header.html'"></ng-include>
+<div id="content">
+    <table ng-table="tableParams" class="table ng-table-responsive">
+        <tr ng-repeat="order in $data">
+            <td data-title="'预定类型'">
+                {{order.Type | orderType}}
+            </td>
+            <td data-title="'状态'">
+                {{order.Status | orderStatus}}
+            </td>
+            <td data-title="'场地'">
+                {{order | field}}
+            </td>
+            <td data-title="'时间'">
+                {{order | orderDate}}
+            </td>
+            <td data-title="'价格'">
+                {{order.Price}}
+            </td>
+            <td data-title="'操作'">
+                <button class="btn btn-primary btn-inline btn-xs" ng-click="openDialog(order, 'AuditOrder')">确认</button>
+            </td>
+        </tr>
+    </table>
+</div>
+<!-- <ng-include src="'partial/sidebar.html'"></ng-include> -->

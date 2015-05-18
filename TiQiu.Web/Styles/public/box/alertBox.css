@@ -1,0 +1,50 @@
+@charset "utf-8";
+/* CSS Document */
+.alert { width:100%; height:100%; position:fixed; _position:absolute; top:0; left:0; z-index:9999; display:none; }
+.alert .alert_bg { width:100%; height:100%; background:#000; filter:alpha(opacity=30); opacity:.3; position:absolute; top:0; left:0; }
+.alert .alert_box_pos { position:absolute; top:50%; left:50%; min-height:160px; min-width:300px; _width:300px; _height:160px; }
+.alert .alert_box { border:3px solid #3B9BC9;border-radius:3px;-moz-box-shadow:0 0 8px 2px rgba(0,0,0,.75); -webkit-box-shadow:0 0 8px 2px rgba(0,0,0,.75); box-shadow:0 0 8px 2px rgba(0,0,0,.75); background:#fff; position:relative; width:100%;height:100%; margin-left:-50%; top:-50%;}
+.alert .alert_main{min-height:20px;  _height:20px;  margin-bottom:20px; }
+.alert .alert_box header,.alert .alert_box .header{ display:block;height:40px; overflow:hidden;background:#edf5f8  url(../../../images/public/icon/24x24/b_05.gif) no-repeat 20px center;border-top-left-radius:4px;border-top-right-radius:3px;}
+.alert .alert_box header h1,.alert .alert_box .header h1, .alert .alert_box header h2,.alert .alert_box .header h2 { font:700 14px/40px  微软雅黑, Tahoma, 宋体, Verdana;padding-left:36px; margin-left:12px;}
+.alert .alert_box footer,.alert .alert_box .footer { padding:0 20px 20px; text-align:center; }
+.alert .alert_box .alert_main { padding:20px 20px 0 ;}
+.alert .alert_close { float:right; text-align:center; font:18px/17px Tahoma; color:#81c6e3; cursor:pointer; width:18px; height:18px; margin:4px 4px 0 0; border:transparent solid 1px; }
+.alert .alert_close:hover {border:#81c6e3 solid 1px; background:#F8FBFC;}
+#alert .alert_main{ text-align:center;}
+
+/*公共弹层icon*/
+.icon0 .alert_box header{ background:#FCF8EF url(../../../images/public/icon/24x24/a_00_0.png) no-repeat 20px center; _background-image:#FCF8EF url(../../../images/public/icon/24x24/a_00.gif);}
+.icon1 .alert_box header{ background:#FCF8EF url(../../../images/public/icon/24x24/a_01_0.png) no-repeat 20px center; _background-image:#FCF8EF url(../../../images/public/icon/24x24/a_01.gif);}
+.icon2 .alert_box header{ background:#FCF8EF url(../../../images/public/icon/24x24/a_02_0.png) no-repeat 20px center; _background-image:#FCF8EF url(../../../images/public/icon/24x24/a_02.gif);}
+
+/* CSS 动画 */
+.modern .alert{display:block;height:0;opacity:0;overflow:hidden;}
+.modern .show_alert{height:100%;opacity:1;}
+.show_alert .alert_box{-webkit-animation: showAlert 400ms ease both;animation: showAlert 400ms ease both;}
+.hide_alert .alert_box{-webkit-animation: hideAnimate 200ms ease both;animation: hideAnimate 200ms ease both;}
+.hide_alert .alert_bg{opacity:0;}
+
+@media all and  (min-device-width:480px){/* css3 支持判断 */
+	.alert .alert_box{border-color:#949494;border-width:1px;}
+}
+@-webkit-keyframes showAlert {
+    0% { opacity:0;-webkit-transform: scale(.1) translateY(-2000px); }
+    60% { opacity:1;-webkit-transform: scale(.9) translateY(30px);}
+    80% { -webkit-transform: scale(1.05) translateY(-10px);}
+    100% { -webkit-transform: scale(1) translateY(0);}
+}
+@keyframes showAlert {
+     0% { opacity:0;transform: scale(.1) translateY(-2000px); }
+    60% { opacity:1;transform: scale(.9) translateY(30px);}
+    80% { transform: scale(1.05) translateY(-10px);}
+    100% { transform: scale(1) translateY(0);}
+}
+@-webkit-keyframes hideAnimate {
+     0% { opacity: 1; -webkit-transform: scale(1); }
+    100% { opacity: 0; -webkit-transform: scale(.1); }
+}
+@keyframes hideAnimate {
+   0% { opacity: 1; transform: scale(1); }
+    100% { opacity: 0; transform: scale(.1); }
+}

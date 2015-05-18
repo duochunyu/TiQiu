@@ -1,0 +1,118 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TiQiu.Web", "TiQiu.Web\TiQiu.Web.csproj", "{9DCEBA22-AD59-4BA0-9E50-EF78F8266D22}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TiQiu.Biz", "TiQiu.Biz\TiQiu.Biz.csproj", "{90365E8C-0B13-429C-B553-951B976B62C2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lib", "Lib", "{3E8D19D9-22B1-4BED-8E2B-56BCECB07D4C}"
+	ProjectSection(SolutionItems) = preProject
+		ReferenceLib\Newtonsoft.Json.dll = ReferenceLib\Newtonsoft.Json.dll
+		ReferenceLib\Newtonsoft.Json.pdb = ReferenceLib\Newtonsoft.Json.pdb
+		ReferenceLib\Newtonsoft.Json.xml = ReferenceLib\Newtonsoft.Json.xml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TiQiu.DAL", "TiQiu.DAL\TiQiu.DAL.csproj", "{F8326F97-CD0F-455D-A4B0-1BC868356A58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TiQiu.Common", "TiQiu.Common\TiQiu.Common.csproj", "{F7DE6B5A-CEA5-4CCC-BCC1-E006509A9E65}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TiQiu.Biz.Tests", "TiQiu.Biz.Tests\TiQiu.Biz.Tests.csproj", "{3702C599-C4F3-4BEB-A931-42F6663A2EAB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TiQiu.WebServcie", "TiQiu.WebServcie\TiQiu.WebServcie.csproj", "{CBA81981-567B-4742-BF20-5F408C50B862}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TiQiu.SMS", "TiQiu.SMS\TiQiu.SMS.csproj", "{9164E2FF-96FF-403D-85DD-8268B39C9BED}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "TiQiu.Manager", "http://localhost:32653", "{8647247E-1F5B-4604-A783-4DC4188CA96B}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = ""
+		SccAuxPath = ""
+		SccLocalPath = ""
+		SccProvider = ""
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_32653"
+		Debug.AspNetCompiler.PhysicalPath = "TiQiu.Manager\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_32653\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_32653"
+		Release.AspNetCompiler.PhysicalPath = "TiQiu.Manager\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_32653\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "TiQiu.Manager\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TiQiu.PushJob", "TiQiu.PushJob\TiQiu.PushJob.csproj", "{B6BE0673-450C-439B-B56E-D57323E6D085}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TiQiu.SMSJOB", "TiQiu.SMSJOB\TiQiu.SMSJOB.csproj", "{870DE27A-A4DA-4E1C-940E-699F7686AE87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TiQiu.Model", "TiQiu.Model\TiQiu.Model.csproj", "{73895D5D-9A20-44B0-A436-C61E4ACD12F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TiQiu.BuildScheduledJob", "TiQiu.BuildScheduledJob\TiQiu.BuildScheduledJob.csproj", "{95C722C9-B8BE-449C-98F4-D60628454A58}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9DCEBA22-AD59-4BA0-9E50-EF78F8266D22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DCEBA22-AD59-4BA0-9E50-EF78F8266D22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DCEBA22-AD59-4BA0-9E50-EF78F8266D22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DCEBA22-AD59-4BA0-9E50-EF78F8266D22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90365E8C-0B13-429C-B553-951B976B62C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90365E8C-0B13-429C-B553-951B976B62C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90365E8C-0B13-429C-B553-951B976B62C2}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{90365E8C-0B13-429C-B553-951B976B62C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90365E8C-0B13-429C-B553-951B976B62C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8326F97-CD0F-455D-A4B0-1BC868356A58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8326F97-CD0F-455D-A4B0-1BC868356A58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8326F97-CD0F-455D-A4B0-1BC868356A58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8326F97-CD0F-455D-A4B0-1BC868356A58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7DE6B5A-CEA5-4CCC-BCC1-E006509A9E65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7DE6B5A-CEA5-4CCC-BCC1-E006509A9E65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7DE6B5A-CEA5-4CCC-BCC1-E006509A9E65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7DE6B5A-CEA5-4CCC-BCC1-E006509A9E65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3702C599-C4F3-4BEB-A931-42F6663A2EAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3702C599-C4F3-4BEB-A931-42F6663A2EAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3702C599-C4F3-4BEB-A931-42F6663A2EAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3702C599-C4F3-4BEB-A931-42F6663A2EAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBA81981-567B-4742-BF20-5F408C50B862}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBA81981-567B-4742-BF20-5F408C50B862}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBA81981-567B-4742-BF20-5F408C50B862}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBA81981-567B-4742-BF20-5F408C50B862}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9164E2FF-96FF-403D-85DD-8268B39C9BED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9164E2FF-96FF-403D-85DD-8268B39C9BED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9164E2FF-96FF-403D-85DD-8268B39C9BED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9164E2FF-96FF-403D-85DD-8268B39C9BED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8647247E-1F5B-4604-A783-4DC4188CA96B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8647247E-1F5B-4604-A783-4DC4188CA96B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8647247E-1F5B-4604-A783-4DC4188CA96B}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{8647247E-1F5B-4604-A783-4DC4188CA96B}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{B6BE0673-450C-439B-B56E-D57323E6D085}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6BE0673-450C-439B-B56E-D57323E6D085}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6BE0673-450C-439B-B56E-D57323E6D085}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6BE0673-450C-439B-B56E-D57323E6D085}.Release|Any CPU.Build.0 = Release|Any CPU
+		{870DE27A-A4DA-4E1C-940E-699F7686AE87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{870DE27A-A4DA-4E1C-940E-699F7686AE87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{870DE27A-A4DA-4E1C-940E-699F7686AE87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{870DE27A-A4DA-4E1C-940E-699F7686AE87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73895D5D-9A20-44B0-A436-C61E4ACD12F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73895D5D-9A20-44B0-A436-C61E4ACD12F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73895D5D-9A20-44B0-A436-C61E4ACD12F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73895D5D-9A20-44B0-A436-C61E4ACD12F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95C722C9-B8BE-449C-98F4-D60628454A58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95C722C9-B8BE-449C-98F4-D60628454A58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95C722C9-B8BE-449C-98F4-D60628454A58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95C722C9-B8BE-449C-98F4-D60628454A58}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

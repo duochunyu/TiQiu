@@ -1,0 +1,15 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MasterPages/Master.Master" AutoEventWireup="true" CodeBehind="Content.master.cs" Inherits="TiQiu.Web.MasterPage.MainPage" %>
+
+<asp:Content runat="server" ID="chpHead" ContentPlaceHolderID="CPHead">
+    <asp:ContentPlaceHolder ID="CPHead" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="cContent" ContentPlaceHolderID="mian" runat="server">
+     <div class="">
+                <div class="">
+                    <asp:ContentPlaceHolder runat="server" ID="cphmain">
+                        
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+</asp:Content>

@@ -1,0 +1,16 @@
+[2014/8/25 22:44:43]: Platform:WinNT-Query:action=login&name=hz&pwd=1  
+[2014/8/25 22:44:55]: Platform:WinNT-Query:action=Login&name=hz&pwd=1  
+[2014/8/25 22:45:08]: Platform:WinNT-Query:action=Login&name=hz&pwd=1&bduserId=1  
+[2014/8/25 22:45:25]: Platform:WinNT-Query:action=Login&name=hz&pwd=1&bduserId=1&bdchannelid=1  
+[2014/8/25 22:45:38]: Platform:WinNT-Query:action=Login&name=hz&pwd=1&bduserId=1&bdchannelid=1&deveicetype=1  
+[2014/8/25 22:45:46]: Platform:WinNT-Query:action=Login&name=hz&pwd=1&bduserId=1&bdchannelid=1&devecetype=1  
+[2014/8/25 22:45:55]: Platform:WinNT-Query:action=Login&name=hz&pwd=1&bduserId=1&bdchannelid=1&devicetype=1  
+[2014/8/25 22:46:03]: Platform:WinNT-Query:action=Login&name=hz&pwd=1&bduserId=1&bdchannelid=1&devicetype=1&version=1  
+[2014/8/25 22:47:05]: Platform:WinNT-Query:action=GetOrderByID&memberid=2&token=2lcauonvuflip2ujkef1qyn4&orderid=420  
+[2014/8/25 22:47:16]: Platform:WinNT-Query:action=GetOrderByID&memberid=2&token=2lcauonvuflip2ujkef1qyn4&orderid=420  
+[2014/8/25 22:47:50]: Platform:WinNT-Query:action=GetOrderByID&memberid=2&token=2lcauonvuflip2ujkef1qyn4&orderid=420  
+[2014/8/25 22:48:02]: Platform:WinNT-Query:action=GetOrderByID&memberid=2&token=2lcauonvuflip2ujkef1qyn4&orderid=420  
+[2014/8/25 22:51:28]: Platform:WinNT-Query:action=GetOrderByID&memberid=2&token=2lcauonvuflip2ujkef1qyn4&orderid=410  
+[2014/8/25 22:51:34]: Platform:WinNT-Query:action=GetOrderByID&memberid=2&token=2lcauonvuflip2ujkef1qyn4&orderid=410  
+[2014/8/25 23:00:50]: Platform:WinNT-Query:action=Login&name=hz&pwd=1&bduserId=1&bdchannelid=1&devicetype=1&version=1  
+[2014/8/25 23:01:02]: Platform:WinNT-Query:action=GetOrderByID&memberid=2&token=2lcauonvuflip2ujkef1qyn4&orderid=410  

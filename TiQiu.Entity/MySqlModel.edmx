@@ -1,0 +1,936 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="tiqiuModel.Store" Alias="Self" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.6" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="tiqiuModelStoreContainer">
+          <EntitySet Name="account" EntityType="tiqiuModel.Store.account" store:Type="Tables" Schema="tiqiu" />
+          <EntitySet Name="account_b" EntityType="tiqiuModel.Store.account_b" store:Type="Tables" Schema="tiqiu" />
+          <EntitySet Name="account_b_businesses" EntityType="tiqiuModel.Store.account_b_businesses" store:Type="Tables" Schema="tiqiu" />
+          <EntitySet Name="businesses" EntityType="tiqiuModel.Store.businesses" store:Type="Tables" Schema="tiqiu" />
+          <EntitySet Name="dict_team_role" EntityType="tiqiuModel.Store.dict_team_role" store:Type="Tables" Schema="tiqiu" />
+          <EntitySet Name="field" EntityType="tiqiuModel.Store.field" store:Type="Tables" Schema="tiqiu" />
+          <EntitySet Name="field_item" EntityType="tiqiuModel.Store.field_item" store:Type="Tables" Schema="tiqiu" />
+          <EntitySet Name="field_order" EntityType="tiqiuModel.Store.field_order" store:Type="Tables" Schema="tiqiu" />
+          <EntitySet Name="field_rule" EntityType="tiqiuModel.Store.field_rule" store:Type="Tables" Schema="tiqiu" />
+          <EntitySet Name="field_scheduled" EntityType="tiqiuModel.Store.field_scheduled" store:Type="Tables" Schema="tiqiu" />
+          <EntitySet Name="game_scheduled" EntityType="tiqiuModel.Store.game_scheduled" store:Type="Tables" Schema="tiqiu" />
+          <EntitySet Name="member" EntityType="tiqiuModel.Store.member" store:Type="Tables" Schema="tiqiu" />
+          <EntitySet Name="right" EntityType="tiqiuModel.Store.right" store:Type="Tables" Schema="tiqiu" />
+          <EntitySet Name="role" EntityType="tiqiuModel.Store.role" store:Type="Tables" Schema="tiqiu" />
+          <EntitySet Name="role_account_b" EntityType="tiqiuModel.Store.role_account_b" store:Type="Tables" Schema="tiqiu" />
+          <EntitySet Name="role_right" EntityType="tiqiuModel.Store.role_right" store:Type="Tables" Schema="tiqiu" />
+          <EntitySet Name="sms_confirm" EntityType="tiqiuModel.Store.sms_confirm" store:Type="Tables" Schema="tiqiu" />
+          <EntitySet Name="sms_history" EntityType="tiqiuModel.Store.sms_history" store:Type="Tables" Schema="tiqiu" />
+          <EntitySet Name="sms_pool" EntityType="tiqiuModel.Store.sms_pool" store:Type="Tables" Schema="tiqiu" />
+          <EntitySet Name="team" EntityType="tiqiuModel.Store.team" store:Type="Tables" Schema="tiqiu" />
+          <EntitySet Name="team_member" EntityType="tiqiuModel.Store.team_member" store:Type="Tables" Schema="tiqiu" />
+          <EntitySet Name="team_score" EntityType="tiqiuModel.Store.team_score" store:Type="Tables" Schema="tiqiu" />
+        </EntityContainer>
+        <EntityType Name="account">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="NAME" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="PWD" Type="char" Nullable="false" MaxLength="60" />
+          <Property Name="STATUS" Type="int" Nullable="false" />
+          <Property Name="CREATE_DATE" Type="datetime" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="LAST_LOGIN_DATE" Type="datetime" />
+        </EntityType>
+        <EntityType Name="account_b">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="NAME" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="PWD" Type="char" Nullable="false" MaxLength="60" />
+          <Property Name="STATUS" Type="int" Nullable="false" />
+          <Property Name="CREATE_TIME" Type="datetime" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="LAST_LOGIN_TIME" Type="datetime" />
+        </EntityType>
+        <EntityType Name="account_b_businesses">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="BUSINESSESS_ID" Type="int" Nullable="false" />
+          <Property Name="ACCOUNT_B_ID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="businesses">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="LEVEL" Type="int" Nullable="false" />
+          <Property Name="STATUS" Type="int" Nullable="false" />
+          <Property Name="NAME" Type="varchar" Nullable="false" MaxLength="200" />
+          <Property Name="BRIEF" Type="varchar" />
+        </EntityType>
+        <EntityType Name="dict_team_role">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="NAME" Type="varchar" MaxLength="100" />
+          <Property Name="TYPE" Type="int" />
+        </EntityType>
+        <EntityType Name="field">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="BUSINESSES_ID" Type="int" Nullable="false" />
+          <Property Name="AREA_CODE" Type="char" Nullable="false" MaxLength="6" />
+          <Property Name="L" Type="float" />
+          <Property Name="B" Type="float" />
+          <Property Name="NAME" Type="varchar" Nullable="false" MaxLength="200" />
+          <Property Name="BRIEF" Type="varchar" MaxLength="500" />
+          <Property Name="LEVEL" Type="int" />
+          <Property Name="HALF_SIZE_FIELD" Type="int" Nullable="false" />
+          <Property Name="FULL_SIZE_FIELD" Type="int" Nullable="false" />
+          <Property Name="ADRESS" Type="varchar" Nullable="false" MaxLength="500" />
+          <Property Name="SCORE" Type="int" Nullable="false" />
+          <Property Name="BOTTOM_PRICE" Type="decimal" Nullable="false" Precision="8" Scale="2" />
+          <Property Name="TOP_PRICE" Type="decimal" Nullable="false" Precision="8" Scale="2" />
+          <Property Name="HAS_BATHROOM" Type="bit" Nullable="false" />
+          <Property Name="END_TIME" Type="time" Nullable="false" />
+          <Property Name="START_TIME" Type="time" Nullable="false" />
+        </EntityType>
+        <EntityType Name="field_item">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="FIELD_ID" Type="int" />
+          <Property Name="BUSINESSES_ID" Type="int" />
+          <Property Name="LEVEL" Type="int" />
+          <Property Name="TYPE" Type="int" />
+          <Property Name="BRIEF" Type="varchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="field_order">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="FIELD_SCHEDULED_ID" Type="int" Nullable="false" />
+          <Property Name="FIELD_ID" Type="int" Nullable="false" />
+          <Property Name="FIELD_ITEM_ID" Type="int" Nullable="false" />
+          <Property Name="ORDER_DATE" Type="datetime" Nullable="false" />
+          <Property Name="NEED_REFEREE" Type="bit" Nullable="false" />
+          <Property Name="STATUS" Type="int" Nullable="false" />
+          <Property Name="START_TIME" Type="time" Nullable="false" />
+          <Property Name="END_TIME" Type="time" Nullable="false" />
+          <Property Name="MEMBER_ID" Type="int" Nullable="false" />
+          <Property Name="CREATE_DATE" Type="datetime" Nullable="false" />
+          <Property Name="CONFIRM_MEMBER_DATE" Type="datetime" />
+          <Property Name="CONFIRM_BUSINESSES_ID" Type="int" />
+          <Property Name="CONFIRM_BUSINESSES_DATE" Type="datetime" />
+          <Property Name="ARRIVE_DATE" Type="datetime" />
+          <Property Name="CANCEL_DATE" Type="datetime" />
+          <Property Name="IS_PK" Type="bit" />
+          <Property Name="TEAM_ID" Type="int" />
+          <Property Name="INCOME" Type="decimal" Precision="8" Scale="2" />
+          <Property Name="SCORE" Type="int" />
+          <Property Name="REMARK" Type="varchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="field_rule">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="FIELD_ID" Type="int" Nullable="false" />
+          <Property Name="FIELD_ITEM_ID" Type="int" />
+          <Property Name="TYPE" Type="int" Nullable="false" />
+          <Property Name="START_DATE" Type="datetime" />
+          <Property Name="END_DATE" Type="datetime" />
+          <Property Name="START_TIME" Type="time" />
+          <Property Name="END_TIME" Type="time" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="field_scheduled">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="FIELD_ID" Type="int" />
+          <Property Name="FIELD_ITEM_ID" Type="int" />
+          <Property Name="SCHEDULED_DATE" Type="date" />
+          <Property Name="START_TIME" Type="time" />
+          <Property Name="END_TIME" Type="time" />
+          <Property Name="PRICE" Type="decimal" Precision="8" Scale="2" />
+          <Property Name="STATUS" Type="int" />
+          <Property Name="REMARK" Type="varchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="game_scheduled">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="TEAM_A_ID" Type="int" Nullable="false" />
+          <Property Name="TEAM_B_ID" Type="int" Nullable="false" />
+          <Property Name="START_TIME" Type="datetime" Nullable="false" />
+          <Property Name="END_TIME" Type="datetime" Nullable="false" />
+          <Property Name="FIELD_ID" Type="int" />
+          <Property Name="GROUP_CODE" Type="char" MaxLength="10" />
+          <Property Name="FIELD_ITEM_ID" Type="int" />
+          <Property Name="FIELD_ORDER_ID" Type="int" />
+        </EntityType>
+        <EntityType Name="member">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ACCOUNT_ID" Type="int" />
+          <Property Name="NAME" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="IS_TEAMLEADER" Type="bit" Nullable="false" />
+          <Property Name="CELLPHONE" Type="char" Nullable="false" MaxLength="11" />
+          <Property Name="EMAIL" Type="varchar" MaxLength="50" />
+          <Property Name="ADRESS" Type="varchar" MaxLength="500" />
+          <Property Name="AREA_CODE" Type="char" MaxLength="6" />
+          <Property Name="MEMBERcol" Type="varchar" MaxLength="45" />
+          <Property Name="LEVLE" Type="int" Nullable="false" />
+          <Property Name="SCORE" Type="int" />
+        </EntityType>
+        <EntityType Name="right">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="NAME" Type="varchar" MaxLength="45" />
+          <Property Name="CODE" Type="varchar" MaxLength="45" />
+          <Property Name="TYPE" Type="varchar" MaxLength="45" />
+        </EntityType>
+        <EntityType Name="role">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="NAME" Type="varchar" Nullable="false" MaxLength="45" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="45" />
+        </EntityType>
+        <EntityType Name="role_account_b">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ACCOUNT_B_ID" Type="int" />
+          <Property Name="BUSINESSESS_ID" Type="int" />
+          <Property Name="ROLE_ID" Type="int" />
+        </EntityType>
+        <EntityType Name="role_right">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ROLE_ID" Type="int" />
+          <Property Name="RIGHT_ID" Type="int" />
+        </EntityType>
+        <EntityType Name="sms_confirm">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="SMS_POOL_ID" Type="int" Nullable="false" />
+          <Property Name="CELL_PHONE" Type="char" Nullable="false" MaxLength="11" />
+          <Property Name="CONTENT" Type="varchar" Nullable="false" MaxLength="200" />
+          <Property Name="RECEIVE_DATE" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="sms_history">
+          <Key>
+            <PropertyRef Name="SMS_POOL_ID" />
+          </Key>
+          <Property Name="SMS_POOL_ID" Type="int" Nullable="false" />
+          <Property Name="FIELD_ORDER_ID" Type="int" Nullable="false" />
+          <Property Name="MEMBER_ID" Type="int" />
+          <Property Name="BUSINESSES_ID" Type="int" />
+          <Property Name="CELL_PHONE" Type="char" Nullable="false" MaxLength="11" />
+          <Property Name="CONTENT" Type="varchar" Nullable="false" MaxLength="200" />
+          <Property Name="CREATE_DATE" Type="datetime" Nullable="false" />
+          <Property Name="SEND_DATE" Type="datetime" />
+        </EntityType>
+        <EntityType Name="sms_pool">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="FIELD_ORDER_ID" Type="int" Nullable="false" />
+          <Property Name="MEMBER_ID" Type="int" />
+          <Property Name="BUSINESSES_ID" Type="int" />
+          <Property Name="CELL_PHONE" Type="char" Nullable="false" MaxLength="11" />
+          <Property Name="CONTENT" Type="varchar" Nullable="false" MaxLength="200" />
+          <Property Name="CREATE_DATE" Type="datetime" Nullable="false" />
+          <Property Name="LAST_SEND_DATE" Type="datetime" />
+        </EntityType>
+        <EntityType Name="team">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="NAME" Type="varchar" Nullable="false" MaxLength="200" />
+          <Property Name="LEVEL" Type="int" Nullable="false" />
+          <Property Name="SCORE" Type="int" Nullable="false" />
+          <Property Name="WIN" Type="int" Nullable="false" />
+          <Property Name="LOSE" Type="int" Nullable="false" />
+          <Property Name="DRAW" Type="int" Nullable="false" />
+          <Property Name="BRIEF" Type="varchar" />
+        </EntityType>
+        <EntityType Name="team_member">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="MEMBER_ID" Type="int" Nullable="false" />
+          <Property Name="TEAM_ID" Type="int" Nullable="false" />
+          <Property Name="ROLE_ID" Type="int" Nullable="false" />
+          <Property Name="STATUS" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="team_score">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="FIELD_ORDER_ID" Type="int" Nullable="false" />
+          <Property Name="TEAM_A_ID" Type="int" Nullable="false" />
+          <Property Name="TEAM_B_ID" Type="int" Nullable="false" />
+          <Property Name="TEAM_A_SCORE" Type="int" Nullable="false" />
+          <Property Name="TEAM_A_NAME" Type="varchar" Nullable="false" MaxLength="200" />
+          <Property Name="TEAM_B_NAME" Type="varchar" Nullable="false" MaxLength="200" />
+          <Property Name="START_TIME" Type="datetime" Nullable="false" />
+          <Property Name="END_TIME" Type="datetime" Nullable="false" />
+          <Property Name="SCORE" Type="varchar" MaxLength="45" />
+          <Property Name="RECEIVE_SCORE" Type="int" />
+          <Property Name="LOSE_SCORE" Type="int" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="tiqiuModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="tiqiuEntities" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="accounts" EntityType="tiqiuModel.account" />
+          <EntitySet Name="account_b" EntityType="tiqiuModel.account_b" />
+          <EntitySet Name="account_b_businesses" EntityType="tiqiuModel.account_b_businesses" />
+          <EntitySet Name="businesses" EntityType="tiqiuModel.business" />
+          <EntitySet Name="dict_team_role" EntityType="tiqiuModel.dict_team_role" />
+          <EntitySet Name="fields" EntityType="tiqiuModel.field" />
+          <EntitySet Name="field_item" EntityType="tiqiuModel.field_item" />
+          <EntitySet Name="field_order" EntityType="tiqiuModel.field_order" />
+          <EntitySet Name="field_rule" EntityType="tiqiuModel.field_rule" />
+          <EntitySet Name="field_scheduled" EntityType="tiqiuModel.field_scheduled" />
+          <EntitySet Name="game_scheduled" EntityType="tiqiuModel.game_scheduled" />
+          <EntitySet Name="members" EntityType="tiqiuModel.member" />
+          <EntitySet Name="rights" EntityType="tiqiuModel.right" />
+          <EntitySet Name="roles" EntityType="tiqiuModel.role" />
+          <EntitySet Name="role_account_b" EntityType="tiqiuModel.role_account_b" />
+          <EntitySet Name="role_right" EntityType="tiqiuModel.role_right" />
+          <EntitySet Name="sms_confirm" EntityType="tiqiuModel.sms_confirm" />
+          <EntitySet Name="sms_history" EntityType="tiqiuModel.sms_history" />
+          <EntitySet Name="sms_pool" EntityType="tiqiuModel.sms_pool" />
+          <EntitySet Name="teams" EntityType="tiqiuModel.team" />
+          <EntitySet Name="team_member" EntityType="tiqiuModel.team_member" />
+          <EntitySet Name="team_score" EntityType="tiqiuModel.team_score" />
+        </EntityContainer>
+        <EntityType Name="account">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="NAME" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="PWD" Type="String" Nullable="false" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="STATUS" Type="Int32" Nullable="false" />
+          <Property Name="CREATE_DATE" Type="DateTime" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="LAST_LOGIN_DATE" Type="DateTime" />
+        </EntityType>
+        <EntityType Name="account_b">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="NAME" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="PWD" Type="String" Nullable="false" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="STATUS" Type="Int32" Nullable="false" />
+          <Property Name="CREATE_TIME" Type="DateTime" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="LAST_LOGIN_TIME" Type="DateTime" />
+        </EntityType>
+        <EntityType Name="account_b_businesses">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="BUSINESSESS_ID" Type="Int32" Nullable="false" />
+          <Property Name="ACCOUNT_B_ID" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="business">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="LEVEL" Type="Int32" Nullable="false" />
+          <Property Name="STATUS" Type="Int32" Nullable="false" />
+          <Property Name="NAME" Type="String" Nullable="false" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="BRIEF" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="dict_team_role">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="NAME" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="TYPE" Type="Int32" />
+        </EntityType>
+        <EntityType Name="field">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="BUSINESSES_ID" Type="Int32" Nullable="false" />
+          <Property Name="AREA_CODE" Type="String" Nullable="false" MaxLength="6" Unicode="false" FixedLength="false" />
+          <Property Name="L" Type="Single" />
+          <Property Name="B" Type="Single" />
+          <Property Name="NAME" Type="String" Nullable="false" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="BRIEF" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+          <Property Name="LEVEL" Type="Int32" />
+          <Property Name="HALF_SIZE_FIELD" Type="Int32" Nullable="false" />
+          <Property Name="FULL_SIZE_FIELD" Type="Int32" Nullable="false" />
+          <Property Name="ADRESS" Type="String" Nullable="false" MaxLength="500" Unicode="false" FixedLength="false" />
+          <Property Name="SCORE" Type="Int32" Nullable="false" />
+          <Property Name="BOTTOM_PRICE" Type="Decimal" Nullable="false" />
+          <Property Name="TOP_PRICE" Type="Decimal" Nullable="false" />
+          <Property Name="HAS_BATHROOM" Type="Boolean" Nullable="false" />
+          <Property Name="END_TIME" Type="Time" Nullable="false" />
+          <Property Name="START_TIME" Type="Time" Nullable="false" />
+        </EntityType>
+        <EntityType Name="field_item">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="FIELD_ID" Type="Int32" />
+          <Property Name="BUSINESSES_ID" Type="Int32" />
+          <Property Name="LEVEL" Type="Int32" />
+          <Property Name="TYPE" Type="Int32" />
+          <Property Name="BRIEF" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="field_order">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="FIELD_SCHEDULED_ID" Type="Int32" Nullable="false" />
+          <Property Name="FIELD_ID" Type="Int32" Nullable="false" />
+          <Property Name="FIELD_ITEM_ID" Type="Int32" Nullable="false" />
+          <Property Name="ORDER_DATE" Type="DateTime" Nullable="false" />
+          <Property Name="NEED_REFEREE" Type="Boolean" Nullable="false" />
+          <Property Name="STATUS" Type="Int32" Nullable="false" />
+          <Property Name="START_TIME" Type="Time" Nullable="false" />
+          <Property Name="END_TIME" Type="Time" Nullable="false" />
+          <Property Name="MEMBER_ID" Type="Int32" Nullable="false" />
+          <Property Name="CREATE_DATE" Type="DateTime" Nullable="false" />
+          <Property Name="CONFIRM_MEMBER_DATE" Type="DateTime" />
+          <Property Name="CONFIRM_BUSINESSES_ID" Type="Int32" />
+          <Property Name="CONFIRM_BUSINESSES_DATE" Type="DateTime" />
+          <Property Name="ARRIVE_DATE" Type="DateTime" />
+          <Property Name="CANCEL_DATE" Type="DateTime" />
+          <Property Name="IS_PK" Type="Boolean" />
+          <Property Name="TEAM_ID" Type="Int32" />
+          <Property Name="INCOME" Type="Decimal" />
+          <Property Name="SCORE" Type="Int32" />
+          <Property Name="REMARK" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="field_rule">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="FIELD_ID" Type="Int32" Nullable="false" />
+          <Property Name="FIELD_ITEM_ID" Type="Int32" />
+          <Property Name="TYPE" Type="Int32" Nullable="false" />
+          <Property Name="START_DATE" Type="DateTime" />
+          <Property Name="END_DATE" Type="DateTime" />
+          <Property Name="START_TIME" Type="Time" />
+          <Property Name="END_TIME" Type="Time" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="field_scheduled">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="FIELD_ID" Type="Int32" />
+          <Property Name="FIELD_ITEM_ID" Type="Int32" />
+          <Property Name="SCHEDULED_DATE" Type="DateTime" />
+          <Property Name="START_TIME" Type="Time" />
+          <Property Name="END_TIME" Type="Time" />
+          <Property Name="PRICE" Type="Decimal" />
+          <Property Name="STATUS" Type="Int32" />
+          <Property Name="REMARK" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="game_scheduled">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="TEAM_A_ID" Type="Int32" Nullable="false" />
+          <Property Name="TEAM_B_ID" Type="Int32" Nullable="false" />
+          <Property Name="START_TIME" Type="DateTime" Nullable="false" />
+          <Property Name="END_TIME" Type="DateTime" Nullable="false" />
+          <Property Name="FIELD_ID" Type="Int32" />
+          <Property Name="GROUP_CODE" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="FIELD_ITEM_ID" Type="Int32" />
+          <Property Name="FIELD_ORDER_ID" Type="Int32" />
+        </EntityType>
+        <EntityType Name="member">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="ACCOUNT_ID" Type="Int32" />
+          <Property Name="NAME" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="IS_TEAMLEADER" Type="Boolean" Nullable="false" />
+          <Property Name="CELLPHONE" Type="String" Nullable="false" MaxLength="11" Unicode="false" FixedLength="false" />
+          <Property Name="EMAIL" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="ADRESS" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+          <Property Name="AREA_CODE" Type="String" MaxLength="6" Unicode="false" FixedLength="false" />
+          <Property Name="MEMBERcol" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+          <Property Name="LEVLE" Type="Int32" Nullable="false" />
+          <Property Name="SCORE" Type="Int32" />
+        </EntityType>
+        <EntityType Name="right">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="NAME" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+          <Property Name="CODE" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+          <Property Name="TYPE" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="role">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="NAME" Type="String" Nullable="false" MaxLength="45" Unicode="false" FixedLength="false" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="role_account_b">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="ACCOUNT_B_ID" Type="Int32" />
+          <Property Name="BUSINESSESS_ID" Type="Int32" />
+          <Property Name="ROLE_ID" Type="Int32" />
+        </EntityType>
+        <EntityType Name="role_right">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="ROLE_ID" Type="Int32" />
+          <Property Name="RIGHT_ID" Type="Int32" />
+        </EntityType>
+        <EntityType Name="sms_confirm">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="SMS_POOL_ID" Type="Int32" Nullable="false" />
+          <Property Name="CELL_PHONE" Type="String" Nullable="false" MaxLength="11" Unicode="false" FixedLength="false" />
+          <Property Name="CONTENT" Type="String" Nullable="false" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="RECEIVE_DATE" Type="DateTime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="sms_history">
+          <Key>
+            <PropertyRef Name="SMS_POOL_ID" />
+          </Key>
+          <Property Name="SMS_POOL_ID" Type="Int32" Nullable="false" />
+          <Property Name="FIELD_ORDER_ID" Type="Int32" Nullable="false" />
+          <Property Name="MEMBER_ID" Type="Int32" />
+          <Property Name="BUSINESSES_ID" Type="Int32" />
+          <Property Name="CELL_PHONE" Type="String" Nullable="false" MaxLength="11" Unicode="false" FixedLength="false" />
+          <Property Name="CONTENT" Type="String" Nullable="false" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="CREATE_DATE" Type="DateTime" Nullable="false" />
+          <Property Name="SEND_DATE" Type="DateTime" />
+        </EntityType>
+        <EntityType Name="sms_pool">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="FIELD_ORDER_ID" Type="Int32" Nullable="false" />
+          <Property Name="MEMBER_ID" Type="Int32" />
+          <Property Name="BUSINESSES_ID" Type="Int32" />
+          <Property Name="CELL_PHONE" Type="String" Nullable="false" MaxLength="11" Unicode="false" FixedLength="false" />
+          <Property Name="CONTENT" Type="String" Nullable="false" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="CREATE_DATE" Type="DateTime" Nullable="false" />
+          <Property Name="LAST_SEND_DATE" Type="DateTime" />
+        </EntityType>
+        <EntityType Name="team">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="NAME" Type="String" Nullable="false" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="LEVEL" Type="Int32" Nullable="false" />
+          <Property Name="SCORE" Type="Int32" Nullable="false" />
+          <Property Name="WIN" Type="Int32" Nullable="false" />
+          <Property Name="LOSE" Type="Int32" Nullable="false" />
+          <Property Name="DRAW" Type="Int32" Nullable="false" />
+          <Property Name="BRIEF" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="team_member">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="MEMBER_ID" Type="Int32" Nullable="false" />
+          <Property Name="TEAM_ID" Type="Int32" Nullable="false" />
+          <Property Name="ROLE_ID" Type="Int32" Nullable="false" />
+          <Property Name="STATUS" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="team_score">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="FIELD_ORDER_ID" Type="Int32" Nullable="false" />
+          <Property Name="TEAM_A_ID" Type="Int32" Nullable="false" />
+          <Property Name="TEAM_B_ID" Type="Int32" Nullable="false" />
+          <Property Name="TEAM_A_SCORE" Type="Int32" Nullable="false" />
+          <Property Name="TEAM_A_NAME" Type="String" Nullable="false" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="TEAM_B_NAME" Type="String" Nullable="false" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="START_TIME" Type="DateTime" Nullable="false" />
+          <Property Name="END_TIME" Type="DateTime" Nullable="false" />
+          <Property Name="SCORE" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+          <Property Name="RECEIVE_SCORE" Type="Int32" />
+          <Property Name="LOSE_SCORE" Type="Int32" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="tiqiuModelStoreContainer" CdmEntityContainer="tiqiuEntities">
+          <EntitySetMapping Name="accounts">
+            <EntityTypeMapping TypeName="tiqiuModel.account">
+              <MappingFragment StoreEntitySet="account">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="NAME" ColumnName="NAME" />
+                <ScalarProperty Name="PWD" ColumnName="PWD" />
+                <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+                <ScalarProperty Name="CREATE_DATE" ColumnName="CREATE_DATE" />
+                <ScalarProperty Name="LAST_LOGIN_DATE" ColumnName="LAST_LOGIN_DATE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="account_b">
+            <EntityTypeMapping TypeName="tiqiuModel.account_b">
+              <MappingFragment StoreEntitySet="account_b">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="NAME" ColumnName="NAME" />
+                <ScalarProperty Name="PWD" ColumnName="PWD" />
+                <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+                <ScalarProperty Name="CREATE_TIME" ColumnName="CREATE_TIME" />
+                <ScalarProperty Name="LAST_LOGIN_TIME" ColumnName="LAST_LOGIN_TIME" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="account_b_businesses">
+            <EntityTypeMapping TypeName="tiqiuModel.account_b_businesses">
+              <MappingFragment StoreEntitySet="account_b_businesses">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="BUSINESSESS_ID" ColumnName="BUSINESSESS_ID" />
+                <ScalarProperty Name="ACCOUNT_B_ID" ColumnName="ACCOUNT_B_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="businesses">
+            <EntityTypeMapping TypeName="tiqiuModel.business">
+              <MappingFragment StoreEntitySet="businesses">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="LEVEL" ColumnName="LEVEL" />
+                <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+                <ScalarProperty Name="NAME" ColumnName="NAME" />
+                <ScalarProperty Name="BRIEF" ColumnName="BRIEF" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="dict_team_role">
+            <EntityTypeMapping TypeName="tiqiuModel.dict_team_role">
+              <MappingFragment StoreEntitySet="dict_team_role">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="NAME" ColumnName="NAME" />
+                <ScalarProperty Name="TYPE" ColumnName="TYPE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="fields">
+            <EntityTypeMapping TypeName="tiqiuModel.field">
+              <MappingFragment StoreEntitySet="field">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="BUSINESSES_ID" ColumnName="BUSINESSES_ID" />
+                <ScalarProperty Name="AREA_CODE" ColumnName="AREA_CODE" />
+                <ScalarProperty Name="L" ColumnName="L" />
+                <ScalarProperty Name="B" ColumnName="B" />
+                <ScalarProperty Name="NAME" ColumnName="NAME" />
+                <ScalarProperty Name="BRIEF" ColumnName="BRIEF" />
+                <ScalarProperty Name="LEVEL" ColumnName="LEVEL" />
+                <ScalarProperty Name="HALF_SIZE_FIELD" ColumnName="HALF_SIZE_FIELD" />
+                <ScalarProperty Name="FULL_SIZE_FIELD" ColumnName="FULL_SIZE_FIELD" />
+                <ScalarProperty Name="ADRESS" ColumnName="ADRESS" />
+                <ScalarProperty Name="SCORE" ColumnName="SCORE" />
+                <ScalarProperty Name="BOTTOM_PRICE" ColumnName="BOTTOM_PRICE" />
+                <ScalarProperty Name="TOP_PRICE" ColumnName="TOP_PRICE" />
+                <ScalarProperty Name="HAS_BATHROOM" ColumnName="HAS_BATHROOM" />
+                <ScalarProperty Name="END_TIME" ColumnName="END_TIME" />
+                <ScalarProperty Name="START_TIME" ColumnName="START_TIME" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="field_item">
+            <EntityTypeMapping TypeName="tiqiuModel.field_item">
+              <MappingFragment StoreEntitySet="field_item">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="FIELD_ID" ColumnName="FIELD_ID" />
+                <ScalarProperty Name="BUSINESSES_ID" ColumnName="BUSINESSES_ID" />
+                <ScalarProperty Name="LEVEL" ColumnName="LEVEL" />
+                <ScalarProperty Name="TYPE" ColumnName="TYPE" />
+                <ScalarProperty Name="BRIEF" ColumnName="BRIEF" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="field_order">
+            <EntityTypeMapping TypeName="tiqiuModel.field_order">
+              <MappingFragment StoreEntitySet="field_order">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="FIELD_SCHEDULED_ID" ColumnName="FIELD_SCHEDULED_ID" />
+                <ScalarProperty Name="FIELD_ID" ColumnName="FIELD_ID" />
+                <ScalarProperty Name="FIELD_ITEM_ID" ColumnName="FIELD_ITEM_ID" />
+                <ScalarProperty Name="ORDER_DATE" ColumnName="ORDER_DATE" />
+                <ScalarProperty Name="NEED_REFEREE" ColumnName="NEED_REFEREE" />
+                <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+                <ScalarProperty Name="START_TIME" ColumnName="START_TIME" />
+                <ScalarProperty Name="END_TIME" ColumnName="END_TIME" />
+                <ScalarProperty Name="MEMBER_ID" ColumnName="MEMBER_ID" />
+                <ScalarProperty Name="CREATE_DATE" ColumnName="CREATE_DATE" />
+                <ScalarProperty Name="CONFIRM_MEMBER_DATE" ColumnName="CONFIRM_MEMBER_DATE" />
+                <ScalarProperty Name="CONFIRM_BUSINESSES_ID" ColumnName="CONFIRM_BUSINESSES_ID" />
+                <ScalarProperty Name="CONFIRM_BUSINESSES_DATE" ColumnName="CONFIRM_BUSINESSES_DATE" />
+                <ScalarProperty Name="ARRIVE_DATE" ColumnName="ARRIVE_DATE" />
+                <ScalarProperty Name="CANCEL_DATE" ColumnName="CANCEL_DATE" />
+                <ScalarProperty Name="IS_PK" ColumnName="IS_PK" />
+                <ScalarProperty Name="TEAM_ID" ColumnName="TEAM_ID" />
+                <ScalarProperty Name="INCOME" ColumnName="INCOME" />
+                <ScalarProperty Name="SCORE" ColumnName="SCORE" />
+                <ScalarProperty Name="REMARK" ColumnName="REMARK" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="field_rule">
+            <EntityTypeMapping TypeName="tiqiuModel.field_rule">
+              <MappingFragment StoreEntitySet="field_rule">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="FIELD_ID" ColumnName="FIELD_ID" />
+                <ScalarProperty Name="FIELD_ITEM_ID" ColumnName="FIELD_ITEM_ID" />
+                <ScalarProperty Name="TYPE" ColumnName="TYPE" />
+                <ScalarProperty Name="START_DATE" ColumnName="START_DATE" />
+                <ScalarProperty Name="END_DATE" ColumnName="END_DATE" />
+                <ScalarProperty Name="START_TIME" ColumnName="START_TIME" />
+                <ScalarProperty Name="END_TIME" ColumnName="END_TIME" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="field_scheduled">
+            <EntityTypeMapping TypeName="tiqiuModel.field_scheduled">
+              <MappingFragment StoreEntitySet="field_scheduled">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="FIELD_ID" ColumnName="FIELD_ID" />
+                <ScalarProperty Name="FIELD_ITEM_ID" ColumnName="FIELD_ITEM_ID" />
+                <ScalarProperty Name="SCHEDULED_DATE" ColumnName="SCHEDULED_DATE" />
+                <ScalarProperty Name="START_TIME" ColumnName="START_TIME" />
+                <ScalarProperty Name="END_TIME" ColumnName="END_TIME" />
+                <ScalarProperty Name="PRICE" ColumnName="PRICE" />
+                <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+                <ScalarProperty Name="REMARK" ColumnName="REMARK" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="game_scheduled">
+            <EntityTypeMapping TypeName="tiqiuModel.game_scheduled">
+              <MappingFragment StoreEntitySet="game_scheduled">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="TEAM_A_ID" ColumnName="TEAM_A_ID" />
+                <ScalarProperty Name="TEAM_B_ID" ColumnName="TEAM_B_ID" />
+                <ScalarProperty Name="START_TIME" ColumnName="START_TIME" />
+                <ScalarProperty Name="END_TIME" ColumnName="END_TIME" />
+                <ScalarProperty Name="FIELD_ID" ColumnName="FIELD_ID" />
+                <ScalarProperty Name="GROUP_CODE" ColumnName="GROUP_CODE" />
+                <ScalarProperty Name="FIELD_ITEM_ID" ColumnName="FIELD_ITEM_ID" />
+                <ScalarProperty Name="FIELD_ORDER_ID" ColumnName="FIELD_ORDER_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="members">
+            <EntityTypeMapping TypeName="tiqiuModel.member">
+              <MappingFragment StoreEntitySet="member">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="ACCOUNT_ID" ColumnName="ACCOUNT_ID" />
+                <ScalarProperty Name="NAME" ColumnName="NAME" />
+                <ScalarProperty Name="IS_TEAMLEADER" ColumnName="IS_TEAMLEADER" />
+                <ScalarProperty Name="CELLPHONE" ColumnName="CELLPHONE" />
+                <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+                <ScalarProperty Name="ADRESS" ColumnName="ADRESS" />
+                <ScalarProperty Name="AREA_CODE" ColumnName="AREA_CODE" />
+                <ScalarProperty Name="MEMBERcol" ColumnName="MEMBERcol" />
+                <ScalarProperty Name="LEVLE" ColumnName="LEVLE" />
+                <ScalarProperty Name="SCORE" ColumnName="SCORE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="rights">
+            <EntityTypeMapping TypeName="tiqiuModel.right">
+              <MappingFragment StoreEntitySet="right">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="NAME" ColumnName="NAME" />
+                <ScalarProperty Name="CODE" ColumnName="CODE" />
+                <ScalarProperty Name="TYPE" ColumnName="TYPE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="roles">
+            <EntityTypeMapping TypeName="tiqiuModel.role">
+              <MappingFragment StoreEntitySet="role">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="NAME" ColumnName="NAME" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="role_account_b">
+            <EntityTypeMapping TypeName="tiqiuModel.role_account_b">
+              <MappingFragment StoreEntitySet="role_account_b">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="ACCOUNT_B_ID" ColumnName="ACCOUNT_B_ID" />
+                <ScalarProperty Name="BUSINESSESS_ID" ColumnName="BUSINESSESS_ID" />
+                <ScalarProperty Name="ROLE_ID" ColumnName="ROLE_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="role_right">
+            <EntityTypeMapping TypeName="tiqiuModel.role_right">
+              <MappingFragment StoreEntitySet="role_right">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="ROLE_ID" ColumnName="ROLE_ID" />
+                <ScalarProperty Name="RIGHT_ID" ColumnName="RIGHT_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sms_confirm">
+            <EntityTypeMapping TypeName="tiqiuModel.sms_confirm">
+              <MappingFragment StoreEntitySet="sms_confirm">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="SMS_POOL_ID" ColumnName="SMS_POOL_ID" />
+                <ScalarProperty Name="CELL_PHONE" ColumnName="CELL_PHONE" />
+                <ScalarProperty Name="CONTENT" ColumnName="CONTENT" />
+                <ScalarProperty Name="RECEIVE_DATE" ColumnName="RECEIVE_DATE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sms_history">
+            <EntityTypeMapping TypeName="tiqiuModel.sms_history">
+              <MappingFragment StoreEntitySet="sms_history">
+                <ScalarProperty Name="SMS_POOL_ID" ColumnName="SMS_POOL_ID" />
+                <ScalarProperty Name="FIELD_ORDER_ID" ColumnName="FIELD_ORDER_ID" />
+                <ScalarProperty Name="MEMBER_ID" ColumnName="MEMBER_ID" />
+                <ScalarProperty Name="BUSINESSES_ID" ColumnName="BUSINESSES_ID" />
+                <ScalarProperty Name="CELL_PHONE" ColumnName="CELL_PHONE" />
+                <ScalarProperty Name="CONTENT" ColumnName="CONTENT" />
+                <ScalarProperty Name="CREATE_DATE" ColumnName="CREATE_DATE" />
+                <ScalarProperty Name="SEND_DATE" ColumnName="SEND_DATE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sms_pool">
+            <EntityTypeMapping TypeName="tiqiuModel.sms_pool">
+              <MappingFragment StoreEntitySet="sms_pool">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="FIELD_ORDER_ID" ColumnName="FIELD_ORDER_ID" />
+                <ScalarProperty Name="MEMBER_ID" ColumnName="MEMBER_ID" />
+                <ScalarProperty Name="BUSINESSES_ID" ColumnName="BUSINESSES_ID" />
+                <ScalarProperty Name="CELL_PHONE" ColumnName="CELL_PHONE" />
+                <ScalarProperty Name="CONTENT" ColumnName="CONTENT" />
+                <ScalarProperty Name="CREATE_DATE" ColumnName="CREATE_DATE" />
+                <ScalarProperty Name="LAST_SEND_DATE" ColumnName="LAST_SEND_DATE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="teams">
+            <EntityTypeMapping TypeName="tiqiuModel.team">
+              <MappingFragment StoreEntitySet="team">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="NAME" ColumnName="NAME" />
+                <ScalarProperty Name="LEVEL" ColumnName="LEVEL" />
+                <ScalarProperty Name="SCORE" ColumnName="SCORE" />
+                <ScalarProperty Name="WIN" ColumnName="WIN" />
+                <ScalarProperty Name="LOSE" ColumnName="LOSE" />
+                <ScalarProperty Name="DRAW" ColumnName="DRAW" />
+                <ScalarProperty Name="BRIEF" ColumnName="BRIEF" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="team_member">
+            <EntityTypeMapping TypeName="tiqiuModel.team_member">
+              <MappingFragment StoreEntitySet="team_member">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="MEMBER_ID" ColumnName="MEMBER_ID" />
+                <ScalarProperty Name="TEAM_ID" ColumnName="TEAM_ID" />
+                <ScalarProperty Name="ROLE_ID" ColumnName="ROLE_ID" />
+                <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="team_score">
+            <EntityTypeMapping TypeName="tiqiuModel.team_score">
+              <MappingFragment StoreEntitySet="team_score">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="FIELD_ORDER_ID" ColumnName="FIELD_ORDER_ID" />
+                <ScalarProperty Name="TEAM_A_ID" ColumnName="TEAM_A_ID" />
+                <ScalarProperty Name="TEAM_B_ID" ColumnName="TEAM_B_ID" />
+                <ScalarProperty Name="TEAM_A_SCORE" ColumnName="TEAM_A_SCORE" />
+                <ScalarProperty Name="TEAM_A_NAME" ColumnName="TEAM_A_NAME" />
+                <ScalarProperty Name="TEAM_B_NAME" ColumnName="TEAM_B_NAME" />
+                <ScalarProperty Name="START_TIME" ColumnName="START_TIME" />
+                <ScalarProperty Name="END_TIME" ColumnName="END_TIME" />
+                <ScalarProperty Name="SCORE" ColumnName="SCORE" />
+                <ScalarProperty Name="RECEIVE_SCORE" ColumnName="RECEIVE_SCORE" />
+                <ScalarProperty Name="LOSE_SCORE" ColumnName="LOSE_SCORE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="无" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

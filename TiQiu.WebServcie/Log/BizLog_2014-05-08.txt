@@ -1,0 +1,16 @@
+[2014/5/8 16:47:58]: Platform:WinNT-Query:action=GetPKList&start=2014-05-07&end=2014-05-09&pageIndex=1&pageSize=10&ts=1  
+[2014/5/8 17:25:54]: Platform:WinNT-Query:action=GetFieldList&pageindx=1&pagesize=5&start=2014-5-5&end=2014-5-5  
+[2014/5/8 17:26:15]: Platform:WinNT-Query:action=GetFieldList&pageindex=1&pagesize=5&start=2014-5-5&end=2014-5-5  
+[2014/5/8 17:26:23]: Platform:WinNT-Query:action=GetFieldList&pageindex=1&pagesize=5&start=2014-5-5&end=2014-5-5  
+[2014/5/8 17:28:28]: Platform:WinNT-Query:action=GetFieldList&pageindex=1&pagesize=5&start=2014-5-5&end=2014-5-5  
+[2014/5/8 17:28:44]: Platform:WinNT-Query:action=GetFieldList&pageindex=1&pagesize=5&start=2014-5-5&end=2014-5-5  
+[2014/5/8 17:31:09]: Platform:WinNT-Query:action=GetFieldList&pageindex=1&pagesize=5&start=2014-5-5&end=2014-5-5  
+[2014/5/8 17:31:30]: Platform:WinNT-Query:action=GetFieldList&pageindex=1&pagesize=5&start=2014-5-5&end=2014-5-5  
+[2014/5/8 17:33:27]: Platform:WinNT-Query:action=GetFieldList&pageindex=1&pagesize=5&start=2014-5-5&end=2014-5-5  
+[2014/5/8 17:33:39]: Platform:WinNT-Query:action=GetFieldList&pageindex=1&pagesize=5&start=2014-5-5&end=2014-5-5  
+[2014/5/8 17:35:35]: Platform:WinNT-Query:action=GetFieldList&pageindex=1&pagesize=5&start=2014-5-5&end=2014-5-5  
+[2014/5/8 17:44:52]: Platform:WinNT-Query:action=Login&name=hz&phone=123&pwd=1  
+[2014/5/8 17:45:37]: Platform:WinNT-Query:action=OrderPK&scheduledId=4787&memberId=2&Token=dkt5rv55w1ienq55zcqybn45&needReferee=1&teamId=2&teambId=-1&payType=1&ts=1399541883721  
+[2014/5/8 23:35:03]: Platform:WinNT-Query:action=Login&name=hz&phone=123&pwd=1  
+[2014/5/8 23:35:18]: Platform:WinNT-Query:action=OrderPK&scheduledId=4787&memberId=2&Token=dkt5rv55w1ienq55zcqybn45&needReferee=1&teamId=2&teambId=-1&payType=1&ts=1399541883721  
+[2014/5/8 23:37:15]: Platform:WinNT-Query:action=GetFieldList&pageindex=0&pagesize=5&start=2014-5-8&end=2014-5-9  

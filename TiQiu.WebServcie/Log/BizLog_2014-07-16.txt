@@ -1,0 +1,2 @@
+[2014/7/16 22:20:38]: Platform:WinNT-Query:action=GetNewGameCommentList&schId=9&lastid=10  
+[2014/7/16 22:21:24]: Platform:WinNT-Query:action=GetNewGameCommentList&schId=9&lastid=10  

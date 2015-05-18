@@ -1,0 +1,121 @@
+﻿@charset "utf-8";
+/*
+ 这个文件定义UI规范里面定义的字体、颜色、链接色等。按钮在隔壁button文件里定义，盒子模型也是一样。
+*/
+
+/* 第1部分，字体与颜色 */
+
+/* 默认文本格式 */
+html{_background-image:url(about:blank);_background-attachment: fixed;} /* for ie6 fixed position bug */
+body{font:12px/1.5 Tahoma,Helvetica,'宋体','Microsoft Yahei';color:#58b5e1;}
+textarea, button, input, select { font-size:12px; color:#333; font-family:Tahoma, '宋体', Verdana; }
+var { font-style:normal;}
+/* 处理Tahoma字体等宽 */
+/* label { font-family:'宋体'; } */
+.title { font:14px/1.5 '微软雅黑', Tahoma, '宋体', Verdana; font-weight:bold; }
+/* 主色 */
+.color1 { color:#FF3A42FF; }
+/* 辅色 */
+.color2 { color:#58b5e1; }
+/* 弱化颜色 */
+.color3 { color:#666; }
+.color4 { color:#999; }
+/* 警告颜色 */
+.color5 { color:#f90; }
+/* 强化颜色 */
+em { font-style:normal; color:#ff513a; }
+/* 链接颜色 */
+a { color:#3b9bc9; text-decoration:none;}
+a.em { color:#E35480; }
+a:hover { color:#58b5e1; text-decoration:underline;}
+
+/* 第2部分，页面排版与尺寸 */
+
+/* 浮动清除 */
+.clearfix:after { content:"."; height:0; line-height:0; font-size:0; display:block; clear:both; visibility:hidden; }
+.clearfix { *display:inline-block; }
+/* \*/
+* html .clearfix { height:1%; }
+/* */
+/* 常用区块 */
+.w960 { width:960px; margin:0 auto; clear:both;  }
+.w961 { width:960px; margin:0 auto; clear:both;background:url(../../images/public/bg/bg.png) repeat-x #D7E8F0;}
+.w830 { width:830px; }
+.w820{ width:820px; }
+.w710 { width:710px; }
+.w580 { width:580px; }
+.w250 { width:250px; }
+.w130 { width:130px; }
+.w830, .w710, .w580, .w250, .w130, .w820 { float:left; _display:inline; }
+.h220 { height:220px; }
+/* 常用边距 */
+.mt_10 { margin-top:-10px; }
+.mt10 { margin-top:10px; }
+.mt15 { margin-top:15px; }
+.mt20 { margin-top:20px; }
+.mb10 { margin-bottom:10px; }
+.mb15 { margin-bottom:15px; }
+.mb20 { margin-bottom:20px; }
+.pt10 { padding-top:10px; }
+.pt15 { padding-top:15px; }
+.pt20 { padding-top:20px; }
+.pb10 { padding-bottom:10px; }
+.pb15 { padding-bottom:15px; }
+.pb20 { padding-bottom:20px; }
+/* 文本排列 */
+.text_center { text-align:center; }
+.text_left { text-align:left; }
+.text_right { text-align:right; }
+.rlinks { text-align:right; float:right; }
+.readmore { padding-right:12px; background:url(../../images/public/icon/ico_readmore.gif) 100% 0 no-repeat; }
+.readmore.readmore_folded { background-position: 100% 100%; }
+/* 更多连接 */
+.title_more { float:right; font-family:"宋体"; text-decoration:none; }
+
+/**/
+.hide{ display:none;}
+.show { display:block;}
+
+/* 会员在线状态 */
+.online {display: inline-block; width: 16px; height: 16px; font-size: 0; vertical-align: middle;margin-bottom: 1px;background: url(../../images/public/icon/16x16/online.gif) no-repeat; }
+
+/* 隐藏小屏幕两侧广告和手机 flash 显示 */
+@media all and (max-device-width: 940px) {
+	#enter,.theme_flash { display:none; }
+	body{-webkit-text-size-adjust: none;}
+  }
+  
+/* 公用三角形  / 默认为8个像素向左的小三角形，背景为白色，外边框为灰色，需要指定top 值   */ 
+.pub_tg{position:absolute;height:0;width:0;line-height:0;font-size:0;border-style:dashed;border-color:transparent;border-width:10px;border-right:10px solid #eaeaea;border-left:none;left:-10px;}
+.pub_tg_inner{border-right:10px solid #fff;left:-9px;}
+.pub_tg_mask{position:absolute;height:9px;width:9px;background:#f9f9f9;border-bottom:solid 1px #eaeaea;border-right:solid 1px #eaeaea;left:-10px;line-height:0;font-size:0;}
+
+/* 定义 全站两侧 CMS 样式  */
+.gobal_side_floater{width: 100%; position: fixed; top: 100px; right: 0; z-index: 9;}
+.gobal_top_right_floater{width:103px;cursor: pointer; position: absolute; top: 0; right: 0;}
+.gobal_top_right_floater a{text-decoration:none !important;}
+.gobal_side_advise{width:80px;height:80px;cursor:pointer;position:absolute;top:200px;right:0;}
+.gobal_floater_box{height:143px;background-position:0 -96px;position:relative;cursor:pointer;}
+.gobal_floater_tit{position:absolute;top:4px;left:4px;height:17px;width:61px;color:#fff;line-height:17px;text-align:center;background-position:0 -56px;_background-position:0 -76px;font-family:"Microsoft Yahei"}
+.gobal_floater_box img{width:87px;height:85px;padding:8px 0 0 9px;}
+.floater_game_info{color:#da295e;padding:4px 0 0 10px;cursor:pointer;}
+.floater_hover_layer{display:none;cursor:pointer;}
+.floater_hover_layer .mask{position:absolute;display:block;height:143px;width:103px;background:#000;opacity:.5;filter:alpha(opacity=50);top:0;left:0;cursor:pointer;}
+.floater_hover_layer .side_game_btn{position:absolute;height:27px;width:75px;_height:25px;line-height:25px;text-align:center;_background-position:0 -28px;color:#fff;left:14px;top:48px;cursor:pointer;}
+.gobal_floater_box:hover .floater_hover_layer{display:block;}
+
+
+.gobal_floater_box,.gobal_floater_tit,.floater_hover_layer .side_game_btn{background-image:url(../../images/bigpic/cms/side_cms.png);background-repeat:no-repeat;}
+
+/* 两栏布局 */
+.second_col{border:solid 1px #C3CACD;margin-left:10px;border-radius:4px;width:818px !important;background:#fff;}
+/*tab */
+.global_tab{border-radius:4px 4px 0 0;border-bottom:1px solid #d4e3eb;background-color:#eef5f9;height:33px;padding:10px 0 0 26px;text-align:center;}
+.global_tab li{float:left;margin-right:7px;border:1px solid #d4e3eb;border-radius:4px 4px 0 0;height:32px;line-height:32px;cursor:pointer;border-bottom:none;}
+.global_tab li a{padding: 0 24px;font-size:14px;text-decoration:none;display:block; outline:none;}
+.global_tab li.this_page{position:relative;bottom:-1px;;font-weight:bold;background:#fff;_height:30px;_line-height:30px;}
+.global_tab li.this_page a{color:#666; font-weight:bold;border-top:solid 2px #bbe0f1;}
+
+/* 固定头部广告高度 */
+.banner_img{_height:80px;min-height:80px;}
+

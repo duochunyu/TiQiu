@@ -1,0 +1,4 @@
+[2014/6/5 9:45:27]: Platform:WinNT-Query:action=GetPklist  
+[2014/6/5 9:51:08]: Platform:WinNT-Query:action=GetPKList&token=dkt5rv55w1ienq55zcqybn45&Name=%u6e05%u6c34%u6cb3&PageIndex=0&PageSize=5  
+[2014/6/5 9:51:14]: Platform:WinNT-Query:action=GetPKList&token=dkt5rv55w1ienq55zcqybn45&Name=%u6e05%u6c34%u6cb3&PageIndex=1&PageSize=5  
+[2014/6/5 9:51:28]: Platform:WinNT-Query:action=GetPKList&token=dkt5rv55w1ienq55zcqybn45&PageIndex=1&PageSize=5  

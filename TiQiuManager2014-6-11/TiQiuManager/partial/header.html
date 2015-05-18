@@ -1,0 +1,30 @@
+<header id="header">
+    <nav class="clearfix navbar navbar-default">
+        <a href="#" class="logo navbar-brand">
+            <i class="iconfont_282 dib" style="font-size: 50px;">&#983049</i>
+            <span class="logo-text dib">后台系统</span>
+        </a>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="{{'#book/' + $stateParams.fieldId}}" class="entry" ng-class="{ active: $state.includes('book')}">预定管理</a>
+                </li>
+
+                <li>
+                    <a href="{{'#config/' + $stateParams.fieldId}}" class="entry" ng-class="{ active: $state.includes('config')}">场次管理</a>
+                </li>
+            </ul>
+        </div>
+        <!-- <ul id="menu">
+
+            <li>
+                <a href="{{'#book/' + $stateParams.fieldId}}" class="entry" ng-class="{ active: $state.includes('book')}">预定管理</a>
+            </li>
+
+            <li>
+                <a href="{{'#config/' + $stateParams.fieldId}}" class="entry" ng-class="{ active: $state.includes('config')}">场次管理</a>
+            </li>
+
+        </ul> -->
+    </nav>
+</header>

@@ -1,0 +1,200 @@
+﻿html
+{
+    scrollbar-shadow-color: #ffffff;
+    scrollbar-highlight-color: #ffffff;
+    scrollbar-face-color: #d9d9d9;
+    scrollbar-3dlight-color: #d9d9d9;
+    scrollbar-darkshadow-color: #d9d9d9;
+    scrollbar-track-color: #ffffff;
+    scrollbar-arrow-color: #ffffff;
+}
+.wrapTd
+{
+    word-break:break-all;
+}
+.masterProgressBarBG
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+}
+.masterProgressBar
+{
+    background-color: White;
+    width: 148px;
+    height: 28px;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    margin-left: -74px;
+    margin-top: -14px;
+    padding: 10px 10px 10px 50px;
+    text-align: left;
+    line-height: 27px;
+    font-weight: bold;
+    z-index: 100;
+    border: solid 2px #86a5ad;
+    background: #FFF url(../CSS/DWZ/default/images/progressBar/progressBar_m.gif) no-repeat 10px 10px;
+}
+.masterProgressAlphaBox
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+    background: #F3F3F3;
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+    opacity: 0;
+}
+body
+{
+    border: none;
+    background-color: White;
+    overflow: auto;
+    font-size: 12px;
+}
+/*区域框*/
+fieldset legend
+{
+    margin-left: 40px;
+    font-weight: bold;
+    color: Gray;
+}
+fieldset
+{
+    margin-bottom: 10px;
+}
+.groupBoxContent
+{
+    margin: 15px;
+}
+
+/*表格样式*/
+
+.ui_table td
+{
+    background-color: #FFFFFF;
+    height: 25px;
+    line-height: 25px;
+    padding-left: 5px;
+}
+.ui_table
+{
+    width: 100%;
+    background-color: Silver;
+}
+.titletr th
+{
+    height: 30px;
+    line-height: 30px;
+    background-color: RGB(240,240,240);
+    padding-left: 5px;
+}
+.ui_table a
+{
+    color: #0072bc;
+}
+
+/*分页控件样式*/
+.pages
+{
+    margin-top: 8px;
+    text-align: right;
+}
+.pages a
+{
+    color: #333;
+    display: inline-block;
+    border: 1px solid #CCC;
+    padding: 3px 5px;
+    text-decoration: none;
+}
+.pages a:hover
+{
+    color: #F60;
+}
+.pages a.curr
+{
+    border: none;
+    font-size: 14px;
+    color: #F60;
+    font-weight: bold;
+}
+.pages input[type=text]
+{
+    width: 25px;
+    text-align: center;
+    height: 15px;
+    padding-top: 3px;
+    margin: 0;
+    background: none;
+    border: solid 1px #ccc;
+    cursor: text;
+}
+.pages .go
+{
+    margin-left: 5px;
+}
+
+/*错误提示SPAN*/
+.errorSpan
+{
+    color: Red;
+    display: none;
+}
+.td_right
+{
+    text-align: right;
+    padding-right: 5px;
+}
+/*详细页面表格样式*/
+.info_table
+{
+    width: 100%;
+    background-color: Silver;
+    border-bottom: 1px solid #CCCCCC;
+    border-left: 1px solid #CCCCCC;
+}
+.info_table td
+{
+    background-color: #FFFFFF;
+    height: 25px;
+    padding-left: 5px;
+    border: 1px solid #CCCCCC;
+    border-bottom: none;
+    border-left: none;
+}
+.info_table .left_td
+{
+    width: 10%;
+    background-color: RGB(240,240,240);
+}
+.info_table .right_td
+{
+    width: 40%;
+}
+.info_table a
+{
+    color: #0072bc;
+}
+
+.info_table .left_td_3
+{
+    width: 8%;
+    background-color: RGB(240,240,240);
+}
+.info_table .right_td_3
+{
+    width: 25%;
+}
+.NumTextBox
+{
+    text-align: right;
+    width: 30px;
+}
